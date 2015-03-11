@@ -16,9 +16,11 @@ public class Randomization extends ActionBarActivity{
     private Random rand;
     DBHandler dbHandler;
 	private ArrayList<Integer> used = new ArrayList<Integer>();
-    private int current;
+    private Excuse current;
+    private Excuse previous;
     private TextView text;
     private Button newButton;
+    private Button prevButton;
     private int numOfExc;
 
 	@Override
@@ -27,6 +29,8 @@ public class Randomization extends ActionBarActivity{
 		setContentView(R.layout.activity_randomization);
         text = (TextView)findViewById(R.id.textView1);
         newButton = (Button)findViewById(R.id.newButton);
+        prevButton = (Button)findViewById(R.id.prevButton);
+        prevButton.setEnabled(false);
         dbHandler = new DBHandler(this);
 
         try {
@@ -72,6 +76,7 @@ public class Randomization extends ActionBarActivity{
 	
 	public Excuse Randomize() throws IOException{
         int num;
+        this.previous = current;
 
         do{
             rand = new Random();
@@ -79,18 +84,23 @@ public class Randomization extends ActionBarActivity{
         }while(used.contains(num) && used.size()<numOfExc);
 
         if(used.size() == numOfExc){
-            newButton.setText("Du har sett alla. Fortsätt?");
+            newButton.setText("Börja om");
             used = new ArrayList<Integer>();
         }
 
         Excuse randomExcuse = dbHandler.getExcuse(num);
-        this.current = num;
-        this.used.add(num);
+
+        this.used.add(randomExcuse.getId());
+        this.current = randomExcuse;
+
 
         return randomExcuse;
 	}
 	 
 	public void getAnother(View view){
+        if(!prevButton.isEnabled()){
+            prevButton.setEnabled(true);
+        }
         if(used.size() == 1){
             newButton.setText("Ny ursäkt");
         }
@@ -103,8 +113,10 @@ public class Randomization extends ActionBarActivity{
 	}
 
     public void getPrevious(View view){
-
-
+        text.setText(dbHandler.getExcuse(previous.getId()).getText());
+        current = previous;
+        previous = null;
+        prevButton.setEnabled(false);
     }
 	
 	
