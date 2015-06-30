@@ -25,19 +25,17 @@
     >
 
         <Button
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_margin="10dp"
+            android:text="@string/favBtn_text"
+            style="@style/MenuButtons"
         />
         <Button
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_margin="10dp"
+            android:text="@string/catBtn_text"
+            style="@style/MenuButtons"
+
         />
         <Button
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_margin="10dp"
+            android:text="@string/addBtn_text"
+            style="@style/MenuButtons"
         />
 
     </LinearLayout>
@@ -48,19 +46,15 @@
         >
 
         <Button
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_margin="10dp"
+            style="@style/MenuButtons"
             />
         <Button
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_margin="10dp"
+            android:text="@string/setBtn_text"
+            style="@style/MenuButtons"
             />
         <Button
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_margin="10dp"
+            android:text="@string/aboutBtn_text"
+            style="@style/MenuButtons"
             />
 
     </LinearLayout>

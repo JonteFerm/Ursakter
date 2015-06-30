@@ -17,4 +17,17 @@
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
 
+    <style name="MenuButtons">
+        <item name="android:layout_height">90dp</item>
+        <item name="android:layout_width">90dp</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:textSize">12dp</item>
+
+    </style>
+
+    <style name="TopBarButtons">
+        <item name="android:layout_marginLeft">5dp</item>
+    </style>
+
 </resources>

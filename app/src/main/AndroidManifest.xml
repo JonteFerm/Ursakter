@@ -25,8 +25,9 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Randomization"
-            android:label="@string/title_activity_randomization" >
+            android:name=".ExcuseActivity"
+            android:label="@string/title_activity_randomization"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         </activity>
     </application>
 

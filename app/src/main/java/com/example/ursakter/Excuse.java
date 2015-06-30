@@ -9,7 +9,7 @@ import java.util.Arrays;
 public class Excuse {
     private int id;
     private String text;
-    private ArrayList<Category> categories;
+    private ArrayList<String> categories;
     private int approvals;
 
     public Excuse(int id, String text, int approvals){
@@ -27,7 +27,7 @@ public class Excuse {
         return text;
     }
 
-    public ArrayList<Category> getCategories() {
+    public ArrayList<String> getCategories() {
         return categories;
     }
 
@@ -38,5 +38,9 @@ public class Excuse {
 
     public int getApprovals() {
         return approvals;
+    }
+
+    public void setApprovals(int approvals){
+        this.approvals = approvals;
     }
 }

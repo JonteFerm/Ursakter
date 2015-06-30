@@ -1,5 +1,6 @@
 package com.example.ursakter;
 
+import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
@@ -98,7 +99,7 @@ public class DBHandler extends SQLiteOpenHelper {
         String path = DB_PATH+DB_NAME;
 
         try{
-            db = SQLiteDatabase.openDatabase(path,null,SQLiteDatabase.OPEN_READONLY);
+            db = SQLiteDatabase.openDatabase(path,null,SQLiteDatabase.OPEN_READWRITE);
         }catch(Exception e){
             e.printStackTrace();
         }
@@ -122,6 +123,12 @@ public class DBHandler extends SQLiteOpenHelper {
         Excuse newExcuse = new Excuse(Integer.parseInt(cursorExc.getString(0)),cursorExc.getString(1), Integer.parseInt(cursorExc.getString(2)));
 
         return newExcuse;
+    }
+
+    public void updateExcuse(Excuse excuse){
+        ContentValues cv = new ContentValues();
+        cv.put("approvals",excuse.getApprovals());
+        db.update(TABLE_EXCUSES,cv,"_id = ?",new String[]{Integer.toString(excuse.getId())});
     }
 
     private Array fetchCategories(int id){

@@ -4,47 +4,43 @@ import java.io.IOException;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Random;
-import android.support.v7.app.ActionBarActivity;
+
+import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
 import android.widget.TextView;
 
-public class Randomization extends ActionBarActivity{
+import custom.views.NextButton;
+import custom.views.PreviousButton;
+import custom.views.RatingButton;
+
+public class ExcuseActivity extends Activity {
     private Random rand;
     DBHandler dbHandler;
 	private ArrayList<Integer> used = new ArrayList<Integer>();
     private Excuse current;
     private Excuse previous;
     private TextView text;
-    private Button newButton;
-    private Button prevButton;
+    private NextButton nextButton;
+    private PreviousButton prevButton;
+    private RatingButton ratingButton;
     private int numOfExc;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_randomization);
+		setContentView(R.layout.activity_excuse);
         text = (TextView)findViewById(R.id.textView1);
-        newButton = (Button)findViewById(R.id.newButton);
-        prevButton = (Button)findViewById(R.id.prevButton);
+        nextButton = (NextButton)findViewById(R.id.next_btn);
+        prevButton = (PreviousButton)findViewById(R.id.previous_btn);
         prevButton.setEnabled(false);
         dbHandler = new DBHandler(this);
+        ratingButton = (RatingButton)findViewById(R.id.rating_button);
 
-        try {
-            dbHandler.createDB();
-
-            dbHandler.openDatabase();
-
-        } catch (IOException e) {
-            e.printStackTrace();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-
-        numOfExc = dbHandler.countExcuses();
+        initDB();
 
         try {
            text.setText(Randomize().getText());
@@ -73,6 +69,21 @@ public class Randomization extends ActionBarActivity{
 		}
 		return super.onOptionsItemSelected(item);
 	}
+
+    private void initDB(){
+        try {
+            dbHandler.createDB();
+
+            dbHandler.openDatabase();
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        numOfExc = dbHandler.countExcuses();
+    }
 	
 	public Excuse Randomize() throws IOException{
         int num;
@@ -84,7 +95,7 @@ public class Randomization extends ActionBarActivity{
         }while(used.contains(num) && used.size()<numOfExc);
 
         if(used.size() == numOfExc){
-            newButton.setText("Börja om");
+            initDB();
             used = new ArrayList<Integer>();
         }
 
@@ -93,16 +104,18 @@ public class Randomization extends ActionBarActivity{
         this.used.add(randomExcuse.getId());
         this.current = randomExcuse;
 
+        updateView();
 
         return randomExcuse;
 	}
 	 
-	public void getAnother(View view){
+	public void loadNewExcuse(View view){
         if(!prevButton.isEnabled()){
             prevButton.setEnabled(true);
+            prevButton.setPos();
+            prevButton.invalidate();
         }
         if(used.size() == 1){
-            newButton.setText("Ny ursäkt");
         }
 		try {
             text.setText(Randomize().getText());
@@ -113,13 +126,35 @@ public class Randomization extends ActionBarActivity{
 	}
 
     public void getPrevious(View view){
-        text.setText(dbHandler.getExcuse(previous.getId()).getText());
+        text.setText(previous.getText());
+        ratingButton.setCurrentRating(previous.getApprovals());
+        ratingButton.invalidate();
         current = previous;
         previous = null;
         prevButton.setEnabled(false);
+        prevButton.setNeg();
+        prevButton.invalidate();
+    }
+
+    public void rateCurrent(View view){
+        current.setApprovals(current.getApprovals()+1);
+        updateView();
     }
 	
-	
+	public void mainMenu(View view){
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+    }
+
+    private void updateView(){
+        ratingButton.setCurrentRating(current.getApprovals());
+        saveCurrent();
+        ratingButton.invalidate();
+    }
+
+    private void saveCurrent(){
+        dbHandler.updateExcuse(current);
+    }
 	
 	
 }

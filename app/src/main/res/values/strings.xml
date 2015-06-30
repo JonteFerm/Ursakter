@@ -8,6 +8,11 @@
     <string name="main_button">Slumpa ursäkt</string>
     <string name="main_title">150+ Ursäkter till att komma försent</string>
     <string name="start_text">Ursäkta att jag är sen...</string>
+    <string name="favBtn_text">Favoriter</string>
+    <string name="catBtn_text">Bibliotek</string>
+    <string name="addBtn_text">Lägg till</string>
+    <string name="setBtn_text">Ställ in</string>
+    <string name="aboutBtn_text">Om...</string>
     <string name="next_button">Ny ursäkt</string>
     <string name="prev_button">Föregående</string>
 

@@ -7,7 +7,6 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
 
 public class MainActivity extends ActionBarActivity {
 
@@ -38,7 +37,7 @@ public class MainActivity extends ActionBarActivity {
 	}
 	
 	public void sendMessage(View view){
-		Intent intent = new Intent(this, Randomization.class);
+		Intent intent = new Intent(this, ExcuseActivity.class);
 		startActivity(intent);
 		
 		
