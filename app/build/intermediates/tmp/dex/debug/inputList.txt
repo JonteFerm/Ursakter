@@ -1,5 +1,5 @@
 C:\Users\Ferm\Dropbox\150Ursakter\Ursakter\app\build\intermediates\classes\debug
-C:\Users\Ferm\Dropbox\150Ursakter\Ursakter\app\build\intermediates\pre-dexed\debug\support-annotations-21.0.3-9dc6db6f55c0db00923e9eaf79de86dfff75b4c4.jar
-C:\Users\Ferm\Dropbox\150Ursakter\Ursakter\app\build\intermediates\pre-dexed\debug\internal_impl-21.0.3-9bb024b6a434cdfb78b8b8cf96d9ff8033235dc9.jar
-C:\Users\Ferm\Dropbox\150Ursakter\Ursakter\app\build\intermediates\pre-dexed\debug\classes-dae96a933244b5ae8d5fa19fac312463eef0b02a.jar
-C:\Users\Ferm\Dropbox\150Ursakter\Ursakter\app\build\intermediates\pre-dexed\debug\classes-32a85e603d07dca3419fcca13dd09d545d2bbccf.jar
+C:\Users\Ferm\Dropbox\150Ursakter\Ursakter\app\build\intermediates\pre-dexed\debug\support-annotations-22.0.0-f4bac854f5ea19796364683d0db9735c390545ce.jar
+C:\Users\Ferm\Dropbox\150Ursakter\Ursakter\app\build\intermediates\pre-dexed\debug\internal_impl-22.0.0-a1ffb169f5d0407f18f79a173f7db05978a11ef7.jar
+C:\Users\Ferm\Dropbox\150Ursakter\Ursakter\app\build\intermediates\pre-dexed\debug\classes-5b1fbd5d35e921197a80caa7cd38538bdc4cdfbf.jar
+C:\Users\Ferm\Dropbox\150Ursakter\Ursakter\app\build\intermediates\pre-dexed\debug\classes-af868b53f4d071ed85e7606bfed74134457ba8d0.jar

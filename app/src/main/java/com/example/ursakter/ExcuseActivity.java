@@ -19,11 +19,11 @@ import custom.views.RatingButton;
 
 public class ExcuseActivity extends Activity {
     private Random rand;
-    DBHandler dbHandler;
 	private ArrayList<Integer> used = new ArrayList<Integer>();
     private Excuse current;
     private Excuse previous;
     private TextView text;
+    private DBHandler dbHandler;
     private NextButton nextButton;
     private PreviousButton prevButton;
     private RatingButton ratingButton;
@@ -37,11 +37,11 @@ public class ExcuseActivity extends Activity {
         nextButton = (NextButton)findViewById(R.id.next_btn);
         prevButton = (PreviousButton)findViewById(R.id.previous_btn);
         prevButton.setEnabled(false);
-        dbHandler = new DBHandler(this);
         ratingButton = (RatingButton)findViewById(R.id.rating_button);
 
+        dbHandler = new DBHandler(this);
         initDB();
-
+        numOfExc = dbHandler.countExcuses();
         try {
            text.setText(Randomize().getText());
 
@@ -69,21 +69,6 @@ public class ExcuseActivity extends Activity {
 		}
 		return super.onOptionsItemSelected(item);
 	}
-
-    private void initDB(){
-        try {
-            dbHandler.createDB();
-
-            dbHandler.openDatabase();
-
-        } catch (IOException e) {
-            e.printStackTrace();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-
-        numOfExc = dbHandler.countExcuses();
-    }
 	
 	public Excuse Randomize() throws IOException{
         int num;
@@ -124,6 +109,19 @@ public class ExcuseActivity extends Activity {
 			e.printStackTrace();
 		}	
 	}
+
+    private void initDB(){
+        try {
+            dbHandler.createDB();
+
+            dbHandler.openDatabase();
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
 
     public void getPrevious(View view){
         text.setText(previous.getText());

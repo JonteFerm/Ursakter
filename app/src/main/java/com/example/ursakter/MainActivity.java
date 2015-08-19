@@ -1,6 +1,7 @@
 package com.example.ursakter;
 
 
+import android.os.Parcelable;
 import android.support.v7.app.ActionBarActivity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,14 +9,20 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
+import java.io.IOException;
+import java.sql.SQLException;
+
 public class MainActivity extends ActionBarActivity {
+    DBHandler dbHandler;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		
-	}
+        dbHandler = new DBHandler(this);
+        initDB();
+
+    }
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
@@ -35,11 +42,27 @@ public class MainActivity extends ActionBarActivity {
 		}
 		return super.onOptionsItemSelected(item);
 	}
+
+    private void initDB(){
+        try {
+            dbHandler.createDB();
+
+            dbHandler.openDatabase();
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
 	
-	public void sendMessage(View view){
+	public void openExcuse(View view){
 		Intent intent = new Intent(this, ExcuseActivity.class);
 		startActivity(intent);
-		
-		
 	}
+
+    public void openLibrary(View view){
+        Intent intent = new Intent(this, LibraryActivity.class);
+        startActivity(intent);
+    }
 }

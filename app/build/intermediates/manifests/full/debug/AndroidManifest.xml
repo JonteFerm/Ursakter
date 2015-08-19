@@ -10,6 +10,8 @@
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
+    <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
@@ -25,8 +27,21 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.example.ursakter.Randomization"
-            android:label="@string/title_activity_randomization" >
+            android:name="com.example.ursakter.ExcuseActivity"
+            android:label="@string/title_activity_randomization"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+        </activity>
+        <activity
+            android:name="com.example.ursakter.LibraryActivity"
+            android:label="@string/title_activity_library" >
+        </activity>
+        <activity
+            android:name="com.example.ursakter.FavouriteActivity"
+            android:label="@string/title_activity_favourite" >
+        </activity>
+        <activity
+            android:name="com.example.ursakter.CategoryActivity"
+            android:label="@string/title_activity_category" >
         </activity>
     </application>
 

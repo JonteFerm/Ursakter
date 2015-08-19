@@ -25,18 +25,23 @@
     >
 
         <Button
-            android:text="@string/favBtn_text"
-            style="@style/MenuButtons"
+            style="@style/MenuButtonsTop"
+            android:background="@drawable/btn_toc"
+            android:onClick="openLibrary"
         />
-        <Button
-            android:text="@string/catBtn_text"
-            style="@style/MenuButtons"
 
-        />
         <Button
-            android:text="@string/addBtn_text"
-            style="@style/MenuButtons"
+            style="@style/MenuButtonsTop"
+            android:background="@drawable/btn_settings"
+            />
+
+
+
+        <Button
+            style="@style/MenuButtonsTop"
+            android:background="@drawable/btn_about"
         />
+
 
     </LinearLayout>
     <LinearLayout
@@ -46,29 +51,27 @@
         >
 
         <Button
-            style="@style/MenuButtons"
-            />
+            style="@style/MenuButtonsBottom"
+            android:background="@drawable/btn_add"
+        />
+
         <Button
-            android:text="@string/setBtn_text"
-            style="@style/MenuButtons"
-            />
-        <Button
-            android:text="@string/aboutBtn_text"
-            style="@style/MenuButtons"
-            />
+            style="@style/MenuButtonsBottom"
+            android:background="@drawable/btn_fav"
+        />
+
 
     </LinearLayout>
 
     <Button
         android:id="@+id/randomizeButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="320dp"
+        android:layout_height="120dp"
         android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
         android:layout_marginTop="48dp"
-        android:onClick="sendMessage"
-        android:text="@string/main_button"
-        android:padding="30dp"
-        android:textSize="30dp"
-        android:background="#1c3"
+        android:onClick="openExcuse"
+        android:background="@drawable/btn_random"
     />
 </LinearLayout>

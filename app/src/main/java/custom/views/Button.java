@@ -18,8 +18,8 @@ public abstract class Button extends View {
     Rect dst;
     public Bitmap initialBmp;
     public Bitmap bmp;
-    public static final int BUTTON_WIDTH = 150;
-    public static final int BUTTON_HEIGHT = 150;
+    public static final int BUTTON_WIDTH = 120;
+    public static final int BUTTON_HEIGHT = 120;
 
     public Button(Context context) {
         super(context);

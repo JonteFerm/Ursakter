@@ -5,6 +5,7 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.os.Parcelable;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -14,6 +15,7 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.lang.reflect.Array;
 import java.sql.SQLException;
+import java.util.ArrayList;
 
 /**
  * Created by Jonathan on 2015-03-02.
@@ -131,9 +133,38 @@ public class DBHandler extends SQLiteOpenHelper {
         db.update(TABLE_EXCUSES,cv,"_id = ?",new String[]{Integer.toString(excuse.getId())});
     }
 
-    private Array fetchCategories(int id){
+    public ArrayList<Category> fetchCategories(){
+        ArrayList<Category> categories = new ArrayList<>();
+        Cursor cursor = db.rawQuery("SELECT * FROM "+TABLE_CATEGORY+" ORDER BY category_name;",null);
+        cursor.moveToFirst();
+        do{
+            Category newCategory = new Category(cursor.getInt(0), cursor.getString(1));
+            categories.add(newCategory);
+        }while(cursor.moveToNext());
+
+        if(categories.size() > 0){
+            return categories;
+        }
 
         return null;
+    }
+
+    public ArrayList<Excuse> getExcusesByCategory(int categoryId){
+        ArrayList<Excuse> excuses = new ArrayList<>();
+        Cursor cursor = db.rawQuery("SELECT e.*, category.category_name AS category FROM "+TABLE_EXCUSES+" AS e " +
+                "LEFT OUTER JOIN excuse2category AS e2c ON e._id = e2c.excuse_id " +
+                "LEFT OUTER JOIN "+TABLE_CATEGORY+" ON e2c.category_id = category._id " +
+                "WHERE e2c.category_id = ?;", new String[]{Integer.toString(categoryId)});
+
+        cursor.moveToFirst();
+
+        do{
+            Excuse newExcuse = new Excuse(cursor.getInt(0),cursor.getString(1),cursor.getInt(2));
+            excuses.add(newExcuse);
+
+        }while(cursor.moveToNext());
+
+        return excuses;
     }
 
     public int countExcuses(){
@@ -141,6 +172,7 @@ public class DBHandler extends SQLiteOpenHelper {
 
         return cursor.getCount();
     }
+
 
     @Override
     public void onCreate(SQLiteDatabase db) {

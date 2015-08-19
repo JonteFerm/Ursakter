@@ -25,19 +25,17 @@
     >
 
         <Button
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_margin="10dp"
+            android:text="@string/favBtn_text"
+            style="@style/MenuButtons"
         />
         <Button
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_margin="10dp"
+            android:text="@string/catBtn_text"
+            style="@style/MenuButtons"
+            android:onClick="openLibrary"
         />
         <Button
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_margin="10dp"
+            android:text="@string/addBtn_text"
+            style="@style/MenuButtons"
         />
 
     </LinearLayout>
@@ -48,19 +46,15 @@
         >
 
         <Button
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_margin="10dp"
+            style="@style/MenuButtons"
             />
         <Button
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_margin="10dp"
+            android:text="@string/setBtn_text"
+            style="@style/MenuButtons"
             />
         <Button
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_margin="10dp"
+            android:text="@string/aboutBtn_text"
+            style="@style/MenuButtons"
             />
 
     </LinearLayout>
@@ -71,10 +65,10 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="48dp"
-        android:onClick="sendMessage"
+        android:onClick="openExcuse"
         android:text="@string/main_button"
         android:padding="30dp"
         android:textSize="30dp"
         android:background="#1c3"
     />
-</LinearLayout><!-- From: file:/C:/Users/Jonathan/Dropbox/150Ursakter/Ursakter/app/src/main/res/layout/activity_main.xml -->
+</LinearLayout><!-- From: file:/C:/Users/Ferm/Dropbox/150Ursakter/Ursakter/app/src/main/res/layout/activity_main.xml -->

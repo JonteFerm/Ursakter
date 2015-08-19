@@ -15,5 +15,9 @@
     <string name="aboutBtn_text">Om...</string>
     <string name="next_button">Ny ursäkt</string>
     <string name="prev_button">Föregående</string>
+    <string name="title_activity_library">LibraryActivity</string>
+    <string name="title_activity_favourite">FavouriteActivity</string>
+    <string name="title_activity_category">CategoryActivity</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>
