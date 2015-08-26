@@ -1,67 +1,47 @@
 package com.example.ursakter;
 
-import android.app.Activity;
-import android.content.DialogInterface;
-import android.content.Intent;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
+import android.support.v4.view.ViewPager;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.LinearLayout;
-import android.widget.ScrollView;
-import android.widget.TextView;
 
 import java.io.IOException;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
 
-public class LibraryActivity extends Activity {
-    //DBHandler dbHandler;
-    //LinearLayout categoryScroll;
-
+public class LibraryActivity extends FragmentActivity implements ExcuseFragment.OnFragmentInteractionListener{
+    private DBHandler dbHandler = new DBHandler(this);
+    private ViewPager libraryPager;
+    private LibraryPagerAdapter libraryPagerAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_library);
-        /*
-        categoryScroll = (LinearLayout)findViewById(R.id.categoryScroll);
-        dbHandler = new DBHandler(this);
         initDB();
-        ArrayList<Category> categories = dbHandler.fetchCategories();
+        libraryPager = (ViewPager) findViewById(R.id.pager);
+        libraryPagerAdapter = new LibraryPagerAdapter(getSupportFragmentManager());
 
-        for(Category category : categories){
-            TextView categoryLabel =  new TextView(this);
-            categoryLabel.setText(category.getName());
-            categoryLabel.setLayoutParams(
-                    new LinearLayout.LayoutParams(
-                            LinearLayout.LayoutParams.MATCH_PARENT,
-                            LinearLayout.LayoutParams.MATCH_PARENT
-                    )
-            );
-            categoryLabel.setId(category.getId());
-            categoryLabel.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    TextView textView = (TextView)v;
-                    showCategory(textView.getId());
-                }
-            });
+        ArrayList<Excuse> excuses = dbHandler.getExcusesByCategory(getIntent().getIntExtra("categoryId", 0));
 
-            categoryScroll.addView(categoryLabel);
+        libraryPagerAdapter.setExcusesInCategory(excuses);
+        libraryPager.setAdapter(libraryPagerAdapter);
+
+        /*
+        for(Excuse excuse : excuses){
+            System.out.println(excuse.getText());
+        }*/
 
 
-        }
-        */
     }
 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_library, menu);
+        getMenuInflater().inflate(R.menu.menu_category, menu);
         return true;
     }
 
@@ -80,7 +60,12 @@ public class LibraryActivity extends Activity {
         return super.onOptionsItemSelected(item);
     }
 
-    /*
+    @Override
+    public void onFragmentInteraction(int position){
+        libraryPager.setCurrentItem(position);
+    }
+
+
     private void initDB(){
         try {
             dbHandler.createDB();
@@ -91,13 +76,5 @@ public class LibraryActivity extends Activity {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-    }
-    */
-
-    public void showCategory(View view){
-
-        Intent intent = new Intent(this, CategoryActivity.class);
-        intent.putExtra("categoryId", Integer.valueOf((String)view.getTag()));
-        startActivity(intent);
     }
 }

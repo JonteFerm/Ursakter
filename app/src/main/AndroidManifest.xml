@@ -32,7 +32,7 @@
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
         </activity>
         <activity
-            android:name=".LibraryActivity"
+            android:name=".CategoryActivity"
             android:label="@string/title_activity_library" >
         </activity>
         <activity
@@ -40,7 +40,7 @@
             android:label="@string/title_activity_favourite" >
         </activity>
         <activity
-            android:name=".CategoryActivity"
+            android:name=".LibraryActivity"
             android:label="@string/title_activity_category" >
         </activity>
     </application>

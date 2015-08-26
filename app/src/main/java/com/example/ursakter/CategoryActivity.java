@@ -1,41 +1,58 @@
 package com.example.ursakter;
 
 import android.app.Activity;
-import android.app.Fragment;
-import android.support.v4.app.FragmentActivity;
-import android.support.v7.app.ActionBarActivity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-
-import java.io.IOException;
-import java.sql.SQLException;
-import java.util.ArrayList;
+import android.view.View;
 
 
-public class CategoryActivity extends FragmentActivity {
-    DBHandler dbHandler = new DBHandler(this);
+public class CategoryActivity extends Activity {
+    //DBHandler dbHandler;
+    //LinearLayout categoryScroll;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_category);
+        /*
+        categoryScroll = (LinearLayout)findViewById(R.id.categoryScroll);
+        dbHandler = new DBHandler(this);
         initDB();
-        ArrayList<Excuse> excuses = dbHandler.getExcusesByCategory(getIntent().getIntExtra("categoryId", 0));
+        ArrayList<Category> categories = dbHandler.fetchCategories();
 
-        for(Excuse excuse : excuses){
-            System.out.println(excuse.getText());
+        for(Category category : categories){
+            TextView categoryLabel =  new TextView(this);
+            categoryLabel.setText(category.getName());
+            categoryLabel.setLayoutParams(
+                    new LinearLayout.LayoutParams(
+                            LinearLayout.LayoutParams.MATCH_PARENT,
+                            LinearLayout.LayoutParams.MATCH_PARENT
+                    )
+            );
+            categoryLabel.setId(category.getId());
+            categoryLabel.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    TextView textView = (TextView)v;
+                    showCategory(textView.getId());
+                }
+            });
+
+            categoryScroll.addView(categoryLabel);
+
 
         }
-
-
+        */
     }
 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_category, menu);
+        getMenuInflater().inflate(R.menu.menu_library, menu);
         return true;
     }
 
@@ -54,6 +71,7 @@ public class CategoryActivity extends FragmentActivity {
         return super.onOptionsItemSelected(item);
     }
 
+    /*
     private void initDB(){
         try {
             dbHandler.createDB();
@@ -64,5 +82,13 @@ public class CategoryActivity extends FragmentActivity {
         } catch (SQLException e) {
             e.printStackTrace();
         }
+    }
+    */
+
+    public void showCategory(View view){
+
+        Intent intent = new Intent(this, LibraryActivity.class);
+        intent.putExtra("categoryId", Integer.valueOf((String)view.getTag()));
+        startActivity(intent);
     }
 }

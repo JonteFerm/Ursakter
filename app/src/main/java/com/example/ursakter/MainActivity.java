@@ -1,7 +1,6 @@
 package com.example.ursakter;
 
 
-import android.os.Parcelable;
 import android.support.v7.app.ActionBarActivity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -62,7 +61,7 @@ public class MainActivity extends ActionBarActivity {
 	}
 
     public void openLibrary(View view){
-        Intent intent = new Intent(this, LibraryActivity.class);
+        Intent intent = new Intent(this, CategoryActivity.class);
         startActivity(intent);
     }
 }
