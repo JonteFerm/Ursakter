@@ -18,6 +18,7 @@ public abstract class Button extends View {
     Rect dst;
     public Bitmap initialBmp;
     public Bitmap bmp;
+    public BitmapFactory.Options options;
     public static final int BUTTON_WIDTH = 120;
     public static final int BUTTON_HEIGHT = 120;
 

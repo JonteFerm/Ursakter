@@ -1,6 +1,8 @@
 package com.example.ursakter;
 
 
+import android.app.Activity;
+import android.graphics.Bitmap;
 import android.support.v7.app.ActionBarActivity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,7 +13,7 @@ import android.view.View;
 import java.io.IOException;
 import java.sql.SQLException;
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends Activity {
     DBHandler dbHandler;
 
 	@Override
@@ -22,25 +24,6 @@ public class MainActivity extends ActionBarActivity {
         initDB();
 
     }
-
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.main, menu);
-		return true;
-	}
-
-	@Override
-	public boolean onOptionsItemSelected(MenuItem item) {
-		// Handle action bar item clicks here. The action bar will
-		// automatically handle clicks on the Home/Up button, so long
-		// as you specify a parent activity in AndroidManifest.xml.
-		int id = item.getItemId();
-		if (id == R.id.action_settings) {
-			return true;
-		}
-		return super.onOptionsItemSelected(item);
-	}
 
     private void initDB(){
         try {
@@ -54,14 +37,25 @@ public class MainActivity extends ActionBarActivity {
             e.printStackTrace();
         }
     }
-	
-	public void openExcuse(View view){
-		Intent intent = new Intent(this, ExcuseActivity.class);
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+
+    }
+
+    public void openExcuse(View view){
+		Intent intent = new Intent(this, RandomExcusesActivity.class);
 		startActivity(intent);
 	}
 
     public void openLibrary(View view){
         Intent intent = new Intent(this, CategoryActivity.class);
+        startActivity(intent);
+    }
+
+    public void openAdd(View view){
+        Intent intent = new Intent(this, AddActivity.class);
         startActivity(intent);
     }
 }

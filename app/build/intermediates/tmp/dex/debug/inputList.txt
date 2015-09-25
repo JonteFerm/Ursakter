@@ -1,5 +1,0 @@
-C:\Users\Ferm\Dropbox\150Ursakter\Ursakter\app\build\intermediates\classes\debug
-C:\Users\Ferm\Dropbox\150Ursakter\Ursakter\app\build\intermediates\pre-dexed\debug\support-annotations-22.0.0-f4bac854f5ea19796364683d0db9735c390545ce.jar
-C:\Users\Ferm\Dropbox\150Ursakter\Ursakter\app\build\intermediates\pre-dexed\debug\internal_impl-22.0.0-a1ffb169f5d0407f18f79a173f7db05978a11ef7.jar
-C:\Users\Ferm\Dropbox\150Ursakter\Ursakter\app\build\intermediates\pre-dexed\debug\classes-5b1fbd5d35e921197a80caa7cd38538bdc4cdfbf.jar
-C:\Users\Ferm\Dropbox\150Ursakter\Ursakter\app\build\intermediates\pre-dexed\debug\classes-af868b53f4d071ed85e7606bfed74134457ba8d0.jar

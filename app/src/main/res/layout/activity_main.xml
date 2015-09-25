@@ -9,15 +9,7 @@
     android:orientation="vertical"
     android:background="#fff"
     tools:context="com.example.ursakter.MainActivity" >
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="@string/main_title"
-        android:textSize="25dp"
-        android:gravity="center"
-        android:textColor="#000"
-    />
+
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="110dp"
@@ -53,6 +45,7 @@
         <Button
             style="@style/MenuButtonsBottom"
             android:background="@drawable/btn_add"
+            android:onClick="openAdd"
         />
 
         <Button
@@ -73,5 +66,6 @@
         android:layout_marginTop="48dp"
         android:onClick="openExcuse"
         android:background="@drawable/btn_random"
+
     />
 </LinearLayout>

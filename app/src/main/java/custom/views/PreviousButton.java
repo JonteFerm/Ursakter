@@ -11,6 +11,8 @@ import com.example.ursakter.R;
  * Created by Ferm on 2015-06-12.
  */
 public class PreviousButton extends Button {
+    private boolean isNeg = true;
+
     public PreviousButton(Context context) {
         super(context);
         initialBmp = BitmapFactory.decodeResource(getResources(), R.drawable.prev);
@@ -31,11 +33,17 @@ public class PreviousButton extends Button {
 
     public void setNeg(){
         initialBmp = BitmapFactory.decodeResource(getResources(),R.drawable.prev_neg);
-        bmp = Bitmap.createScaledBitmap(initialBmp,BUTTON_WIDTH,BUTTON_HEIGHT,false);
+        bmp = Bitmap.createScaledBitmap(initialBmp, BUTTON_WIDTH, BUTTON_HEIGHT, false);
+        isNeg = true;
     }
 
     public void setPos(){
         initialBmp = BitmapFactory.decodeResource(getResources(),R.drawable.prev);
-        bmp = Bitmap.createScaledBitmap(initialBmp,BUTTON_WIDTH,BUTTON_HEIGHT,false);
+        bmp = Bitmap.createScaledBitmap(initialBmp, BUTTON_WIDTH, BUTTON_HEIGHT, false);
+        isNeg = false;
+    }
+
+    public boolean isNeg() {
+        return isNeg;
     }
 }

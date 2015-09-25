@@ -20,7 +20,8 @@ import java.util.ArrayList;
 /**
  * Created by Jonathan on 2015-03-02.
  */
-public class DBHandler extends SQLiteOpenHelper {
+public class
+        DBHandler extends SQLiteOpenHelper {
 
     private static final String DB_NAME = "excusesDB";
     private static final String DB_PATH = "/data/data/com.example.ursakter/databases/";
@@ -117,36 +118,51 @@ public class DBHandler extends SQLiteOpenHelper {
     }
 
     public Excuse getExcuse(int id){
-        Cursor cursorExc = db.query(TABLE_EXCUSES, new String[]{"_id","text","approvals"}, "_id=?", new String[]{String.valueOf(id)},null,null,null);
+        Cursor cursorExc = db.query(TABLE_EXCUSES, new String[]{"_id", "text", "approvals"}, "_id=?", new String[]{String.valueOf(id)}, null, null, null);
         if(cursorExc != null){
             cursorExc.moveToFirst();
         }
 
         Excuse newExcuse = new Excuse(Integer.parseInt(cursorExc.getString(0)),cursorExc.getString(1), Integer.parseInt(cursorExc.getString(2)));
 
+        cursorExc.close();
+
         return newExcuse;
+    }
+
+    public ArrayList<Excuse> getAllExcuses(){
+        ArrayList<Excuse> allExcuses = new ArrayList<>();
+        Cursor cursor = db.rawQuery("SELECT * FROM "+TABLE_EXCUSES+";", null);
+
+        if(cursor != null){
+            cursor.moveToFirst();
+
+            do{
+                Excuse newExcuse = new Excuse(Integer.parseInt(cursor.getString(0)),cursor.getString(1), Integer.parseInt(cursor.getString(2)));
+                allExcuses.add(newExcuse);
+            }while(cursor.moveToNext());
+
+            cursor.close();
+
+            return allExcuses;
+        }
+
+        return null;
     }
 
     public void updateExcuse(Excuse excuse){
         ContentValues cv = new ContentValues();
-        cv.put("approvals",excuse.getApprovals());
+        cv.put("approvals", excuse.getApprovals());
         db.update(TABLE_EXCUSES,cv,"_id = ?",new String[]{Integer.toString(excuse.getId())});
     }
 
-    public ArrayList<Category> fetchCategories(){
-        ArrayList<Category> categories = new ArrayList<>();
-        Cursor cursor = db.rawQuery("SELECT * FROM "+TABLE_CATEGORY+" ORDER BY category_name;",null);
+    public Category fetchCategory(int id){
+        Cursor cursor = db.rawQuery("SELECT * FROM "+TABLE_CATEGORY+" WHERE _id = ?;", new String[]{Integer.toString(id)});
         cursor.moveToFirst();
-        do{
-            Category newCategory = new Category(cursor.getInt(0), cursor.getString(1));
-            categories.add(newCategory);
-        }while(cursor.moveToNext());
+        Category category = new Category(cursor.getInt(0), cursor.getString(1));
 
-        if(categories.size() > 0){
-            return categories;
-        }
-
-        return null;
+        cursor.close();
+        return category;
     }
 
     public ArrayList<Excuse> getExcusesByCategory(int categoryId){
@@ -156,21 +172,47 @@ public class DBHandler extends SQLiteOpenHelper {
                 "LEFT OUTER JOIN "+TABLE_CATEGORY+" ON e2c.category_id = category._id " +
                 "WHERE e2c.category_id = ?;", new String[]{Integer.toString(categoryId)});
 
-        cursor.moveToFirst();
+        if(cursor != null){
+            cursor.moveToFirst();
 
-        do{
-            Excuse newExcuse = new Excuse(cursor.getInt(0),cursor.getString(1),cursor.getInt(2));
-            excuses.add(newExcuse);
+            do{
+                Excuse newExcuse = new Excuse(cursor.getInt(0),cursor.getString(1),cursor.getInt(2));
+                excuses.add(newExcuse);
 
-        }while(cursor.moveToNext());
+            }while(cursor.moveToNext());
 
-        return excuses;
+            cursor.close();
+
+            return excuses;
+        }
+
+        return null;
     }
 
     public int countExcuses(){
         Cursor cursor = db.rawQuery("SELECT _id FROM "+TABLE_EXCUSES+";",null);
+        int count = cursor.getCount();
+        cursor.close();
+        return count;
+    }
 
-        return cursor.getCount();
+    public ArrayList<Category> fetchCategories(){
+        ArrayList<Category> categories = new ArrayList<>();
+        Cursor cursor = db.rawQuery("SELECT * FROM " + TABLE_CATEGORY + " ORDER BY category_name;", null);
+
+        if(cursor != null){
+            cursor.moveToFirst();
+            do{
+                Category newCategory = new Category(cursor.getInt(0), cursor.getString(1));
+                categories.add(newCategory);
+            }while(cursor.moveToNext());
+
+            cursor.close();
+
+            return categories;
+        }
+
+        return null;
     }
 
 
