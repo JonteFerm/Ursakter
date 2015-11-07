@@ -3,30 +3,33 @@ package custom.views;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.Rect;
 import android.util.AttributeSet;
 
 import com.example.ursakter.R;
 
 /**
- * Created by Ferm on 2015-09-25.
+ * Created by Ferm on 2015-10-12.
  */
-public class OkButton extends Button{
-
-    public OkButton(Context context) {
+public class AddButton extends Button{
+    public AddButton(Context context) {
         super(context);
-        initialBmp = BitmapFactory.decodeResource(getResources(), R.drawable.ui_app_new_btn_ok);
+        initialBmp = BitmapFactory.decodeResource(getResources(), R.drawable.ui_app_btn_add_25);
         bmp = Bitmap.createScaledBitmap(initialBmp, BUTTON_WIDTH, BUTTON_HEIGHT, false);
+
     }
 
-    public OkButton(Context context, AttributeSet attrs) {
+    public AddButton(Context context, AttributeSet attrs) {
         super(context, attrs);
-        initialBmp = BitmapFactory.decodeResource(getResources(),R.drawable.ui_app_new_btn_ok);
+        initialBmp = BitmapFactory.decodeResource(getResources(),R.drawable.ui_app_btn_add_25);
         bmp = Bitmap.createScaledBitmap(initialBmp,BUTTON_WIDTH,BUTTON_HEIGHT,false);
+
     }
 
-    public OkButton(Context context, AttributeSet attrs, int defStyle) {
+    public AddButton(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
-        initialBmp = BitmapFactory.decodeResource(getResources(),R.drawable.ui_app_new_btn_ok);
+        initialBmp = BitmapFactory.decodeResource(getResources(),R.drawable.ui_app_btn_add_25);
         bmp = Bitmap.createScaledBitmap(initialBmp,BUTTON_WIDTH,BUTTON_HEIGHT,false);
+
     }
 }

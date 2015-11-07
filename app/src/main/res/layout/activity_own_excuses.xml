@@ -2,8 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    tools:context="com.example.ursakter.RandomExcusesActivity"
-    >
+    tools:context="com.example.ursakter.OwnExcusesActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -15,27 +14,39 @@
         android:layout_alignParentTop="true"
         >
 
-        <custom.views.RatingButton
-            android:id="@+id/rating_button"
+        <custom.views.RemoveButton
+            android:id="@+id/remove_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginRight="60dp"
-            android:onClick="rateCurrent"
-            />
-        <custom.views.HomeButton
-            android:id="@+id/home_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="mainMenu"
-
-            />
+            android:layout_marginRight="20dp"
+            android:onClick="removeCurrent"
+        />
 
         <custom.views.ShareButton
             android:id="@+id/share_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="60dp"
-            />
+            android:layout_marginRight="20dp"
+        />
+
+        <custom.views.HomeButton
+            android:id="@+id/home_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:onClick="mainMenu"
+
+        />
+
+        <custom.views.AddButton
+            android:id="@+id/add_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:onClick="openAdd"
+        />
+
+
 
     </LinearLayout>
 
@@ -52,6 +63,17 @@
             android:layout_height="wrap_content">
 
             <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_alignParentTop="true"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:layout_marginTop="10dp"
+                />
+
+            <TextView
                 android:layout_below="@+id/textView1"
                 android:id="@+id/textView2"
                 android:layout_width="match_parent"
@@ -64,15 +86,23 @@
                 android:gravity="center"
                 />
 
-            <custom.views.MagicPager
+            <android.support.v4.view.ViewPager
                 android:layout_below="@id/textView2"
-                android:id="@+id/pagerz"
+                android:id="@+id/pager"
                 android:layout_width="wrap_content"
                 android:layout_height="250dp"
                 >
 
-            </custom.views.MagicPager>
+            </android.support.v4.view.ViewPager>
 
+            <TextView
+                android:layout_below="@+id/pager"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView3"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                />
 
         </RelativeLayout>
 
@@ -103,7 +133,7 @@
             android:id="@+id/next_btn"
             android:layout_marginLeft="10dp"
             android:onClick="loadNewExcuse"
-            />
+        />
 
     </LinearLayout>
 

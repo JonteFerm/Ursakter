@@ -121,18 +121,20 @@ public class
         Cursor cursorExc = db.query(TABLE_EXCUSES, new String[]{"_id", "text", "approvals"}, "_id=?", new String[]{String.valueOf(id)}, null, null, null);
         if(cursorExc != null){
             cursorExc.moveToFirst();
+
+            Excuse newExcuse = new Excuse(Integer.parseInt(cursorExc.getString(0)),cursorExc.getString(1), Integer.parseInt(cursorExc.getString(2)));
+
+            cursorExc.close();
+
+            return newExcuse;
         }
 
-        Excuse newExcuse = new Excuse(Integer.parseInt(cursorExc.getString(0)),cursorExc.getString(1), Integer.parseInt(cursorExc.getString(2)));
-
-        cursorExc.close();
-
-        return newExcuse;
+        return null;
     }
 
     public ArrayList<Excuse> getAllExcuses(){
         ArrayList<Excuse> allExcuses = new ArrayList<>();
-        Cursor cursor = db.rawQuery("SELECT * FROM "+TABLE_EXCUSES+";", null);
+        Cursor cursor = db.rawQuery("SELECT * FROM " + TABLE_EXCUSES + ";", null);
 
         if(cursor != null){
             cursor.moveToFirst();
@@ -150,10 +152,47 @@ public class
         return null;
     }
 
+    public ArrayList<Excuse> getFavouriteExcuses(){
+        ArrayList<Excuse> faveExcuses = new ArrayList<>();
+        Cursor cursor = db.rawQuery("SELECT * FROM " + TABLE_EXCUSES + " WHERE approvals = 5;", null);
+
+        if (cursor != null){
+            cursor.moveToFirst();
+
+            do{
+                Excuse newExcuse = new Excuse(Integer.parseInt(cursor.getString(0)),cursor.getString(1), Integer.parseInt(cursor.getString(2)));
+                faveExcuses.add(newExcuse);
+            }while(cursor.moveToNext());
+
+            cursor.close();
+
+            return faveExcuses;
+        }
+
+
+        return null;
+    }
+
+    public void addExcuse(String text){
+        ContentValues cv = new ContentValues();
+        cv.put("text", text);
+        cv.put("approvals", 0);
+        long lastId = db.insert("excuses",null,cv);
+        cv.clear();
+        cv.put("category_id", 9);
+        cv.put("excuse_id", lastId);
+        db.insert("excuse2category", null, cv);
+    }
+
     public void updateExcuse(Excuse excuse){
         ContentValues cv = new ContentValues();
         cv.put("approvals", excuse.getApprovals());
-        db.update(TABLE_EXCUSES,cv,"_id = ?",new String[]{Integer.toString(excuse.getId())});
+        db.update(TABLE_EXCUSES, cv, "_id = ?", new String[]{Integer.toString(excuse.getId())});
+    }
+
+    public void removeExcuse(int excuseId){
+        db.delete(TABLE_EXCUSES, "_id = ?", new String[]{Integer.toString(excuseId)});
+        db.delete(TABLE_EXCUSES2CATEGORY, "excuse_id", new String[]{Integer.toString(excuseId)});
     }
 
     public Category fetchCategory(int id){
@@ -172,7 +211,7 @@ public class
                 "LEFT OUTER JOIN "+TABLE_CATEGORY+" ON e2c.category_id = category._id " +
                 "WHERE e2c.category_id = ?;", new String[]{Integer.toString(categoryId)});
 
-        if(cursor != null){
+        if(cursor.getCount() > 0){
             cursor.moveToFirst();
 
             do{

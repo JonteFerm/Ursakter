@@ -1,17 +1,27 @@
 package com.example.ursakter;
 
 import android.app.Activity;
-import android.support.v7.app.ActionBarActivity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.EditText;
+
+import java.io.IOException;
+import java.sql.SQLException;
 
 public class AddActivity extends Activity {
+    private EditText editText;
+    private DBHandler dbHandler = new DBHandler(this);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add);
+        editText = (EditText)findViewById(R.id.edit_text);
+        initDB();
+
     }
 
     @Override
@@ -34,5 +44,36 @@ public class AddActivity extends Activity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    private void initDB(){
+        try {
+            dbHandler.createDB();
+            dbHandler.openDatabase();
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void mainMenu(View view){
+        Intent intent = new Intent(this, MainActivity.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        startActivity(intent);
+    }
+
+    public void saveExcuse(View view){
+        if(editText.toString() != null){
+            dbHandler.addExcuse(editText.getText().toString());
+        }else{
+            editText.setText("Du måste skriva nåt!");
+        }
+    }
+
+    public void abort(View view){
+        Intent intent = new Intent(this, OwnExcusesActivity.class);
+        startActivity(intent);
     }
 }

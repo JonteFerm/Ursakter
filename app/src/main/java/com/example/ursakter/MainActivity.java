@@ -54,8 +54,18 @@ public class MainActivity extends Activity {
         startActivity(intent);
     }
 
-    public void openAdd(View view){
-        Intent intent = new Intent(this, AddActivity.class);
+    public void openOwnExcuses(View view){
+        Intent intent = new Intent(this, OwnExcusesActivity.class);
+        startActivity(intent);
+    }
+
+    public void openFavourites(View view){
+        Intent intent = new Intent(this, FavouriteActivity.class);
+        startActivity(intent);
+    }
+
+    public void openSettings(View view){
+        Intent intent = new Intent(this, SettingsActivity.class);
         startActivity(intent);
     }
 }

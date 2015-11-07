@@ -15,30 +15,30 @@ public class PreviousButton extends Button {
 
     public PreviousButton(Context context) {
         super(context);
-        initialBmp = BitmapFactory.decodeResource(getResources(), R.drawable.prev);
+        initialBmp = BitmapFactory.decodeResource(getResources(), R.drawable.ui_app_btn_back);
         bmp = Bitmap.createScaledBitmap(initialBmp, BUTTON_WIDTH, BUTTON_HEIGHT, false);
     }
 
     public PreviousButton(Context context, AttributeSet attrs) {
         super(context, attrs);
-        initialBmp = BitmapFactory.decodeResource(getResources(),R.drawable.prev);
+        initialBmp = BitmapFactory.decodeResource(getResources(),R.drawable.ui_app_btn_back);
         bmp = Bitmap.createScaledBitmap(initialBmp,BUTTON_WIDTH,BUTTON_HEIGHT,false);
     }
 
     public PreviousButton(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
-        initialBmp = BitmapFactory.decodeResource(getResources(),R.drawable.prev);
+        initialBmp = BitmapFactory.decodeResource(getResources(),R.drawable.ui_app_btn_back);
         bmp = Bitmap.createScaledBitmap(initialBmp,BUTTON_WIDTH,BUTTON_HEIGHT,false);
     }
 
     public void setNeg(){
-        initialBmp = BitmapFactory.decodeResource(getResources(),R.drawable.prev_neg);
+        initialBmp = BitmapFactory.decodeResource(getResources(),R.drawable.ui_app_btn_back_neg);
         bmp = Bitmap.createScaledBitmap(initialBmp, BUTTON_WIDTH, BUTTON_HEIGHT, false);
         isNeg = true;
     }
 
     public void setPos(){
-        initialBmp = BitmapFactory.decodeResource(getResources(),R.drawable.prev);
+        initialBmp = BitmapFactory.decodeResource(getResources(),R.drawable.ui_app_btn_back);
         bmp = Bitmap.createScaledBitmap(initialBmp, BUTTON_WIDTH, BUTTON_HEIGHT, false);
         isNeg = false;
     }

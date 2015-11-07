@@ -1,71 +1,96 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:orientation="vertical"
-    android:background="#fff"
     tools:context="com.example.ursakter.MainActivity" >
 
     <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="110dp"
-        android:orientation="horizontal"
-    >
-
-        <Button
-            style="@style/MenuButtonsTop"
-            android:background="@drawable/btn_toc"
-            android:onClick="openLibrary"
-        />
-
-        <Button
-            style="@style/MenuButtonsTop"
-            android:background="@drawable/btn_settings"
-            />
-
-
-
-        <Button
-            style="@style/MenuButtonsTop"
-            android:background="@drawable/btn_about"
-        />
-
-
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="110dp"
-        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#fff"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
         >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="110dp"
+            android:orientation="horizontal"
+            >
 
-        <Button
-            style="@style/MenuButtonsBottom"
-            android:background="@drawable/btn_add"
-            android:onClick="openAdd"
-        />
+            <Button
+                style="@style/MenuButtonsTop"
+                android:background="@drawable/ui_app_btn_libary"
+                android:onClick="openLibrary"
+                />
 
-        <Button
-            style="@style/MenuButtonsBottom"
-            android:background="@drawable/btn_fav"
-        />
+            <Button
+                style="@style/MenuButtonsTop"
+                android:background="@drawable/ui_app_btn_settings"
+                android:onClick="openSettings"
+                />
 
 
+
+            <Button
+                style="@style/MenuButtonsTop"
+                android:background="@drawable/ui_app_btn_about"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="110dp"
+            android:orientation="horizontal"
+            >
+
+            <Button
+                style="@style/MenuButtonsBottom"
+                android:background="@drawable/ui_app_btn_add_10"
+                android:onClick="openOwnExcuses"
+                />
+
+            <Button
+                style="@style/MenuButtonsBottom"
+                android:background="@drawable/ui_app_btn_fav"
+                android:onClick="openFavourites"
+                />
+
+
+        </LinearLayout>
     </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        >
+        <Button
 
-    <Button
-        android:id="@+id/randomizeButton"
-        android:layout_width="320dp"
-        android:layout_height="120dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginTop="48dp"
-        android:onClick="openExcuse"
-        android:background="@drawable/btn_random"
+            android:id="@+id/randomizeButton"
+            android:layout_width="320dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:onClick="openExcuse"
+            android:background="@drawable/ui_app_btn_random"
 
-    />
-</LinearLayout>
+        />
+        <LinearLayout
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:id="@+id/bottom_panel"
+            android:background="@drawable/ui_app_bg_bottom"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            >
+        </LinearLayout>
+
+    </FrameLayout>
+
+</RelativeLayout>

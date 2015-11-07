@@ -53,7 +53,7 @@ public class RandomExcusesActivity  extends FragmentActivity implements ExcuseFr
 
         ratingButton.setCurrentRating(excuses.get(0).getApprovals());
         ratingButton.invalidate();
-
+        current = excuses.get(0);
         stack1 = excuses.size();
     }
 

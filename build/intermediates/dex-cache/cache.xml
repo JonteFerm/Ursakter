@@ -2,32 +2,32 @@
 <items version="2" >
 
     <item
-        jar="C:\Users\Ferm\Dropbox\150Ursakter\Ursakter\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\jars\classes.jar"
+        jar="C:\Users\Ferm\Desktop\150Ursakter2\ursakter\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\jars\classes.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
-        <dex dex="C:\Users\Ferm\Dropbox\150Ursakter\Ursakter\app\build\intermediates\pre-dexed\debug\classes-8eb5935e25c506e839058c28d7d8fd30371ae5b1.jar" />
+        <dex dex="C:\Users\Ferm\Desktop\150Ursakter2\ursakter\app\build\intermediates\pre-dexed\debug\classes-2981e78c56b47db523a21a3b0a435bed331b338b.jar" />
     </item>
     <item
-        jar="C:\Users\Ferm\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\22.0.0\support-annotations-22.0.0.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="685d0b2c590447e85284ed84712cb363ba04eff8">
-        <dex dex="C:\Users\Ferm\Dropbox\150Ursakter\Ursakter\app\build\intermediates\pre-dexed\debug\support-annotations-22.0.0-f6404887a3faebf05c6f6bd80b4288531556057a.jar" />
-    </item>
-    <item
-        jar="C:\Users\Ferm\Dropbox\150Ursakter\Ursakter\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.0.0\jars\classes.jar"
+        jar="C:\Users\Ferm\Desktop\150Ursakter2\ursakter\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.0.0\jars\classes.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="d84409890828e07d344a3b9b1da545dba9897b51">
-        <dex dex="C:\Users\Ferm\Dropbox\150Ursakter\Ursakter\app\build\intermediates\pre-dexed\debug\classes-0025c50ff58d1720e6fe301aeaffc25552f7a90a.jar" />
+        <dex dex="C:\Users\Ferm\Desktop\150Ursakter2\ursakter\app\build\intermediates\pre-dexed\debug\classes-b916d0fee9fc7b1d484ad4d090907e41510250a2.jar" />
     </item>
     <item
-        jar="C:\Users\Ferm\Dropbox\150Ursakter\Ursakter\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\jars\libs\internal_impl-22.0.0.jar"
+        jar="C:\Users\Ferm\Desktop\150Ursakter2\ursakter\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\jars\libs\internal_impl-22.0.0.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="b5b92f469d515a13d778900f6d50c03d12f35504">
-        <dex dex="C:\Users\Ferm\Dropbox\150Ursakter\Ursakter\app\build\intermediates\pre-dexed\debug\internal_impl-22.0.0-32116c5de4d6ee5db9a353e1fb3787fffff23b26.jar" />
+        <dex dex="C:\Users\Ferm\Desktop\150Ursakter2\ursakter\app\build\intermediates\pre-dexed\debug\internal_impl-22.0.0-02fc995b86d49975e75bc82f3a78b353f609a842.jar" />
+    </item>
+    <item
+        jar="D:\Dev\Sdk\extras\android\m2repository\com\android\support\support-annotations\22.0.0\support-annotations-22.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="685d0b2c590447e85284ed84712cb363ba04eff8">
+        <dex dex="C:\Users\Ferm\Desktop\150Ursakter2\ursakter\app\build\intermediates\pre-dexed\debug\support-annotations-22.0.0-f4bac854f5ea19796364683d0db9735c390545ce.jar" />
     </item>
 
 </items>

@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    tools:context="com.example.ursakter.CategoryActivity"
+    tools:context="com.example.ursakter.AddActivity"
     >
 
     <LinearLayout
@@ -20,7 +20,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="mainMenu"
-            />
+        />
 
 
     </LinearLayout>
@@ -48,7 +48,7 @@
             android:layout_height="wrap_content">
 
             <TextView
-                android:id="@+id/textView2"
+                android:id="@+id/intro_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="25sp"
@@ -57,10 +57,11 @@
                 android:layout_alignParentTop="true"
                 android:layout_marginTop="20dp"
                 android:gravity="center"
-                />
+            />
 
             <EditText
-                android:layout_below="@+id/textView2"
+                android:layout_below="@+id/intro_text"
+                android:id="@+id/edit_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
@@ -78,10 +79,27 @@
         android:layout_height="100dp"
         android:orientation="horizontal"
         android:id="@+id/bottom_panel"
-        android:background="@drawable/bar_bg"
+        android:background="@drawable/ui_app_bg_bottom"
         android:gravity="center"
         android:layout_alignParentBottom="true"
     >
+        <custom.views.AbortButton
+            android:id="@+id/abort_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:onClick="abort"
+
+        />
+
+        <custom.views.OkButton
+            android:id="@+id/ok_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:onClick="saveExcuse"
+
+        />
 
     </LinearLayout>
 </RelativeLayout>

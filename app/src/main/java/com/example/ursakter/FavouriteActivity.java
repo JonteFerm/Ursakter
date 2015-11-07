@@ -2,9 +2,8 @@ package com.example.ursakter;
 
 import android.content.Intent;
 import android.support.v4.app.FragmentActivity;
-import android.os.Bundle;
 import android.support.v4.view.ViewPager;
-import android.view.Menu;
+import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
@@ -15,7 +14,7 @@ import java.util.ArrayList;
 import custom.views.PreviousButton;
 import custom.views.RatingButton;
 
-public class LibraryActivity extends FragmentActivity implements ExcuseFragment.OnFragmentInteractionListener{
+public class FavouriteActivity extends FragmentActivity implements ExcuseFragment.OnFragmentInteractionListener{
     private TextView countView;
     private int numberOfExcuses;
     private PreviousButton previousButton;
@@ -24,34 +23,28 @@ public class LibraryActivity extends FragmentActivity implements ExcuseFragment.
     private ArrayList<Excuse> excuses;
 
     private DBHandler dbHandler = new DBHandler(this);
-    private ViewPager libraryPager;
+    private ViewPager favouritePager;
     private ExcusePagerAdapter excusePagerAdapter;
-    private TextView categoryNameView;
-    private int categoryId;
     private PageListener pageListener;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_library);
+        setContentView(R.layout.activity_favourite);
+
         initDB();
         previousButton = (PreviousButton) findViewById(R.id.previous_btn);
         previousButton.setNeg();
         ratingButton = (RatingButton) findViewById(R.id.rating_button);
-        categoryId = getIntent().getIntExtra("categoryId", 0);
-        excuses = dbHandler.getExcusesByCategory(categoryId);
+        excuses = dbHandler.getFavouriteExcuses();
         numberOfExcuses = excuses.size();
-        categoryNameView = (TextView) findViewById(R.id.textView1);
-        categoryNameView.setText("Kategori: "+dbHandler.fetchCategory(categoryId).getName());
-
-        libraryPager = (ViewPager) findViewById(R.id.pager);
+        favouritePager = (ViewPager) findViewById(R.id.pager);
         excusePagerAdapter = new ExcusePagerAdapter(getSupportFragmentManager());
         excusePagerAdapter.setExcuses(excuses);
-        libraryPager.setAdapter(excusePagerAdapter);
+        favouritePager.setAdapter(excusePagerAdapter);
 
         pageListener = new PageListener();
-        libraryPager.setOnPageChangeListener(pageListener);
+        favouritePager.setOnPageChangeListener(pageListener);
 
         countView = (TextView) findViewById(R.id.textView3);
         countView.setText("1/"+numberOfExcuses);
@@ -59,9 +52,10 @@ public class LibraryActivity extends FragmentActivity implements ExcuseFragment.
         ratingButton.setCurrentRating(excuses.get(0).getApprovals());
     }
 
+
     @Override
     public void onFragmentInteraction(int position){
-        libraryPager.setCurrentItem(position);
+        favouritePager.setCurrentItem(position);
     }
 
 
@@ -78,11 +72,11 @@ public class LibraryActivity extends FragmentActivity implements ExcuseFragment.
     }
 
     public void loadNewExcuse(View view){
-        libraryPager.setCurrentItem(libraryPager.getCurrentItem() + 1);
+        favouritePager.setCurrentItem(favouritePager.getCurrentItem() + 1);
     }
 
     public void getPrevious(View view){
-        libraryPager.setCurrentItem(libraryPager.getCurrentItem() - 1);
+        favouritePager.setCurrentItem(favouritePager.getCurrentItem() - 1);
     }
 
     public void rateCurrent(View view){
@@ -118,4 +112,3 @@ public class LibraryActivity extends FragmentActivity implements ExcuseFragment.
         }
     }
 }
-

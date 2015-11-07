@@ -1,9 +1,10 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
     tools:context="com.example.ursakter.CategoryActivity"
     >
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -18,7 +19,7 @@
         <custom.views.HomeButton
             android:id="@+id/home_btn"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:onClick="mainMenu"
         />
 
@@ -33,101 +34,107 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
             android:orientation="horizontal">
             <Button
                 android:layout_width="fill_parent"
-                android:layout_height="70dp"
+                android:layout_height="fill_parent"
                 android:layout_margin="10dp"
                 android:tag="1"
                 android:onClick="showCategory"
-                android:background="@drawable/kat_btn_sjukdommar_inbillskhet"
+                android:background="@drawable/ui_app_kat_btn_sjukdommar_inbillskhet"
             />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="70dp"
-                android:layout_margin="10dp"
-                android:tag="1"
-                android:layout_weight="1"
-                android:onClick="showCategory"
-                android:background="@drawable/kat_btn_overfall_attacker"
-            />
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="70dp"
-                android:layout_margin="10dp"
-                android:layout_weight="1"
-                android:tag="1"
-                android:onClick="showCategory"
-                android:background="@drawable/kat_btn_dumma_aktiviteter"
-            />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="70dp"
-                android:layout_margin="10dp"
-                android:tag="1"
-                android:layout_weight="1"
-                android:onClick="showCategory"
-                android:background="@drawable/kat_btn_elaka_fracka"
-                />
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="60dp"
-                android:layout_margin="10dp"
-                android:layout_weight="1"
-                android:tag="1"
-                android:onClick="showCategory"
-                android:background="@drawable/kat_btn_ilandsproblem"
-            />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="70dp"
-                android:layout_margin="10dp"
-                android:tag="1"
-                android:layout_weight="1"
-                android:onClick="showCategory"
-                android:background="@drawable/kat_btn_manniskor"
-                />
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="70dp"
-                android:layout_margin="10dp"
-                android:layout_weight="1"
-                android:tag="1"
-                android:onClick="showCategory"
-                android:background="@drawable/kat_btn_djur"
-                />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1">
             <Button
                 android:layout_width="fill_parent"
-                android:layout_height="70dp"
+                android:layout_height="fill_parent"
+                android:layout_margin="10dp"
+                android:tag="1"
+                android:layout_weight="1"
+                android:onClick="showCategory"
+                android:background="@drawable/ui_app_kat_btn_overfall_attacker"
+            />
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:tag="1"
+                android:onClick="showCategory"
+                android:background="@drawable/ui_app_kat_btn_dumma_aktiviteter"
+            />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="10dp"
+                android:tag="1"
+                android:layout_weight="1"
+                android:onClick="showCategory"
+                android:background="@drawable/ui_app_kat_btn_elaka_fracka"
+                />
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:tag="1"
+                android:onClick="showCategory"
+                android:background="@drawable/ui_app_kat_btn_ilandsproblem"
+            />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            >
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="10dp"
+                android:tag="1"
+                android:layout_weight="1"
+                android:onClick="showCategory"
+                android:background="@drawable/ui_app_kat_btn_manniskor"
+                />
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:tag="1"
+                android:onClick="showCategory"
+                android:background="@drawable/ui_app_kat_btn_djur"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
                 android:layout_margin="10dp"
                 android:tag="1"
                 android:onClick="showCategory"
-                android:background="@drawable/kat_btn_sjukdommar_inbillskhet"
+                android:background="@drawable/ui_app_kat_btn_sjukdommar_inbillskhet"
             />
         </LinearLayout>
 
