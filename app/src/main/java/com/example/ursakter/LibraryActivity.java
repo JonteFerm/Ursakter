@@ -56,7 +56,8 @@ public class LibraryActivity extends FragmentActivity implements ExcuseFragment.
         countView = (TextView) findViewById(R.id.textView3);
         countView.setText("1/"+numberOfExcuses);
 
-        ratingButton.setCurrentRating(excuses.get(0).getApprovals());
+        current = excuses.get(0);
+        ratingButton.setCurrentRating(current.getApprovals());
     }
 
     @Override

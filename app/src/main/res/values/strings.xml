@@ -23,5 +23,6 @@
     <string name="title_activity_add">AddActivity</string>
     <string name="title_activity_own_excuses">OwnExcusesActivity</string>
     <string name="title_activity_settings">SettingsActivity</string>
+    <string name="title_activity_choose_rating">ChooseRatingActivity</string>
 
 </resources>

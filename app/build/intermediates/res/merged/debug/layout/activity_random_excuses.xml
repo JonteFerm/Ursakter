@@ -1,0 +1,108 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.example.ursakter.RandomExcusesActivity"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:id="@+id/top_panel"
+        android:background="@drawable/bar_top_bg"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+    >
+
+        <custom.views.ShareButton
+            android:id="@+id/share_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="60dp"
+        />
+
+        <custom.views.HomeButton
+            android:id="@+id/home_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="mainMenu"
+        />
+
+        <custom.views.RatingButton
+            android:id="@+id/rating_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:onClick="rateCurrent"
+        />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/top_panel"
+    >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_below="@+id/textView1"
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:text="@string/start_text"
+                android:layout_centerInParent="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+            />
+
+            <custom.views.MagicPager
+                android:layout_below="@id/textView2"
+                android:id="@+id/pagerz"
+                android:layout_width="wrap_content"
+                android:layout_height="250dp"
+            >
+            </custom.views.MagicPager>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        >
+        <Button
+
+            android:id="@+id/randomizeButton"
+            android:layout_width="320dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:onClick="loadNewExcuse"
+            android:background="@drawable/ui_app_btn_random"
+
+        />
+
+        <LinearLayout
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:id="@+id/bottom_panel"
+            android:background="@drawable/ui_app_bg_bottom"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            >
+        </LinearLayout>
+    </FrameLayout>
+</RelativeLayout><!-- From: file:/C:/Users/Jonathan/Dropbox/150Ursakter/150Ursakter2/ursakter/app/src/main/res/layout/activity_random_excuses.xml -->

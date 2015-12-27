@@ -1,11 +1,14 @@
 package com.example.ursakter;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 
 import java.io.IOException;
@@ -65,10 +68,11 @@ public class AddActivity extends Activity {
     }
 
     public void saveExcuse(View view){
-        if(editText.toString() != null){
+        if(!editText.getText().toString().equals("")){
             dbHandler.addExcuse(editText.getText().toString());
-        }else{
-            editText.setText("Du måste skriva nåt!");
+            InputMethodManager imm = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
+            imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
+            editText.setText("");
         }
     }
 

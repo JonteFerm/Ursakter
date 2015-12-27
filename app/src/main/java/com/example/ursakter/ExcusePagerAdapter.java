@@ -26,6 +26,11 @@ public class ExcusePagerAdapter extends FragmentStatePagerAdapter {
         return excuses.size();
     }
 
+    public void removeItem(int position) {
+        excuses.remove(position);
+        notifyDataSetChanged();
+    }
+
     public void setExcuses(ArrayList<Excuse> excuses) {
         this.excuses = excuses;
     }

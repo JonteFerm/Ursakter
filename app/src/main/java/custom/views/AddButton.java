@@ -12,12 +12,6 @@ import com.example.ursakter.R;
  * Created by Ferm on 2015-10-12.
  */
 public class AddButton extends Button{
-    public AddButton(Context context) {
-        super(context);
-        initialBmp = BitmapFactory.decodeResource(getResources(), R.drawable.ui_app_btn_add_25);
-        bmp = Bitmap.createScaledBitmap(initialBmp, BUTTON_WIDTH, BUTTON_HEIGHT, false);
-
-    }
 
     public AddButton(Context context, AttributeSet attrs) {
         super(context, attrs);
@@ -26,10 +20,4 @@ public class AddButton extends Button{
 
     }
 
-    public AddButton(Context context, AttributeSet attrs, int defStyle) {
-        super(context, attrs, defStyle);
-        initialBmp = BitmapFactory.decodeResource(getResources(),R.drawable.ui_app_btn_add_25);
-        bmp = Bitmap.createScaledBitmap(initialBmp,BUTTON_WIDTH,BUTTON_HEIGHT,false);
-
-    }
 }

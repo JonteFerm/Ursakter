@@ -48,7 +48,24 @@
         </activity>
         <activity
             android:name="com.example.ursakter.AddActivity"
-            android:label="@string/title_activity_add" >
+            android:label="@string/title_activity_add"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name="com.example.ursakter.OwnExcusesActivity"
+            android:label="@string/title_activity_own_excuses" >
+        </activity>
+        <activity
+            android:name="com.example.ursakter.FavouriteActivity"
+            android:label="@string/title_activity_favourite" >
+        </activity>
+        <activity
+            android:name="com.example.ursakter.SettingsActivity"
+            android:label="@string/title_activity_settings" >
+        </activity>
+        <activity
+            android:name="com.example.ursakter.ChooseRatingActivity"
+            android:label="@string/title_activity_choose_rating" >
         </activity>
     </application>
 

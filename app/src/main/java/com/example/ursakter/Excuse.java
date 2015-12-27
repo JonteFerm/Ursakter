@@ -41,6 +41,11 @@ public class Excuse {
     }
 
     public void setApprovals(int approvals){
-        this.approvals = approvals;
+        if(approvals > 5){
+            this.approvals = 0;
+        }else{
+            this.approvals = approvals;
+        }
+
     }
 }

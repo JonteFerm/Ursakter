@@ -27,7 +27,7 @@ public class
     private static final String DB_PATH = "/data/data/com.example.ursakter/databases/";
     private static final String TABLE_EXCUSES = "excuses";
     private static final String TABLE_CATEGORY = "category";
-    private static final String TABLE_EXCUSES2CATEGORY = "excuses2category";
+    private static final String TABLE_EXCUSE2CATEGORY = "excuse2category";
 
     private SQLiteDatabase db;
     private final Context mContext;
@@ -136,7 +136,7 @@ public class
         ArrayList<Excuse> allExcuses = new ArrayList<>();
         Cursor cursor = db.rawQuery("SELECT * FROM " + TABLE_EXCUSES + ";", null);
 
-        if(cursor != null){
+        if(cursor.getCount() > 0){
             cursor.moveToFirst();
 
             do{
@@ -152,11 +152,11 @@ public class
         return null;
     }
 
-    public ArrayList<Excuse> getFavouriteExcuses(){
+    public ArrayList<Excuse> getFavouriteExcuses(int approvals){
         ArrayList<Excuse> faveExcuses = new ArrayList<>();
-        Cursor cursor = db.rawQuery("SELECT * FROM " + TABLE_EXCUSES + " WHERE approvals = 5;", null);
+        Cursor cursor = db.rawQuery("SELECT * FROM " + TABLE_EXCUSES + " WHERE approvals = ?;", new String[]{Integer.toString(approvals)});
 
-        if (cursor != null){
+        if (cursor.getCount() > 0){
             cursor.moveToFirst();
 
             do{
@@ -192,7 +192,7 @@ public class
 
     public void removeExcuse(int excuseId){
         db.delete(TABLE_EXCUSES, "_id = ?", new String[]{Integer.toString(excuseId)});
-        db.delete(TABLE_EXCUSES2CATEGORY, "excuse_id", new String[]{Integer.toString(excuseId)});
+        db.delete(TABLE_EXCUSE2CATEGORY, "excuse_id = ?", new String[]{Integer.toString(excuseId)});
     }
 
     public Category fetchCategory(int id){
@@ -239,7 +239,7 @@ public class
         ArrayList<Category> categories = new ArrayList<>();
         Cursor cursor = db.rawQuery("SELECT * FROM " + TABLE_CATEGORY + " ORDER BY category_name;", null);
 
-        if(cursor != null){
+        if(cursor.getCount() > 0){
             cursor.moveToFirst();
             do{
                 Category newCategory = new Category(cursor.getInt(0), cursor.getString(1));

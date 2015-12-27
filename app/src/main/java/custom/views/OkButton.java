@@ -12,20 +12,8 @@ import com.example.ursakter.R;
  */
 public class OkButton extends Button{
 
-    public OkButton(Context context) {
-        super(context);
-        initialBmp = BitmapFactory.decodeResource(getResources(), R.drawable.ui_app_new_btn_ok);
-        bmp = Bitmap.createScaledBitmap(initialBmp, BUTTON_WIDTH, BUTTON_HEIGHT, false);
-    }
-
     public OkButton(Context context, AttributeSet attrs) {
         super(context, attrs);
-        initialBmp = BitmapFactory.decodeResource(getResources(),R.drawable.ui_app_new_btn_ok);
-        bmp = Bitmap.createScaledBitmap(initialBmp,BUTTON_WIDTH,BUTTON_HEIGHT,false);
-    }
-
-    public OkButton(Context context, AttributeSet attrs, int defStyle) {
-        super(context, attrs, defStyle);
         initialBmp = BitmapFactory.decodeResource(getResources(),R.drawable.ui_app_new_btn_ok);
         bmp = Bitmap.createScaledBitmap(initialBmp,BUTTON_WIDTH,BUTTON_HEIGHT,false);
     }

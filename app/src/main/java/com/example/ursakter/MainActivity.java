@@ -60,7 +60,7 @@ public class MainActivity extends Activity {
     }
 
     public void openFavourites(View view){
-        Intent intent = new Intent(this, FavouriteActivity.class);
+        Intent intent = new Intent(this, ChooseRatingActivity.class);
         startActivity(intent);
     }
 

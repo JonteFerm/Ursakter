@@ -26,22 +26,19 @@ public class RandomExcusesActivity  extends FragmentActivity implements ExcuseFr
     private MagicPager randomPager;
     private ExcusePagerAdapter excusePagerAdapter;
     private PageListener pageListener;
-
-    private int stack1;
-    private int stack2;
+    private Random random;
+    int newRandom;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_random_excuses);
         initDB();
-        previousButton = (PreviousButton) findViewById(R.id.previous_btn);
-        previousButton.setNeg();
         ratingButton = (RatingButton) findViewById(R.id.rating_button);
 
         excuses = dbHandler.getAllExcuses();
-        long seed = System.nanoTime();
-        Collections.shuffle(excuses, new Random(seed));
+
+        random = new Random();
 
         randomPager = (MagicPager)findViewById(R.id.pagerz);
         excusePagerAdapter = new ExcusePagerAdapter(getSupportFragmentManager());
@@ -54,7 +51,6 @@ public class RandomExcusesActivity  extends FragmentActivity implements ExcuseFr
         ratingButton.setCurrentRating(excuses.get(0).getApprovals());
         ratingButton.invalidate();
         current = excuses.get(0);
-        stack1 = excuses.size();
     }
 
 
@@ -84,11 +80,11 @@ public class RandomExcusesActivity  extends FragmentActivity implements ExcuseFr
     }
 
     public void loadNewExcuse(View view){
-        randomPager.setCurrentItem(randomPager.getCurrentItem() + 1);
-    }
+        do{
+            newRandom = random.nextInt(excuses.size());
+        }while(newRandom == lastPos);
 
-    public void getPrevious(View view){
-        randomPager.setCurrentItem(randomPager.getCurrentItem() - 1);
+        randomPager.setCurrentItem(newRandom);
     }
 
     public void rateCurrent(View view){
@@ -109,35 +105,6 @@ public class RandomExcusesActivity  extends FragmentActivity implements ExcuseFr
     }
     private class PageListener extends MagicPager.SimpleOnPageChangeListener{
         public void onPageSelected(int position){
-            /* **MAGIC**
-            ----------------
-            */
-            if((lastPos == 0 && position == 1) || position > lastPos || (position == lastPos && stack2 - position > stack2 - lastPos)){
-                if(previousButton.isNeg()){
-                    previousButton.setPos();
-                    previousButton.invalidate();
-                }
-
-                if(stack2 > 5){
-                    stack1++;
-                    stack2--;
-                }else{
-                    stack2++;
-                    stack1--;
-                }
-            }else if(position < lastPos || (position == lastPos && stack2 - position < stack2 - lastPos)){
-                if(stack2 != 1){
-                    stack1++;
-                    stack2--;
-                }
-            }
-
-            if(!(lastPos == 0 && position == 1) && stack2 == 1){
-                previousButton.setNeg();
-                previousButton.invalidate();
-                //randomPager.setPagingEnabled(false);
-            }
-
             lastPos = position;
             current = excuses.get(position);
             ratingButton.setCurrentRating(excuses.get(position).getApprovals());

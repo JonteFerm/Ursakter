@@ -12,20 +12,8 @@ import com.example.ursakter.R;
  */
 public class ShareButton extends Button {
 
-    public ShareButton(Context context) {
-        super(context);
-        initialBmp = BitmapFactory.decodeResource(getResources(), R.drawable.ui_app_btn_share_grey);
-        bmp = Bitmap.createScaledBitmap(initialBmp, BUTTON_WIDTH, BUTTON_HEIGHT, false);
-    }
-
     public ShareButton(Context context, AttributeSet attrs) {
         super(context, attrs);
-        initialBmp = BitmapFactory.decodeResource(getResources(), R.drawable.ui_app_btn_share_grey);
-        bmp = Bitmap.createScaledBitmap(initialBmp, BUTTON_WIDTH, BUTTON_HEIGHT, false);
-    }
-
-    public ShareButton(Context context, AttributeSet attrs, int defStyle) {
-        super(context, attrs, defStyle);
         initialBmp = BitmapFactory.decodeResource(getResources(), R.drawable.ui_app_btn_share_grey);
         bmp = Bitmap.createScaledBitmap(initialBmp, BUTTON_WIDTH, BUTTON_HEIGHT, false);
     }

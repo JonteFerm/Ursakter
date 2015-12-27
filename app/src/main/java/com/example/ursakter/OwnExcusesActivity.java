@@ -33,6 +33,8 @@ public class OwnExcusesActivity extends FragmentActivity implements ExcuseFragme
     private TextView categoryNameView;
     private PageListener pageListener;
 
+    private int currentPosition = 0;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,14 +58,13 @@ public class OwnExcusesActivity extends FragmentActivity implements ExcuseFragme
 
             countView = (TextView) findViewById(R.id.textView3);
             countView.setText("1/"+numberOfExcuses);
+            current = excuses.get(0);
 
             //ratingButton.setCurrentRating(excuses.get(0).getApprovals());
         }
 
         categoryNameView = (TextView) findViewById(R.id.textView1);
         // categoryNameView.setText("Kategori: "+dbHandler.fetchCategory(9).getName());
-
-
 
     }
 
@@ -112,8 +113,32 @@ public class OwnExcusesActivity extends FragmentActivity implements ExcuseFragme
         dbHandler.updateExcuse(current);
     }
 
-    private void removeCurrent(View view){
-        dbHandler.removeExcuse(current.getId());
+    public void removeCurrent(View view){
+        if(current != null && excusePagerAdapter.getCount() != 0){
+            dbHandler.removeExcuse(current.getId());
+
+            excusePagerAdapter.removeItem(currentPosition);
+
+            numberOfExcuses = excusePagerAdapter.getCount();
+
+            if(currentPosition > 0){
+                libraryPager.setCurrentItem(currentPosition-1);
+            }else if(currentPosition == 0 && excusePagerAdapter.getCount() > 0){
+                libraryPager.setCurrentItem(currentPosition+1);
+            }else{
+                libraryPager.setCurrentItem(0);
+                libraryPager.removeViewAt(0);
+                countView.setText("");
+            }
+
+            if(excusePagerAdapter.getCount() != 0){
+                countView.setText(currentPosition+1+"/"+numberOfExcuses);
+            }
+        }
+
+
+
+
     }
 
     public void mainMenu(View view){
@@ -124,6 +149,7 @@ public class OwnExcusesActivity extends FragmentActivity implements ExcuseFragme
 
     private class PageListener extends ViewPager.SimpleOnPageChangeListener{
         public void onPageSelected(int position){
+            currentPosition = position;
             if(position == 0){
                 previousButton.setNeg();
                 previousButton.invalidate();

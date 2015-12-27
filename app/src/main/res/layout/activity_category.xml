@@ -5,7 +5,6 @@
     tools:context="com.example.ursakter.CategoryActivity"
     >
 
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="60dp"

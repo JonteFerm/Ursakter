@@ -24,20 +24,23 @@
                 style="@style/MenuButtonsTop"
                 android:background="@drawable/ui_app_btn_libary"
                 android:onClick="openLibrary"
-                />
+                android:layout_weight="1"
+            />
 
             <Button
                 style="@style/MenuButtonsTop"
                 android:background="@drawable/ui_app_btn_settings"
                 android:onClick="openSettings"
-                />
+                android:layout_weight="1"
+            />
 
 
 
             <Button
                 style="@style/MenuButtonsTop"
                 android:background="@drawable/ui_app_btn_about"
-                />
+                android:layout_weight="1"
+            />
 
 
         </LinearLayout>
@@ -51,13 +54,15 @@
                 style="@style/MenuButtonsBottom"
                 android:background="@drawable/ui_app_btn_add_10"
                 android:onClick="openOwnExcuses"
-                />
+                android:layout_weight="1"
+            />
 
             <Button
                 style="@style/MenuButtonsBottom"
                 android:background="@drawable/ui_app_btn_fav"
                 android:onClick="openFavourites"
-                />
+                android:layout_weight="1"
+            />
 
 
         </LinearLayout>

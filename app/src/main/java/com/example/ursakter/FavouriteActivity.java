@@ -31,25 +31,27 @@ public class FavouriteActivity extends FragmentActivity implements ExcuseFragmen
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_favourite);
-
         initDB();
         previousButton = (PreviousButton) findViewById(R.id.previous_btn);
         previousButton.setNeg();
         ratingButton = (RatingButton) findViewById(R.id.rating_button);
-        excuses = dbHandler.getFavouriteExcuses();
-        numberOfExcuses = excuses.size();
         favouritePager = (ViewPager) findViewById(R.id.pager);
-        excusePagerAdapter = new ExcusePagerAdapter(getSupportFragmentManager());
-        excusePagerAdapter.setExcuses(excuses);
-        favouritePager.setAdapter(excusePagerAdapter);
-
-        pageListener = new PageListener();
-        favouritePager.setOnPageChangeListener(pageListener);
-
+        excuses = dbHandler.getFavouriteExcuses(getIntent().getIntExtra("approvals", 5));
         countView = (TextView) findViewById(R.id.textView3);
-        countView.setText("1/"+numberOfExcuses);
 
-        ratingButton.setCurrentRating(excuses.get(0).getApprovals());
+
+        excusePagerAdapter = new ExcusePagerAdapter(getSupportFragmentManager());
+
+        if(excuses != null){
+            numberOfExcuses = excuses.size();
+            excusePagerAdapter.setExcuses(excuses);
+            current = excuses.get(0);
+            ratingButton.setCurrentRating(current.getApprovals());
+            countView.setText("1/"+numberOfExcuses);
+            favouritePager.setAdapter(excusePagerAdapter);
+            pageListener = new PageListener();
+            favouritePager.setOnPageChangeListener(pageListener);
+        }
     }
 
 
