@@ -19,34 +19,20 @@ public abstract class Button extends View {
     public Bitmap initialBmp;
     public Bitmap bmp;
     public BitmapFactory.Options options;
-    public static final int BUTTON_WIDTH = 120;
-    public static final int BUTTON_HEIGHT = 120;
+    public int buttonWidth = 120;
+    public int buttonHeight = 120;
 
-    public Button(Context context) {
-        super(context);
-
-        src = new Rect(0,0,BUTTON_WIDTH,BUTTON_HEIGHT);
-        dst = new Rect(0,0,BUTTON_WIDTH,BUTTON_HEIGHT);
-    }
 
     public Button(Context context, AttributeSet attrs) {
         super(context, attrs);
 
-        src = new Rect(0,0,BUTTON_WIDTH,BUTTON_HEIGHT);
-        dst = new Rect(0,0,BUTTON_WIDTH,BUTTON_HEIGHT);
-    }
-
-    public Button(Context context, AttributeSet attrs, int defStyle) {
-        super(context, attrs, defStyle);
-
-        src = new Rect(0,0,BUTTON_WIDTH,BUTTON_HEIGHT);
-        dst = new Rect(0,0,BUTTON_WIDTH,BUTTON_HEIGHT);
-
+        src = new Rect(0,0,buttonWidth, buttonHeight);
+        dst = new Rect(0,0,buttonWidth, buttonHeight);
     }
 
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
-        setMeasuredDimension(BUTTON_WIDTH, BUTTON_HEIGHT);
+        setMeasuredDimension(buttonWidth, buttonWidth);
     }
 
     @Override

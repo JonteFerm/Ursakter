@@ -15,6 +15,8 @@ public class OkButton extends Button{
     public OkButton(Context context, AttributeSet attrs) {
         super(context, attrs);
         initialBmp = BitmapFactory.decodeResource(getResources(),R.drawable.ui_app_new_btn_ok);
-        bmp = Bitmap.createScaledBitmap(initialBmp,BUTTON_WIDTH,BUTTON_HEIGHT,false);
+        this.buttonWidth = initialBmp.getWidth();
+        this.buttonHeight = initialBmp.getHeight();
+        bmp = Bitmap.createScaledBitmap(initialBmp, this.buttonWidth, this.buttonHeight, false);
     }
 }

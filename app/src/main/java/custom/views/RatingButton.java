@@ -15,34 +15,36 @@ public class RatingButton extends Button {
     public RatingButton(Context context, AttributeSet attrs) {
         super(context, attrs);
         initialBmp = BitmapFactory.decodeResource(getResources(),R.drawable.ui_app_menu_btn_rate_0);
-        bmp = Bitmap.createScaledBitmap(initialBmp,BUTTON_WIDTH,BUTTON_HEIGHT,false);
+        this.buttonWidth = initialBmp.getWidth();
+        this.buttonHeight = initialBmp.getHeight();
+        bmp = Bitmap.createScaledBitmap(initialBmp, this.buttonWidth, this.buttonHeight, false);
     }
 
     public void setCurrentRating(int rating){
         switch(rating){
             case 0:
                 initialBmp = BitmapFactory.decodeResource(getResources(),R.drawable.ui_app_menu_btn_rate_0);
-                bmp = Bitmap.createScaledBitmap(initialBmp,BUTTON_WIDTH,BUTTON_HEIGHT,false);
+                bmp = Bitmap.createScaledBitmap(initialBmp, this.buttonWidth, this.buttonHeight, false);
                 break;
             case 1:
                 initialBmp = BitmapFactory.decodeResource(getResources(),R.drawable.ui_app_menu_btn_rate_1);
-                bmp = Bitmap.createScaledBitmap(initialBmp,BUTTON_WIDTH,BUTTON_HEIGHT,false);
+                bmp = Bitmap.createScaledBitmap(initialBmp, this.buttonWidth, this.buttonHeight, false);
                 break;
             case 2:
                 initialBmp = BitmapFactory.decodeResource(getResources(),R.drawable.ui_app_menu_btn_rate_2);
-                bmp = Bitmap.createScaledBitmap(initialBmp,BUTTON_WIDTH,BUTTON_HEIGHT,false);
+                bmp = Bitmap.createScaledBitmap(initialBmp, this.buttonWidth, this.buttonHeight, false);
                 break;
             case 3:
                 initialBmp = BitmapFactory.decodeResource(getResources(),R.drawable.ui_app_menu_btn_rate_3);
-                bmp = Bitmap.createScaledBitmap(initialBmp,BUTTON_WIDTH,BUTTON_HEIGHT,false);
+                bmp = Bitmap.createScaledBitmap(initialBmp, this.buttonWidth, this.buttonHeight, false);
                 break;
             case 4:
                 initialBmp = BitmapFactory.decodeResource(getResources(),R.drawable.ui_app_menu_btn_rate_4);
-                bmp = Bitmap.createScaledBitmap(initialBmp,BUTTON_WIDTH,BUTTON_HEIGHT,false);
+                bmp = Bitmap.createScaledBitmap(initialBmp, this.buttonWidth, this.buttonHeight, false);
                 break;
             case 5:
                 initialBmp = BitmapFactory.decodeResource(getResources(),R.drawable.ui_app_menu_btn_rate_5);
-                bmp = Bitmap.createScaledBitmap(initialBmp,BUTTON_WIDTH,BUTTON_HEIGHT,false);
+                bmp = Bitmap.createScaledBitmap(initialBmp, this.buttonWidth, this.buttonHeight, false);
                 break;
         }
 

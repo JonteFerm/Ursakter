@@ -14,40 +14,42 @@
         android:layout_alignParentTop="true"
         >
 
-        <custom.views.RemoveButton
+        <Button
             android:id="@+id/remove_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="30dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
             android:onClick="removeCurrent"
+            android:background="@drawable/ui_app_btn_remove_33"
         />
 
-        <custom.views.ShareButton
+        <Button
             android:id="@+id/share_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="30dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/ui_app_btn_share_grey"
         />
 
-        <custom.views.HomeButton
+        <Button
             android:id="@+id/home_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="30dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:onClick="mainMenu"
-
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/ui_app_btn_home"
         />
 
-        <custom.views.AddButton
+        <Button
             android:id="@+id/add_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:layout_marginRight="30dp"
             android:onClick="openAdd"
+            android:background="@drawable/ui_app_btn_add_25"
         />
-
-
-
     </LinearLayout>
 
     <LinearLayout
@@ -108,33 +110,47 @@
     </LinearLayout>
 
 
-    <LinearLayout
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:orientation="horizontal"
-        android:id="@+id/bottom_panel"
-        android:background="@drawable/ui_app_bg_bottom"
-        android:gravity="center"
+        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         >
-        <custom.views.PreviousButton
+        <Button
+            android:id="@+id/next_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/previous_btn"
-            android:layout_marginRight="10dp"
-            android:onClick="getPrevious"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="50dp"
+            android:onClick="loadNewExcuse"
+            android:background="@drawable/ui_app_btn_next"
+
             />
 
-        <custom.views.NextButton
+        <Button
+            android:id="@+id/previous_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/next_btn"
-            android:layout_marginLeft="10dp"
-            android:onClick="loadNewExcuse"
-        />
+            android:layout_gravity="center_horizontal"
+            android:layout_marginRight="50dp"
+            android:onClick="getPrevious"
+            android:background="@drawable/ui_app_btn_back"
 
-    </LinearLayout>
+            />
+
+        <LinearLayout
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:id="@+id/bottom_panel"
+            android:background="@drawable/ui_app_bg_bottom"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            >
+        </LinearLayout>
+
+    </FrameLayout>
 
 
 </RelativeLayout>
-<!-- From: file:/C:/Users/Jonathan/Dropbox/150Ursakter/150Ursakter2/ursakter/app/src/main/res/layout/activity_own_excuses.xml -->
+<!-- From: file:/C:/Users/Ferm/Dropbox/150Ursakter/150Ursakter2/ursakter/app/src/main/res/layout/activity_own_excuses.xml -->

@@ -14,30 +14,30 @@
         android:layout_alignParentTop="true"
         >
 
-        <custom.views.ShareButton
+        <Button
             android:id="@+id/share_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="60dp"
-            />
-
-        <custom.views.HomeButton
-            android:id="@+id/home_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="mainMenu"
-
-            />
-
-        <custom.views.RatingButton
-            android:id="@+id/rating_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="60dp"
-            android:onClick="rateCurrent"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/ui_app_btn_share_grey"
         />
 
+        <Button
+            android:id="@+id/home_btn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:onClick="mainMenu"
+            android:background="@drawable/ui_app_btn_home"
+        />
 
+        <Button
+            android:id="@+id/rating_button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:onClick="rateCurrent"
+            android:background="@drawable/ui_app_btn_rate_0"
+        />
     </LinearLayout>
 
     <LinearLayout
@@ -99,32 +99,45 @@
 
     </LinearLayout>
 
-
-    <LinearLayout
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:orientation="horizontal"
-        android:id="@+id/bottom_panel"
-        android:background="@drawable/ui_app_bg_bottom"
-        android:gravity="center"
+        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         >
-        <custom.views.PreviousButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/previous_btn"
-            android:layout_marginRight="10dp"
-            android:onClick="getPrevious"
-            />
-
-        <custom.views.NextButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+        <Button
             android:id="@+id/next_btn"
-            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="50dp"
             android:onClick="loadNewExcuse"
+            android:background="@drawable/ui_app_btn_next"
+
             />
 
-    </LinearLayout>
+        <Button
+            android:id="@+id/previous_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginRight="50dp"
+            android:onClick="getPrevious"
+            android:background="@drawable/ui_app_btn_back"
+
+            />
+
+        <LinearLayout
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:id="@+id/bottom_panel"
+            android:background="@drawable/ui_app_bg_bottom"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            >
+        </LinearLayout>
+
+    </FrameLayout>
 </RelativeLayout>
-<!-- From: file:/C:/Users/Jonathan/Dropbox/150Ursakter/150Ursakter2/ursakter/app/src/main/res/layout/activity_favourite.xml -->
+<!-- From: file:/C:/Users/Ferm/Dropbox/150Ursakter/150Ursakter2/ursakter/app/src/main/res/layout/activity_favourite.xml -->

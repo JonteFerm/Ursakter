@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import java.io.IOException;
@@ -22,8 +23,8 @@ public class OwnExcusesActivity extends FragmentActivity implements ExcuseFragme
 
     private TextView countView;
     private int numberOfExcuses = 0;
-    private PreviousButton previousButton;
-    private RatingButton ratingButton;
+    private Button previousButton;
+    private Button ratingButton;
     private Excuse current;
     private ArrayList<Excuse> excuses;
 
@@ -41,9 +42,9 @@ public class OwnExcusesActivity extends FragmentActivity implements ExcuseFragme
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_own_excuses);
         initDB();
-        previousButton = (PreviousButton) findViewById(R.id.previous_btn);
-        previousButton.setNeg();
-        ratingButton = (RatingButton) findViewById(R.id.rating_button);
+        previousButton = (Button) findViewById(R.id.previous_btn);
+        //previousButton.setBackgroundResource(R.drawable.ui_app_btn_back_neg);
+        ratingButton = (Button) findViewById(R.id.rating_button);
         excuses = dbHandler.getExcusesByCategory(9);
 
         if(excuses != null){
@@ -60,7 +61,7 @@ public class OwnExcusesActivity extends FragmentActivity implements ExcuseFragme
             countView.setText("1/"+numberOfExcuses);
             current = excuses.get(0);
 
-            //ratingButton.setCurrentRating(excuses.get(0).getApprovals());
+            //setCurrentRating(excuses.get(0).getApprovals());
         }
 
         categoryNameView = (TextView) findViewById(R.id.textView1);
@@ -104,9 +105,33 @@ public class OwnExcusesActivity extends FragmentActivity implements ExcuseFragme
 
     public void rateCurrent(View view){
         current.setApprovals(current.getApprovals() + 1);
-        ratingButton.setCurrentRating(current.getApprovals());
+        setCurrentRating(current.getApprovals());
         saveCurrent();
         ratingButton.invalidate();
+    }
+
+    public void setCurrentRating(int rating){
+        switch(rating){
+            case 0:
+                ratingButton.setBackgroundResource(R.drawable.ui_app_menu_btn_rate_0);
+                break;
+            case 1:
+                ratingButton.setBackgroundResource(R.drawable.ui_app_menu_btn_rate_1);
+                break;
+            case 2:
+                ratingButton.setBackgroundResource(R.drawable.ui_app_menu_btn_rate_2);
+                break;
+            case 3:
+                ratingButton.setBackgroundResource(R.drawable.ui_app_menu_btn_rate_3);
+                break;
+            case 4:
+                ratingButton.setBackgroundResource(R.drawable.ui_app_menu_btn_rate_4);
+                break;
+            case 5:
+                ratingButton.setBackgroundResource(R.drawable.ui_app_menu_btn_rate_5);
+                break;
+        }
+
     }
 
     private void saveCurrent(){
@@ -135,10 +160,6 @@ public class OwnExcusesActivity extends FragmentActivity implements ExcuseFragme
                 countView.setText(currentPosition+1+"/"+numberOfExcuses);
             }
         }
-
-
-
-
     }
 
     public void mainMenu(View view){
@@ -151,14 +172,14 @@ public class OwnExcusesActivity extends FragmentActivity implements ExcuseFragme
         public void onPageSelected(int position){
             currentPosition = position;
             if(position == 0){
-                previousButton.setNeg();
+                previousButton.setBackgroundResource(R.drawable.ui_app_btn_back_neg);
                 previousButton.invalidate();
             }else{
-                previousButton.setPos();
+                previousButton.setBackgroundResource(R.drawable.ui_app_btn_back);
                 previousButton.invalidate();
             }
             current = excuses.get(position);
-            //ratingButton.setCurrentRating(excuses.get(position).getApprovals());
+            //setCurrentRating(excuses.get(position).getApprovals());
             //ratingButton.invalidate();
             countView.setText(position+1+"/"+numberOfExcuses);
         }

@@ -15,11 +15,12 @@
         android:layout_alignParentTop="true"
         >
 
-        <custom.views.HomeButton
+        <Button
             android:id="@+id/home_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:onClick="mainMenu"
+            android:background="@drawable/ui_app_btn_home"
         />
 
 
@@ -83,24 +84,25 @@
         android:gravity="center"
         android:layout_alignParentBottom="true"
     >
-        <custom.views.AbortButton
+        <Button
             android:id="@+id/abort_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:layout_marginRight="20dp"
             android:onClick="abort"
+            android:background="@drawable/ui_app_new_btn_abort"
 
         />
 
-        <custom.views.OkButton
+        <Button
             android:id="@+id/ok_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:layout_marginLeft="20dp"
             android:onClick="saveExcuse"
-
+            android:background="@drawable/ui_app_new_btn_ok"
         />
 
     </LinearLayout>
 </RelativeLayout>
-<!-- From: file:/C:/Users/Jonathan/Dropbox/150Ursakter/150Ursakter2/ursakter/app/src/main/res/layout/activity_add.xml -->
+<!-- From: file:/C:/Users/Ferm/Dropbox/150Ursakter/150Ursakter2/ursakter/app/src/main/res/layout/activity_add.xml -->

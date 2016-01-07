@@ -5,6 +5,7 @@ import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
+import android.widget.Button;
 
 import java.io.IOException;
 import java.sql.SQLException;
@@ -17,8 +18,7 @@ import custom.views.PreviousButton;
 import custom.views.RatingButton;
 
 public class RandomExcusesActivity  extends FragmentActivity implements ExcuseFragment.OnFragmentInteractionListener{
-    private PreviousButton previousButton;
-    private RatingButton ratingButton;
+    private Button ratingButton;
     private ArrayList<Excuse> excuses;
     private Excuse current;
     private int lastPos = 0;
@@ -34,7 +34,7 @@ public class RandomExcusesActivity  extends FragmentActivity implements ExcuseFr
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_random_excuses);
         initDB();
-        ratingButton = (RatingButton) findViewById(R.id.rating_button);
+        ratingButton = (Button) findViewById(R.id.rating_button);
 
         excuses = dbHandler.getAllExcuses();
 
@@ -48,7 +48,7 @@ public class RandomExcusesActivity  extends FragmentActivity implements ExcuseFr
         pageListener = new PageListener();
         randomPager.setOnPageChangeListener(pageListener);
 
-        ratingButton.setCurrentRating(excuses.get(0).getApprovals());
+        setCurrentRating(excuses.get(0).getApprovals());
         ratingButton.invalidate();
         current = excuses.get(0);
     }
@@ -89,9 +89,32 @@ public class RandomExcusesActivity  extends FragmentActivity implements ExcuseFr
 
     public void rateCurrent(View view){
         current.setApprovals(current.getApprovals() + 1);
-        ratingButton.setCurrentRating(current.getApprovals());
+        setCurrentRating(current.getApprovals());
         saveCurrent();
         ratingButton.invalidate();
+    }
+
+    public void setCurrentRating(int rating){
+        switch(rating){
+            case 0:
+                ratingButton.setBackgroundResource(R.drawable.ui_app_menu_btn_rate_0);
+                break;
+            case 1:
+                ratingButton.setBackgroundResource(R.drawable.ui_app_menu_btn_rate_1);
+                break;
+            case 2:
+                ratingButton.setBackgroundResource(R.drawable.ui_app_menu_btn_rate_2);
+                break;
+            case 3:
+                ratingButton.setBackgroundResource(R.drawable.ui_app_menu_btn_rate_3);
+                break;
+            case 4:
+                ratingButton.setBackgroundResource(R.drawable.ui_app_menu_btn_rate_4);
+                break;
+            case 5:
+                ratingButton.setBackgroundResource(R.drawable.ui_app_menu_btn_rate_5);
+                break;
+        }
     }
 
     private void saveCurrent(){
@@ -107,7 +130,7 @@ public class RandomExcusesActivity  extends FragmentActivity implements ExcuseFr
         public void onPageSelected(int position){
             lastPos = position;
             current = excuses.get(position);
-            ratingButton.setCurrentRating(excuses.get(position).getApprovals());
+            setCurrentRating(excuses.get(position).getApprovals());
             ratingButton.invalidate();
         }
     }

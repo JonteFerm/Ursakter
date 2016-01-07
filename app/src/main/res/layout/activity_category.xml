@@ -15,11 +15,12 @@
         android:layout_alignParentTop="true"
     >
 
-        <custom.views.HomeButton
+        <Button
             android:id="@+id/home_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:onClick="mainMenu"
+            android:background="@drawable/ui_app_btn_home"
         />
 
 

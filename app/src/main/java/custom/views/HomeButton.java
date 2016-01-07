@@ -17,9 +17,10 @@ public class HomeButton extends Button {
 
     public HomeButton(Context context, AttributeSet attrs) {
         super(context, attrs);
-
         initialBmp = BitmapFactory.decodeResource(getResources(),R.drawable.ui_app_btn_home);
-        bmp = Bitmap.createScaledBitmap(initialBmp,BUTTON_WIDTH,BUTTON_HEIGHT,false);
+        this.buttonWidth = initialBmp.getWidth();
+        this.buttonHeight = initialBmp.getHeight();
+        bmp = Bitmap.createScaledBitmap(initialBmp, this.buttonWidth, this.buttonHeight,false);
     }
 
 }

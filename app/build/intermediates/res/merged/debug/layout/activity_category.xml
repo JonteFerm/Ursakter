@@ -15,11 +15,12 @@
         android:layout_alignParentTop="true"
     >
 
-        <custom.views.HomeButton
+        <Button
             android:id="@+id/home_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:onClick="mainMenu"
+            android:background="@drawable/ui_app_btn_home"
         />
 
 
@@ -139,4 +140,4 @@
 
     </LinearLayout>
 </RelativeLayout>
-<!-- From: file:/C:/Users/Jonathan/Dropbox/150Ursakter/150Ursakter2/ursakter/app/src/main/res/layout/activity_category.xml -->
+<!-- From: file:/C:/Users/Ferm/Dropbox/150Ursakter/150Ursakter2/ursakter/app/src/main/res/layout/activity_category.xml -->

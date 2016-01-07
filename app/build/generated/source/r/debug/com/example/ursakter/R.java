@@ -1349,6 +1349,11 @@ containing a value of this type.
         public static final int ui_app_menu_btn_rate_5=0x7f02005b;
         public static final int ui_app_new_btn_abort=0x7f02005c;
         public static final int ui_app_new_btn_ok=0x7f02005d;
+        public static final int ui_app_settings_btn_col_orange=0x7f02005e;
+        public static final int ui_app_settings_btn_col_orange_purple=0x7f02005f;
+        public static final int ui_app_settings_btn_col_turqouse=0x7f020060;
+        public static final int ui_app_settings_btn_txt_minska=0x7f020061;
+        public static final int ui_app_settings_btn_txt_oka=0x7f020062;
     }
     public static final class id {
         public static final int abort_btn=0x7f0b0044;
@@ -1365,9 +1370,9 @@ containing a value of this type.
         public static final int action_mode_bar=0x7f0b002e;
         public static final int action_mode_bar_stub=0x7f0b002d;
         public static final int action_mode_close_button=0x7f0b0020;
-        public static final int action_settings=0x7f0b0053;
+        public static final int action_settings=0x7f0b0054;
         public static final int activity_chooser_view_content=0x7f0b0021;
-        public static final int add_btn=0x7f0b0050;
+        public static final int add_btn=0x7f0b0051;
         public static final int always=0x7f0b0016;
         public static final int beginning=0x7f0b0013;
         public static final int bottom_panel=0x7f0b0043;
@@ -1383,7 +1388,7 @@ containing a value of this type.
         public static final int end=0x7f0b0014;
         public static final int expand_activities_button=0x7f0b0022;
         public static final int expanded_menu=0x7f0b0028;
-        public static final int fragmentTextView=0x7f0b0052;
+        public static final int fragmentTextView=0x7f0b0053;
         public static final int home=0x7f0b0004;
         public static final int homeAsUp=0x7f0b000d;
         public static final int home_btn=0x7f0b0040;
@@ -1391,6 +1396,7 @@ containing a value of this type.
         public static final int ifRoom=0x7f0b0018;
         public static final int image=0x7f0b0023;
         public static final int intro_text=0x7f0b0041;
+        public static final int linearLayout=0x7f0b004e;
         public static final int listMode=0x7f0b0009;
         public static final int list_item=0x7f0b0025;
         public static final int middle=0x7f0b0015;
@@ -1400,14 +1406,14 @@ containing a value of this type.
         public static final int normal=0x7f0b000a;
         public static final int ok_btn=0x7f0b0045;
         public static final int pager=0x7f0b004c;
-        public static final int pagerz=0x7f0b0051;
+        public static final int pagerz=0x7f0b0052;
         public static final int previous_btn=0x7f0b004a;
         public static final int progress_circular=0x7f0b0005;
         public static final int progress_horizontal=0x7f0b0006;
         public static final int radio=0x7f0b002b;
-        public static final int randomizeButton=0x7f0b004e;
+        public static final int randomizeButton=0x7f0b004f;
         public static final int rating_button=0x7f0b0047;
-        public static final int remove_btn=0x7f0b004f;
+        public static final int remove_btn=0x7f0b0050;
         public static final int search_badge=0x7f0b0035;
         public static final int search_bar=0x7f0b0034;
         public static final int search_button=0x7f0b0036;

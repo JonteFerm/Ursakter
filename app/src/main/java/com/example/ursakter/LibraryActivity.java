@@ -1,6 +1,8 @@
 package com.example.ursakter;
 
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
@@ -12,14 +14,15 @@ import java.io.IOException;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
+import custom.views.Button;
 import custom.views.PreviousButton;
 import custom.views.RatingButton;
 
 public class LibraryActivity extends FragmentActivity implements ExcuseFragment.OnFragmentInteractionListener{
     private TextView countView;
     private int numberOfExcuses;
-    private PreviousButton previousButton;
-    private RatingButton ratingButton;
+    private android.widget.Button previousButton;
+    private android.widget.Button ratingButton;
     private Excuse current;
     private ArrayList<Excuse> excuses;
 
@@ -36,9 +39,9 @@ public class LibraryActivity extends FragmentActivity implements ExcuseFragment.
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_library);
         initDB();
-        previousButton = (PreviousButton) findViewById(R.id.previous_btn);
-        previousButton.setNeg();
-        ratingButton = (RatingButton) findViewById(R.id.rating_button);
+        previousButton = (android.widget.Button) findViewById(R.id.previous_btn);
+        //previousButton.setBackgroundResource(R.drawable.ui_app_btn_back_neg);
+        ratingButton = (android.widget.Button) findViewById(R.id.rating_button);
         categoryId = getIntent().getIntExtra("categoryId", 0);
         excuses = dbHandler.getExcusesByCategory(categoryId);
         numberOfExcuses = excuses.size();
@@ -57,7 +60,7 @@ public class LibraryActivity extends FragmentActivity implements ExcuseFragment.
         countView.setText("1/"+numberOfExcuses);
 
         current = excuses.get(0);
-        ratingButton.setCurrentRating(current.getApprovals());
+        setCurrentRating(current.getApprovals());
     }
 
     @Override
@@ -88,9 +91,33 @@ public class LibraryActivity extends FragmentActivity implements ExcuseFragment.
 
     public void rateCurrent(View view){
         current.setApprovals(current.getApprovals() + 1);
-        ratingButton.setCurrentRating(current.getApprovals());
+        setCurrentRating(current.getApprovals());
         saveCurrent();
         ratingButton.invalidate();
+    }
+
+    public void setCurrentRating(int rating){
+        switch(rating){
+            case 0:
+                ratingButton.setBackgroundResource(R.drawable.ui_app_menu_btn_rate_0);
+                break;
+            case 1:
+                ratingButton.setBackgroundResource(R.drawable.ui_app_menu_btn_rate_1);
+                break;
+            case 2:
+                ratingButton.setBackgroundResource(R.drawable.ui_app_menu_btn_rate_2);
+                break;
+            case 3:
+                ratingButton.setBackgroundResource(R.drawable.ui_app_menu_btn_rate_3);
+                break;
+            case 4:
+                ratingButton.setBackgroundResource(R.drawable.ui_app_menu_btn_rate_4);
+                break;
+            case 5:
+                ratingButton.setBackgroundResource(R.drawable.ui_app_menu_btn_rate_5);
+                break;
+        }
+
     }
 
     private void saveCurrent(){
@@ -106,14 +133,14 @@ public class LibraryActivity extends FragmentActivity implements ExcuseFragment.
     private class PageListener extends ViewPager.SimpleOnPageChangeListener{
         public void onPageSelected(int position){
             if(position == 0){
-                previousButton.setNeg();
+                previousButton.setBackgroundResource(R.drawable.ui_app_btn_back_neg);
                 previousButton.invalidate();
             }else{
-                previousButton.setPos();
+                previousButton.setBackgroundResource(R.drawable.ui_app_btn_back);
                 previousButton.invalidate();
             }
             current = excuses.get(position);
-            ratingButton.setCurrentRating(excuses.get(position).getApprovals());
+            setCurrentRating(excuses.get(position).getApprovals());
             ratingButton.invalidate();
             countView.setText(position+1+"/"+numberOfExcuses);
         }

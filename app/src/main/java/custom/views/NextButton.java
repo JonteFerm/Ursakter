@@ -15,6 +15,8 @@ public class NextButton extends Button {
     public NextButton(Context context, AttributeSet attrs) {
         super(context, attrs);
         initialBmp = BitmapFactory.decodeResource(getResources(),R.drawable.ui_app_btn_next);
-        bmp = Bitmap.createScaledBitmap(initialBmp,BUTTON_WIDTH,BUTTON_HEIGHT,false);
+        this.buttonWidth = initialBmp.getWidth();
+        this.buttonHeight = initialBmp.getHeight();
+        bmp = Bitmap.createScaledBitmap(initialBmp, buttonWidth, buttonHeight,false);
     }
 }
