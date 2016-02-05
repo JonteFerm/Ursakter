@@ -186,6 +186,7 @@
     <string name="title_activity_add">AddActivity</string>
     <string name="title_activity_category">CategoryActivity</string>
     <string name="title_activity_choose_rating">ChooseRatingActivity</string>
+    <string name="title_activity_excuse">ExcuseActivity</string>
     <string name="title_activity_favourite">FavouriteActivity</string>
     <string name="title_activity_library">LibraryActivity</string>
     <string name="title_activity_own_excuses">OwnExcusesActivity</string>
@@ -1064,13 +1065,15 @@
     </style>
     <!-- From: file:/C:/Users/Ferm/Dropbox/150Ursakter/150Ursakter2/ursakter/app/src/main/res/values/styles.xml -->
     <eat-comment/>
+    <style name="BrowsingPanel">
+
+    </style>
     <style name="MenuButtonsBottom">
         <item name="android:layout_height">90dp</item>
         <item name="android:layout_width">145dp</item>
         <item name="android:layout_marginLeft">10dp</item>
         <item name="android:layout_marginRight">10dp</item>
         <item name="android:layout_marginTop">10dp</item>
-
     </style>
     <style name="MenuButtonsTop">
         <item name="android:layout_height">90dp</item>
@@ -1078,6 +1081,8 @@
         <item name="android:layout_marginLeft">10dp</item>
         <item name="android:layout_marginRight">10dp</item>
         <item name="android:layout_marginTop">10dp</item>
+    </style>
+    <style name="OriginalOrange">
     </style>
     <!-- From: file:/C:/Users/Ferm/Dropbox/150Ursakter/150Ursakter2/ursakter/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
     <eat-comment/>
@@ -1344,6 +1349,13 @@
     <style name="ThemeOverlay.AppCompat.Dark" parent="Base.ThemeOverlay.AppCompat.Dark"/>
     <style name="ThemeOverlay.AppCompat.Dark.ActionBar" parent="Base.ThemeOverlay.AppCompat.Dark.ActionBar"/>
     <style name="ThemeOverlay.AppCompat.Light" parent="Base.ThemeOverlay.AppCompat.Light"/>
+    <!-- From: file:/C:/Users/Ferm/Dropbox/150Ursakter/150Ursakter2/ursakter/app/src/main/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="TopPanelButtons">
+
+    </style>
+    <!-- From: file:/C:/Users/Ferm/Dropbox/150Ursakter/150Ursakter2/ursakter/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
+    <eat-comment/>
     <style name="Widget.AppCompat.ActionBar" parent="Base.Widget.AppCompat.ActionBar">
     </style>
     <style name="Widget.AppCompat.ActionBar.Solid" parent="Base.Widget.AppCompat.ActionBar.Solid">

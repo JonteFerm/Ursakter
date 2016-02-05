@@ -16,26 +16,21 @@
     >
 
         <Button
+            style="@style/TopPanelLeftButtons"
             android:id="@+id/share_btn"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_marginRight="30dp"
             android:background="@drawable/ui_app_btn_share_grey"
         />
 
         <Button
+            style="@style/TopPanelButtons"
             android:id="@+id/home_btn"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
             android:onClick="mainMenu"
             android:background="@drawable/ui_app_btn_home"
         />
 
         <Button
+            style="@style/TopPanelRightButtons"
             android:id="@+id/rating_button"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_marginLeft="30dp"
             android:onClick="rateCurrent"
             android:background="@drawable/ui_app_btn_rate_0"
         />
@@ -66,13 +61,17 @@
                 android:gravity="center"
             />
 
-            <custom.views.MagicPager
+            <TextView
                 android:layout_below="@id/textView2"
-                android:id="@+id/pagerz"
+                android:id="@+id/excuseTextView"
+                android:textSize="14sp"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="20dp"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp"
                 android:layout_width="wrap_content"
                 android:layout_height="250dp"
-            >
-            </custom.views.MagicPager>
+            />
 
         </RelativeLayout>
 
@@ -91,7 +90,7 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
-            android:onClick="loadNewExcuse"
+            android:onClick="randomize"
             android:background="@drawable/ui_app_btn_random"
 
         />

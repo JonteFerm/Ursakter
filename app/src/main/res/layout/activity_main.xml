@@ -2,7 +2,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.ursakter.MainActivity" >
+    tools:context="com.example.ursakter.MainActivity"
+    >
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -16,22 +17,26 @@
         >
         <LinearLayout
             android:layout_width="fill_parent"
-            android:layout_height="110dp"
+            android:layout_height="wrap_content"
             android:orientation="horizontal"
+            android:gravity="center_horizontal"
             >
 
             <Button
                 style="@style/MenuButtonsTop"
                 android:background="@drawable/ui_app_btn_libary"
                 android:onClick="openLibrary"
-                android:layout_weight="1"
+                android:layout_height="90dp"
+                android:layout_width="90dp"
+
             />
 
             <Button
                 style="@style/MenuButtonsTop"
                 android:background="@drawable/ui_app_btn_settings"
                 android:onClick="openSettings"
-                android:layout_weight="1"
+                android:layout_height="90dp"
+                android:layout_width="90dp"
             />
 
 
@@ -39,29 +44,33 @@
             <Button
                 style="@style/MenuButtonsTop"
                 android:background="@drawable/ui_app_btn_about"
-                android:layout_weight="1"
+                android:layout_height="90dp"
+                android:layout_width="90dp"
             />
 
 
         </LinearLayout>
         <LinearLayout
             android:layout_width="fill_parent"
-            android:layout_height="110dp"
+            android:layout_height="wrap_content"
             android:orientation="horizontal"
+            android:gravity="center_horizontal"
             >
 
             <Button
                 style="@style/MenuButtonsBottom"
                 android:background="@drawable/ui_app_btn_add_10"
                 android:onClick="openOwnExcuses"
-                android:layout_weight="1"
+                android:layout_height="90dp"
+                android:layout_width="145dp"
             />
 
             <Button
                 style="@style/MenuButtonsBottom"
                 android:background="@drawable/ui_app_btn_fav"
                 android:onClick="openFavourites"
-                android:layout_weight="1"
+                android:layout_height="90dp"
+                android:layout_width="145dp"
             />
 
 

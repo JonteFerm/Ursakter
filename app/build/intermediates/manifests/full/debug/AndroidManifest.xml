@@ -30,11 +30,6 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.example.ursakter.ExcuseActivity"
-            android:label="@string/title_activity_randomization"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
-        </activity>
-        <activity
             android:name="com.example.ursakter.CategoryActivity"
             android:label="@string/title_activity_library" >
         </activity>

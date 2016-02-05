@@ -11,6 +11,6 @@ android:layout_height="match_parent" tools:context="com.example.ursakter.ExcuseF
         android:layout_marginTop="20dp"
         android:paddingRight="20dp"
         android:paddingLeft="20dp"
-        />
+    />
 
 </FrameLayout>

@@ -1,31 +1,26 @@
 package com.example.ursakter;
 
+import android.app.Activity;
 import android.content.Intent;
-import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import java.io.IOException;
 import java.sql.SQLException;
 import java.util.ArrayList;
-import java.util.Collections;
+import java.util.HashSet;
 import java.util.Random;
 
-import custom.views.MagicPager;
-import custom.views.PreviousButton;
-import custom.views.RatingButton;
-
-public class RandomExcusesActivity  extends FragmentActivity implements ExcuseFragment.OnFragmentInteractionListener{
+public class RandomExcusesActivity extends Activity{
+    private TextView excuseTextView;
     private Button ratingButton;
     private ArrayList<Excuse> excuses;
+    private HashSet<Integer> usedExcuses;
     private Excuse current;
-    private int lastPos = 0;
     private DBHandler dbHandler = new DBHandler(this);
-    private MagicPager randomPager;
-    private ExcusePagerAdapter excusePagerAdapter;
-    private PageListener pageListener;
     private Random random;
     int newRandom;
 
@@ -33,24 +28,16 @@ public class RandomExcusesActivity  extends FragmentActivity implements ExcuseFr
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_random_excuses);
+
         initDB();
+
+        excuseTextView = (TextView) findViewById(R.id.excuseTextView);
         ratingButton = (Button) findViewById(R.id.rating_button);
-
         excuses = dbHandler.getAllExcuses();
-
+        usedExcuses = new HashSet();
         random = new Random();
 
-        randomPager = (MagicPager)findViewById(R.id.pagerz);
-        excusePagerAdapter = new ExcusePagerAdapter(getSupportFragmentManager());
-        excusePagerAdapter.setExcuses(excuses);
-        randomPager.setAdapter(excusePagerAdapter);
-
-        pageListener = new PageListener();
-        randomPager.setOnPageChangeListener(pageListener);
-
-        setCurrentRating(excuses.get(0).getApprovals());
-        ratingButton.invalidate();
-        current = excuses.get(0);
+        loadNewExcuse();
     }
 
 
@@ -59,11 +46,6 @@ public class RandomExcusesActivity  extends FragmentActivity implements ExcuseFr
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_category, menu);
         return true;
-    }
-
-    @Override
-    public void onFragmentInteraction(int position){
-        randomPager.setCurrentItem(position);
     }
 
 
@@ -79,12 +61,24 @@ public class RandomExcusesActivity  extends FragmentActivity implements ExcuseFr
         }
     }
 
-    public void loadNewExcuse(View view){
-        do{
-            newRandom = random.nextInt(excuses.size());
-        }while(newRandom == lastPos);
+    public void loadNewExcuse(){
+        newRandom = random.nextInt(excuses.size());
 
-        randomPager.setCurrentItem(newRandom);
+        if(usedExcuses.size() == excuses.size()){
+            usedExcuses = new HashSet<>();
+        }
+
+        if(!usedExcuses.contains(newRandom)){
+            current = excuses.get(newRandom);
+            usedExcuses.add(newRandom);
+        }else{
+            loadNewExcuse();
+        }
+
+        setCurrentRating(current.getApprovals());
+        excuseTextView.setText(current.getText());
+        ratingButton.invalidate();
+        excuseTextView.invalidate();
     }
 
     public void rateCurrent(View view){
@@ -121,17 +115,13 @@ public class RandomExcusesActivity  extends FragmentActivity implements ExcuseFr
         dbHandler.updateExcuse(current);
     }
 
+    public void randomize(View view){
+        loadNewExcuse();
+    }
+
     public void mainMenu(View view){
         Intent intent = new Intent(this, MainActivity.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(intent);
-    }
-    private class PageListener extends MagicPager.SimpleOnPageChangeListener{
-        public void onPageSelected(int position){
-            lastPos = position;
-            current = excuses.get(position);
-            setCurrentRating(excuses.get(position).getApprovals());
-            ratingButton.invalidate();
-        }
     }
 }

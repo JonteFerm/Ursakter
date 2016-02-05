@@ -17,6 +17,9 @@
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
 
+    <style name="OriginalOrange">
+    </style>
+
     <style name="MenuButtonsTop">
         <item name="android:layout_height">90dp</item>
         <item name="android:layout_width">90dp</item>
@@ -25,14 +28,34 @@
         <item name="android:layout_marginTop">10dp</item>
     </style>
 
-    <style name="MenuButtonsBottom">
+    <style name="MenuButtonsBottom" >
         <item name="android:layout_height">90dp</item>
         <item name="android:layout_width">145dp</item>
         <item name="android:layout_marginLeft">10dp</item>
         <item name="android:layout_marginRight">10dp</item>
         <item name="android:layout_marginTop">10dp</item>
+    </style>
+
+    <style name="BrowsingPanel">
 
     </style>
+
+    <style name="TopPanelButtons" >
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_width">40dp</item>
+    </style>
+
+    <style name="TopPanelRightButtons" parent="TopPanelButtons">
+        <item name="android:layout_marginLeft">30dp</item>
+    </style>
+
+    <style name="TopPanelLeftButtons" parent="TopPanelButtons">
+        <item name="android:layout_marginRight">30dp</item>
+    </style>
+
+
+
+
 
 
 </resources>
