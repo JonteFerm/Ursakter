@@ -16,10 +16,34 @@
     <style name="AppTheme" parent="AppBaseTheme">
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
+    
+    <declare-styleable name="ThemeViews">
+        <attr name="randomizeBtnStyle" format="reference"></attr>
+    </declare-styleable>
 
-    <style name="OriginalOrange">
+    <!-- Randomize button theme styles -->
+    <style name="randomizeBtnThemeOO" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_btn_random</item>
     </style>
 
+    <style name="randomizeBtnThemePP" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_purple_btn_random</item>
+    </style>
+
+    <!-- Themes -->
+    <style name="OriginalOrange">
+        <item name="randomizeBtnStyle">@style/randomizeBtnThemeOO</item>
+    </style>
+
+    <style name="PornoPurple">
+        <item name="randomizeBtnStyle">@style/randomizeBtnThemePP</item>
+    </style>
+
+    <style name="BabyBlue">
+
+    </style>
+
+    <!-- Non-themed styles -->
     <style name="MenuButtonsTop">
         <item name="android:layout_height">90dp</item>
         <item name="android:layout_width">90dp</item>

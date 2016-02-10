@@ -2,14 +2,13 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.ursakter"
     android:versionCode="1"
-    android:versionName="1.0" >
+    android:versionName="1.0">
 
     <uses-sdk
         android:minSdkVersion="8"
         android:targetSdkVersion="21" />
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
@@ -17,12 +16,8 @@
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
-        <activity
-            android:name=".MainActivity"
-            android:label="@string/app_name"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
-            >
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -31,37 +26,32 @@
         </activity>
         <activity
             android:name=".CategoryActivity"
-            android:label="@string/title_activity_library" >
-        </activity>
+            android:label="@string/title_activity_library"></activity>
         <activity
             android:name=".LibraryActivity"
-            android:label="@string/title_activity_category" >
-        </activity>
+            android:label="@string/title_activity_category"></activity>
         <activity
             android:name=".RandomExcusesActivity"
-            android:label="@string/title_activity_random_excuses" >
-        </activity>
+            android:label="@string/title_activity_random_excuses"></activity>
         <activity
             android:name=".AddActivity"
             android:label="@string/title_activity_add"
-            android:windowSoftInputMode="adjustResize" >
-        </activity>
+            android:windowSoftInputMode="adjustResize"></activity>
         <activity
             android:name=".OwnExcusesActivity"
-            android:label="@string/title_activity_own_excuses" >
-        </activity>
+            android:label="@string/title_activity_own_excuses"></activity>
         <activity
             android:name=".FavouriteActivity"
-            android:label="@string/title_activity_favourite" >
-        </activity>
+            android:label="@string/title_activity_favourite"></activity>
         <activity
             android:name=".SettingsActivity"
-            android:label="@string/title_activity_settings" >
-        </activity>
+            android:label="@string/title_activity_settings"></activity>
         <activity
             android:name=".ChooseRatingActivity"
-            android:label="@string/title_activity_choose_rating" >
-        </activity>
+            android:label="@string/title_activity_choose_rating"></activity>
+        <activity
+            android:name=".AboutActivity"
+            android:label="@string/title_activity_about"></activity>
     </application>
 
 </manifest>

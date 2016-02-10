@@ -46,6 +46,7 @@
                 android:background="@drawable/ui_app_btn_about"
                 android:layout_height="90dp"
                 android:layout_width="90dp"
+                android:onClick="openAbout"
             />
 
 
@@ -82,8 +83,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         >
-        <Button
-
+        <Button style="?attr/randomizeBtnStyle"
             android:id="@+id/randomizeButton"
             android:layout_width="320dp"
             android:layout_height="120dp"
@@ -91,8 +91,6 @@
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:onClick="openExcuse"
-            android:background="@drawable/ui_app_btn_random"
-
         />
         <LinearLayout
             android:layout_marginTop="50dp"

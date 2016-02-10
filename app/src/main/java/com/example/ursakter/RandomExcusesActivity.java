@@ -2,6 +2,7 @@ package com.example.ursakter;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
@@ -15,6 +16,7 @@ import java.util.HashSet;
 import java.util.Random;
 
 public class RandomExcusesActivity extends Activity{
+    private SharedPreferences appSettings;
     private TextView excuseTextView;
     private Button ratingButton;
     private ArrayList<Excuse> excuses;
@@ -26,6 +28,20 @@ public class RandomExcusesActivity extends Activity{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        appSettings = getSharedPreferences("AppSettings", 0);
+        String currentTheme = appSettings.getString("AppTheme", "OO");
+
+        switch (currentTheme){
+            case "OO":
+                this.setTheme(R.style.OriginalOrange);
+                break;
+            case "PP":
+                this.setTheme(R.style.PornoPurple);
+                break;
+            case "BB":
+                this.setTheme(R.style.BabyBlue);
+                break;
+        }
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_random_excuses);
 

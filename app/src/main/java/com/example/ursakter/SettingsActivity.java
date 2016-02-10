@@ -1,20 +1,60 @@
 package com.example.ursakter;
 
 import android.app.Activity;
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 public class SettingsActivity extends Activity {
+    private SharedPreferences appSettings;
+    private SharedPreferences.Editor settingsEditor;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        appSettings = getSharedPreferences("AppSettings", 0);
+        settingsEditor = appSettings.edit();
+        String currentTheme = appSettings.getString("AppTheme", "OO");
+
+        switch (currentTheme){
+            case "OO":
+                this.setTheme(R.style.OriginalOrange);
+                break;
+            case "PP":
+                this.setTheme(R.style.PornoPurple);
+                break;
+            case "BB":
+                this.setTheme(R.style.BabyBlue);
+                break;
+        }
         super.onCreate(savedInstanceState);
+
+
         setContentView(R.layout.activity_settings);
+
+
     }
 
+    public void setThemeOriginalOrange(View view){
+        settingsEditor.putString("AppTheme", "OO");
+        settingsEditor.commit();
+    }
 
+    public void setThemePornoPurple(View view){
+        settingsEditor.putString("AppTheme", "PP");
+        settingsEditor.commit();
+    }
 
+    public void setThemeBabyBlue(View view){
+        settingsEditor.putString("AppTheme", "BB");
+    }
 
+    public void mainMenu(View view){
+        Intent intent = new Intent(this, MainActivity.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        startActivity(intent);
+    }
 }

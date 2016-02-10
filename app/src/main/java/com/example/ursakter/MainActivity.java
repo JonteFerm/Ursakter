@@ -2,6 +2,7 @@ package com.example.ursakter;
 
 
 import android.app.Activity;
+import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.support.v7.app.ActionBarActivity;
 import android.content.Intent;
@@ -14,15 +15,30 @@ import java.io.IOException;
 import java.sql.SQLException;
 
 public class MainActivity extends Activity {
-    DBHandler dbHandler;
+    private SharedPreferences appSettings;
+    private DBHandler dbHandler;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
+        appSettings = getSharedPreferences("AppSettings", 0);
+        String currentTheme = appSettings.getString("AppTheme", "OO");
+
+        switch (currentTheme){
+            case "OO":
+                this.setTheme(R.style.OriginalOrange);
+                break;
+            case "PP":
+                this.setTheme(R.style.PornoPurple);
+                break;
+            case "BB":
+                this.setTheme(R.style.BabyBlue);
+                break;
+        }
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main);
+
         dbHandler = new DBHandler(this);
         initDB();
-
     }
 
     private void initDB(){
@@ -41,7 +57,6 @@ public class MainActivity extends Activity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
-
     }
 
     public void openExcuse(View view){
@@ -66,6 +81,11 @@ public class MainActivity extends Activity {
 
     public void openSettings(View view){
         Intent intent = new Intent(this, SettingsActivity.class);
+        startActivity(intent);
+    }
+
+    public void openAbout(View view){
+        Intent intent = new Intent(this, AboutActivity.class);
         startActivity(intent);
     }
 }

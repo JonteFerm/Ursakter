@@ -15,38 +15,30 @@
         >
 
         <Button
+            style="@style/TopPanelLeftButtons"
             android:id="@+id/remove_btn"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_marginLeft="30dp"
             android:onClick="removeCurrent"
             android:background="@drawable/ui_app_btn_remove_33"
         />
 
         <Button
+            style="@style/TopPanelLeftButtons"
             android:id="@+id/share_btn"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_marginLeft="30dp"
             android:layout_marginRight="15dp"
             android:background="@drawable/ui_app_btn_share_grey"
         />
 
         <Button
+            style="@style/TopPanelRightButtons"
             android:id="@+id/home_btn"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
             android:onClick="mainMenu"
             android:layout_marginLeft="15dp"
-            android:layout_marginRight="30dp"
             android:background="@drawable/ui_app_btn_home"
         />
 
         <Button
+            style="@style/TopPanelRightButtons"
             android:id="@+id/add_btn"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_marginRight="30dp"
             android:onClick="openAdd"
             android:background="@drawable/ui_app_btn_add_25"
         />

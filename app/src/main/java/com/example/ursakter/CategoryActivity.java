@@ -2,6 +2,7 @@ package com.example.ursakter;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -9,14 +10,29 @@ import android.view.View;
 
 
 public class CategoryActivity extends Activity {
+    private SharedPreferences appSettings;
     //DBHandler dbHandler;
     //LinearLayout categoryScroll;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        appSettings = getSharedPreferences("AppSettings", 0);
+        String currentTheme = appSettings.getString("AppTheme", "OO");
+
+        switch (currentTheme){
+            case "OO":
+                this.setTheme(R.style.OriginalOrange);
+                break;
+            case "PP":
+                this.setTheme(R.style.PornoPurple);
+                break;
+            case "BB":
+                this.setTheme(R.style.BabyBlue);
+                break;
+        }
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_category);
+
         /*
         categoryScroll = (LinearLayout)findViewById(R.id.categoryScroll);
         dbHandler = new DBHandler(this);
