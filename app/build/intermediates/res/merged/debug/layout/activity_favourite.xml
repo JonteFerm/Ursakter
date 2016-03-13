@@ -5,11 +5,11 @@
     tools:context="com.example.ursakter.FavouriteActivity">
 
     <LinearLayout
+        style="?attr/topPanelStyle"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:orientation="horizontal"
         android:id="@+id/top_panel"
-        android:background="@drawable/bar_top_bg"
         android:gravity="center"
         android:layout_alignParentTop="true"
         >
@@ -31,7 +31,7 @@
             style="@style/TopPanelRightButtons"
             android:id="@+id/rating_button"
             android:onClick="rateCurrent"
-            android:background="@drawable/ui_app_btn_rate_0"
+            android:background="@drawable/ui_app_menu_btn_rate_0"
         />
     </LinearLayout>
 
@@ -100,26 +100,24 @@
         android:layout_alignParentBottom="true"
         >
         <Button
+            style="?attr/nextBtnStyle"
             android:id="@+id/next_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginLeft="50dp"
             android:onClick="loadNewExcuse"
-            android:background="@drawable/ui_app_btn_next"
-
-            />
+        />
 
         <Button
+            style="?attr/prevBtnStyle"
             android:id="@+id/previous_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginRight="50dp"
             android:onClick="getPrevious"
-            android:background="@drawable/ui_app_btn_back"
-
-            />
+        />
 
         <LinearLayout
             android:layout_marginTop="50dp"
@@ -130,9 +128,9 @@
             android:background="@drawable/ui_app_bg_bottom"
             android:gravity="center"
             android:layout_alignParentBottom="true"
-            >
+        >
         </LinearLayout>
 
     </FrameLayout>
 </RelativeLayout>
-<!-- From: file:/C:/Users/Ferm/Dropbox/150Ursakter/150Ursakter2/ursakter/app/src/main/res/layout/activity_favourite.xml -->
+<!-- From: file:/C:/Users/Jonathan/Dropbox/150Ursakter/150Ursakter2/ursakter/app/src/main/res/layout/activity_favourite.xml -->

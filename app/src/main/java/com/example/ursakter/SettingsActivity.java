@@ -41,15 +41,28 @@ public class SettingsActivity extends Activity {
     public void setThemeOriginalOrange(View view){
         settingsEditor.putString("AppTheme", "OO");
         settingsEditor.commit();
+        Intent intent = getIntent();
+        intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+        finish();
+        startActivity(intent);
     }
 
     public void setThemePornoPurple(View view){
         settingsEditor.putString("AppTheme", "PP");
         settingsEditor.commit();
+        Intent intent = getIntent();
+        intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+        finish();
+        startActivity(intent);
     }
 
     public void setThemeBabyBlue(View view){
         settingsEditor.putString("AppTheme", "BB");
+        settingsEditor.commit();
+        Intent intent = getIntent();
+        intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+        finish();
+        startActivity(intent);
     }
 
     public void mainMenu(View view){

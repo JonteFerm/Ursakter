@@ -6,11 +6,11 @@
     >
 
     <LinearLayout
+        style="?attr/topPanelStyle"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:orientation="horizontal"
         android:id="@+id/top_panel"
-        android:background="@drawable/bar_top_bg"
         android:gravity="center"
         android:layout_alignParentTop="true"
     >
@@ -38,12 +38,12 @@
             android:gravity="center_horizontal"
         >
             <Button
+                style="?attr/categorySjukdommarBtnStyle"
                 android:layout_width="340dp"
                 android:layout_height="80dp"
                 android:layout_margin="5dp"
                 android:tag="1"
                 android:onClick="showCategory"
-                android:background="@drawable/ui_app_kat_btn_sjukdommar_inbillskhet"
             />
         </LinearLayout>
 
@@ -54,44 +54,20 @@
             android:gravity="center_horizontal"
             >
             <Button
+                style="?attr/categoryOverfallBtnStyle"
                 android:layout_width="165dp"
                 android:layout_height="90dp"
                 android:tag="1"
                 android:layout_margin="5dp"
                 android:onClick="showCategory"
-                android:background="@drawable/ui_app_kat_btn_overfall_attacker"
             />
             <Button
+                style="?attr/categoryDummaBtnStyle"
                 android:layout_width="165dp"
                 android:layout_height="90dp"
                 android:tag="1"
                 android:layout_margin="5dp"
                 android:onClick="showCategory"
-                android:background="@drawable/ui_app_kat_btn_dumma_aktiviteter"
-            />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center_horizontal"
-            >
-            <Button
-                android:layout_width="165dp"
-                android:layout_height="90dp"
-                android:tag="1"
-                android:layout_margin="5dp"
-                android:onClick="showCategory"
-                android:background="@drawable/ui_app_kat_btn_elaka_fracka"
-                />
-            <Button
-                android:layout_width="165dp"
-                android:layout_height="90dp"
-                android:tag="1"
-                android:layout_margin="5dp"
-                android:onClick="showCategory"
-                android:background="@drawable/ui_app_kat_btn_ilandsproblem"
             />
         </LinearLayout>
 
@@ -102,21 +78,45 @@
             android:gravity="center_horizontal"
             >
             <Button
+                style="?attr/categoryElakaBtnStyle"
                 android:layout_width="165dp"
                 android:layout_height="90dp"
                 android:tag="1"
                 android:layout_margin="5dp"
                 android:onClick="showCategory"
-                android:background="@drawable/ui_app_kat_btn_manniskor"
-                />
+            />
             <Button
+                style="?attr/categoryIlandsBtnStyle"
                 android:layout_width="165dp"
                 android:layout_height="90dp"
                 android:tag="1"
                 android:layout_margin="5dp"
                 android:onClick="showCategory"
-                android:background="@drawable/ui_app_kat_btn_djur"
-                />
+            />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            >
+            <Button
+                style="?attr/categoryManniskorBtnStyle"
+                android:layout_width="165dp"
+                android:layout_height="90dp"
+                android:tag="1"
+                android:layout_margin="5dp"
+                android:onClick="showCategory"
+            />
+            <Button
+                style="?attr/categoryDjurBtnStyle"
+                android:layout_width="165dp"
+                android:layout_height="90dp"
+                android:tag="1"
+                android:layout_margin="5dp"
+                android:onClick="showCategory"
+            />
         </LinearLayout>
 
         <LinearLayout
@@ -126,15 +126,15 @@
             android:gravity="center_horizontal"
         >
             <Button
+                style="?attr/categoryKlassikerBtnStyle"
                 android:layout_width="340dp"
                 android:layout_height="90dp"
                 android:layout_margin="5dp"
                 android:tag="1"
                 android:onClick="showCategory"
-                android:background="@drawable/ui_app_kat_btn_sjukdommar_inbillskhet"
             />
         </LinearLayout>
 
     </LinearLayout>
 </RelativeLayout>
-<!-- From: file:/C:/Users/Ferm/Dropbox/150Ursakter/150Ursakter2/ursakter/app/src/main/res/layout/activity_category.xml -->
+<!-- From: file:/C:/Users/Jonathan/Dropbox/150Ursakter/150Ursakter2/ursakter/app/src/main/res/layout/activity_category.xml -->

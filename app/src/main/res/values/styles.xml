@@ -18,33 +18,524 @@
     </style>
     
     <declare-styleable name="ThemeViews">
+        <attr name="topPanelStyle" format="reference"></attr>
         <attr name="randomizeBtnStyle" format="reference"></attr>
+        <attr name="menuLibraryBtnStyle" format="reference"></attr>
+        <attr name="menuSettingsBtnStyle" format="reference"></attr>
+        <attr name="menuAboutBtnStyle" format="reference"></attr>
+        <attr name="menuAddBtnStyle" format="reference"></attr>
+        <attr name="menuFavBtnStyle" format="reference"></attr>
+        <attr name="categorySjukdommarBtnStyle" format="reference"></attr>
+        <attr name="categoryOverfallBtnStyle" format="reference"></attr>
+        <attr name="categoryDummaBtnStyle" format="reference"></attr>
+        <attr name="categoryElakaBtnStyle" format="reference"></attr>
+        <attr name="categoryIlandsBtnStyle" format="reference"></attr>
+        <attr name="categoryManniskorBtnStyle" format="reference"></attr>
+        <attr name="categoryDjurBtnStyle" format="reference"></attr>
+        <attr name="categoryKlassikerBtnStyle" format="reference"></attr>
+        <attr name="nextBtnStyle" format="reference"></attr>
+        <attr name="prevBtnStyle" format="reference"></attr>
+        <attr name="chooseRating0BtnStyle" format="reference"></attr>
+        <attr name="chooseRating1BtnStyle" format="reference"></attr>
+        <attr name="chooseRating2BtnStyle" format="reference"></attr>
+        <attr name="chooseRating3BtnStyle" format="reference"></attr>
+        <attr name="chooseRating4BtnStyle" format="reference"></attr>
+        <attr name="chooseRating5BtnStyle" format="reference"></attr>
+        <attr name="smallTextSettingsBtnStyle" format="reference"></attr>
+        <attr name="bigTextSettingsBtnStyle" format="reference"></attr>
+        <attr name="themeOOSettingsBtnStyle" format="reference"></attr>
+        <attr name="themeBBSettingsBtnStyle" format="reference"></attr>
+        <attr name="themePPSettingsBtnStyle" format="reference"></attr>
     </declare-styleable>
+
+    <!-- Top panel theme styles -->
+    <style name="topPanelThemeOO">
+        <item name="android:background">@drawable/bar_top_bg</item>
+    </style>
+
+    <style name="topPanelThemeBB">
+        <item name="android:background">@drawable/ui_app_blue_bg_top</item>
+    </style>
+
+    <style name="topPanelThemePP">
+        <item name="android:background">@drawable/ui_app_purple_bg_top</item>
+    </style>
+    <!-- ______________________________________________________________________ -->
 
     <!-- Randomize button theme styles -->
     <style name="randomizeBtnThemeOO" parent="AppTheme">
         <item name="android:background">@drawable/ui_app_btn_random</item>
     </style>
 
+    <style name="randomizeBtnThemeBB" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_blue_btn_random</item>
+    </style>
+
     <style name="randomizeBtnThemePP" parent="AppTheme">
         <item name="android:background">@drawable/ui_app_purple_btn_random</item>
+    </style>
+    <!-- ______________________________________________________________________ -->
+
+    <!-- Menu library button theme styles -->
+    <style name="menuLibraryBtnThemeOO" parent="MenuButtonsTop">
+        <item name="android:background">@drawable/ui_app_btn_libary</item>
+    </style>
+
+    <style name="menuLibraryBtnThemeBB" parent="MenuButtonsTop">
+        <item name="android:background">@drawable/ui_app_blue_btn_libary</item>
+    </style>
+
+    <style name="menuLibraryBtnThemePP" parent="MenuButtonsTop">
+        <item name="android:background">@drawable/ui_app_purple_btn_libary</item>
+    </style>
+    <!-- ______________________________________________________________________ -->
+
+    <!-- Menu settings button theme styles -->
+    <style name="menuSettingsBtnThemeOO" parent="MenuButtonsTop">
+        <item name="android:background">@drawable/ui_app_btn_settings</item>
+    </style>
+
+    <style name="menuSettingsBtnThemeBB" parent="MenuButtonsTop">
+        <item name="android:background">@drawable/ui_app_blue_btn_settings</item>
+    </style>
+
+    <style name="menuSettingsBtnThemePP" parent="MenuButtonsTop">
+        <item name="android:background">@drawable/ui_app_purple_btn_settings</item>
+    </style>
+    <!-- ______________________________________________________________________ -->
+
+    <!-- Menu about buttom theme styles -->
+    <style name="menuAboutBtnThemeOO" parent="MenuButtonsTop">
+        <item name="android:background">@drawable/ui_app_btn_about</item>
+    </style>
+
+    <style name="menuAboutBtnThemeBB" parent="MenuButtonsTop">
+        <item name="android:background">@drawable/ui_app_blue_btn_about</item>
+    </style>
+
+    <style name="menuAboutBtnThemePP" parent="MenuButtonsTop">
+        <item name="android:background">@drawable/ui_app_purple_btn_about</item>
+    </style>
+    <!-- ______________________________________________________________________ -->
+
+    <!-- Menu add button theme styles -->
+    <style name="menuAddBtnThemeOO" parent="MenuButtonsBottom">
+        <item name="android:background">@drawable/ui_app_btn_add_10</item>
+    </style>
+
+    <style name="menuAddBtnThemeBB" parent="MenuButtonsBottom">
+        <item name="android:background">@drawable/ui_app_blue_btn_add_10</item>
+    </style>
+
+    <style name="menuAddBtnThemePP" parent="MenuButtonsBottom">
+        <item name="android:background">@drawable/ui_app_purple_btn_add_10</item>
+    </style>
+    <!-- ______________________________________________________________________ -->
+
+    <!-- Menu fav button theme styles -->
+    <style name="menuFavBtnThemeOO" parent="MenuButtonsBottom">
+        <item name="android:background">@drawable/ui_app_btn_fav</item>
+    </style>
+
+    <style name="menuFavBtnThemeBB" parent="MenuButtonsBottom">
+        <item name="android:background">@drawable/ui_app_blue_btn_fav</item>
+    </style>
+
+    <style name="menuFavBtnThemePP" parent="MenuButtonsBottom">
+        <item name="android:background">@drawable/ui_app_purple_btn_fav</item>
+    </style>
+    <!-- ______________________________________________________________________ -->
+
+    <!-- Category sjukdommar/inbillskhet button theme styles-->
+    <style name="categorySjukdommarBtnThemeOO" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_kat_btn_sjukdommar_inbillskhet</item>
+    </style>
+
+    <style name="categorySjukdommarBtnThemeBB" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_blue_kat_btn_sjukdommar_inbillskhet</item>
+    </style>
+
+    <style name="categorySjukdommarBtnThemePP" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_purple_kat_btn_sjukdommar_inbillskhet</item>
+    </style>
+    <!-- ______________________________________________________________________ -->
+
+    <!-- Category överfall/attacker button theme styles-->
+    <style name="categoryOverfallBtnThemeOO" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_kat_btn_overfall_attacker</item>
+    </style>
+
+    <style name="categoryOverfallBtnThemeBB" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_blue_kat_btn_overfall_attacker</item>
+    </style>
+
+    <style name="categoryOverfallBtnThemePP" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_purple_kat_btn_overfall_attacker</item>
+    </style>
+    <!-- ______________________________________________________________________ -->
+
+    <!-- Category dumma aktiviteter button theme styles-->
+    <style name="categoryDummaBtnThemeOO" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_kat_btn_dumma_aktiviteter</item>
+    </style>
+
+    <style name="categoryDummaBtnThemeBB" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_blue_kat_btn_dumma_aktiviteter</item>
+    </style>
+
+    <style name="categoryDummaBtnThemePP" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_purple_kat_btn_dumma_aktiviteter</item>
+    </style>
+    <!-- ______________________________________________________________________ -->
+
+    <!-- Category elaka/fräcka button theme styles-->
+    <style name="categoryElakaBtnThemeOO" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_kat_btn_elaka_fracka</item>
+    </style>
+
+    <style name="categoryElakaBtnThemeBB" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_blue_kat_btn_elaka_fracka</item>
+    </style>
+
+    <style name="categoryElakaBtnThemePP" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_purple_kat_btn_elaka_fracka</item>
+    </style>
+    <!-- ______________________________________________________________________ -->
+
+    <!-- Category i-landsproblem button theme styles-->
+    <style name="categoryIlandsBtnThemeOO" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_kat_btn_ilandsproblem</item>
+    </style>
+
+    <style name="categoryIlandsBtnThemeBB" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_blue_kat_btn_ilandsproblem</item>
+    </style>
+
+    <style name="categoryIlandsBtnThemePP" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_purple_kat_btn_ilandsproblem</item>
+    </style>
+    <!-- ______________________________________________________________________ -->
+
+    <!-- Category människor button theme styles-->
+    <style name="categoryManniskorBtnThemeOO" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_kat_btn_manniskor</item>
+    </style>
+
+    <style name="categoryManniskorBtnThemeBB" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_blue_kat_btn_manniskor</item>
+    </style>
+
+    <style name="categoryManniskorBtnThemePP" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_purple_kat_btn_manniskor</item>
+    </style>
+    <!-- ______________________________________________________________________ -->
+
+    <!-- Category djur button theme styles-->
+    <style name="categoryDjurBtnThemeOO" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_kat_btn_djur</item>
+    </style>
+
+    <style name="categoryDjurBtnThemeBB" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_blue_kat_btn_djur</item>
+    </style>
+
+    <style name="categoryDjurBtnThemePP" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_purple_kat_btn_djur</item>
+    </style>
+    <!-- ______________________________________________________________________ -->
+
+    <!-- Category i-landsproblem button theme styles-->
+    <style name="categoryKlassikerBtnThemeOO" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_kat_btn_klassiker</item>
+    </style>
+
+    <style name="categoryKlassikerBtnThemeBB" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_blue_kat_btn_klassiker</item>
+    </style>
+
+    <style name="categoryKlassikerBtnThemePP" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_purple_kat_btn_klassiker</item>
+    </style>
+    <!-- ______________________________________________________________________ -->
+
+    <!-- Next button theme styles -->
+    <style name="nextBtnThemeOO" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_btn_next</item>
+    </style>
+
+    <style name="nextBtnThemeBB" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_blue_btn_next</item>
+    </style>
+
+    <style name="nextBtnThemePP" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_purple_btn_next</item>
+    </style>
+    <!-- ______________________________________________________________________ -->
+
+    <!-- Previous button theme styles -->
+    <style name="prevBtnThemeOO" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_btn_back</item>
+    </style>
+
+    <style name="prevBtnThemeBB" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_blue_btn_back</item>
+    </style>
+
+    <style name="prevBtnThemePP" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_purple_btn_back</item>
+    </style>
+    <!-- ______________________________________________________________________ -->
+
+    <!-- Choose rating 0 button theme styles -->
+    <style name="chooseRating0BtnThemeOO" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_btn_rate_0</item>
+    </style>
+
+    <style name="chooseRating0BtnThemeBB" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_blue_btn_rate_0</item>
+    </style>
+
+    <style name="chooseRating0BtnThemePP" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_purple_btn_rate_0</item>
+    </style>
+    <!-- ______________________________________________________________________ -->
+
+
+    <!-- Choose rating 1 button theme styles -->
+    <style name="chooseRating1BtnThemeOO" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_btn_rate_1</item>
+    </style>
+
+    <style name="chooseRating1BtnThemeBB" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_blue_btn_rate_1</item>
+    </style>
+
+    <style name="chooseRating1BtnThemePP" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_purple_btn_rate_1</item>
+    </style>
+    <!-- ______________________________________________________________________ -->
+
+    <!-- Choose rating 2 button theme styles -->
+    <style name="chooseRating2BtnThemeOO" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_btn_rate_2</item>
+    </style>
+
+    <style name="chooseRating2BtnThemeBB" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_blue_btn_rate_2</item>
+    </style>
+
+    <style name="chooseRating2BtnThemePP" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_purple_btn_rate_2</item>
+    </style>
+    <!-- ______________________________________________________________________ -->
+
+    <!-- Choose rating 3 button theme styles -->
+    <style name="chooseRating3BtnThemeOO" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_btn_rate_3</item>
+    </style>
+
+    <style name="chooseRating3BtnThemeBB" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_blue_btn_rate_3</item>
+    </style>
+
+    <style name="chooseRating3BtnThemePP" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_purple_btn_rate_3</item>
+    </style>
+    <!-- ______________________________________________________________________ -->
+
+    <!-- Choose rating 4 button theme styles -->
+    <style name="chooseRating4BtnThemeOO" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_btn_rate_4</item>
+    </style>
+
+    <style name="chooseRating4BtnThemeBB" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_blue_btn_rate_4</item>
+    </style>
+
+    <style name="chooseRating4BtnThemePP" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_purple_btn_rate_4</item>
+    </style>
+    <!-- ______________________________________________________________________ -->
+
+    <!-- Choose rating 5 button theme styles -->
+    <style name="chooseRating5BtnThemeOO" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_btn_rate_5</item>
+    </style>
+
+    <style name="chooseRating5BtnThemeBB" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_blue_btn_rate_5</item>
+    </style>
+
+    <style name="chooseRating5BtnThemePP" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_purple_btn_rate_5</item>
+    </style>
+    <!-- ______________________________________________________________________ -->
+
+    <!-- Small text settings button theme styles -->
+    <style name="smallTextSettingsBtnThemeOO" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_settings_btn_txt_minska</item>
+    </style>
+
+    <style name="smallTextSettingsBtnThemeBB" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_blue_settings_btn_txt_minska</item>
+    </style>
+
+    <style name="smallTextSettingsBtnThemePP" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_purple_settings_btn_txt_minska</item>
+    </style>
+    <!-- ______________________________________________________________________ -->
+
+    <!-- Big text settings button theme styles -->
+    <style name="bigTextSettingsBtnThemeOO" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_settings_btn_txt_oka</item>
+    </style>
+
+    <style name="bigTextSettingsBtnThemeBB" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_blue_settings_btn_txt_oka</item>
+    </style>
+
+    <style name="bigTextSettingsBtnThemePP" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_purple_settings_btn_txt_oka</item>
+    </style>
+    <!-- ______________________________________________________________________ -->
+
+    <!-- Theme OO settings button theme styles -->
+    <style name="themeOOSettingsBtnThemeOO" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_settings_btn_col_orange</item>
+    </style>
+
+    <style name="themeOOSettingsBtnThemeBB" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_blue_settings_btn_col_orange</item>
+    </style>
+
+    <style name="themeOOSettingsBtnThemePP" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_purple_settings_btn_col_orange</item>
+    </style>
+    <!-- ______________________________________________________________________ -->
+
+    <!-- Theme BB settings button theme styles -->
+    <style name="themeBBSettingsBtnThemeOO" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_settings_btn_col_turqouse</item>
+    </style>
+
+    <style name="themeBBSettingsBtnThemeBB" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_blue_settings_btn_col_turqouse</item>
+    </style>
+
+    <style name="themeBBSettingsBtnThemePP" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_purple_settings_btn_col_turqouse</item>
+    </style>
+    <!-- ______________________________________________________________________ -->
+
+    <!-- Theme PP settings button theme styles -->
+    <style name="themePPSettingsBtnThemeOO" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_settings_btn_col_orange_purple</item>
+    </style>
+
+    <style name="themePPSettingsBtnThemeBB" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_blue_settings_btn_col_orange_purple</item>
+    </style>
+
+    <style name="themePPSettingsBtnThemePP" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_purple_settings_btn_col_orange_purple</item>
     </style>
 
     <!-- Themes -->
     <style name="OriginalOrange">
+        <item name="topPanelStyle">@style/topPanelThemeOO</item>
         <item name="randomizeBtnStyle">@style/randomizeBtnThemeOO</item>
-    </style>
-
-    <style name="PornoPurple">
-        <item name="randomizeBtnStyle">@style/randomizeBtnThemePP</item>
+        <item name="menuLibraryBtnStyle">@style/menuLibraryBtnThemeOO</item>
+        <item name="menuSettingsBtnStyle">@style/menuSettingsBtnThemeOO</item>
+        <item name="menuAboutBtnStyle">@style/menuAboutBtnThemeOO</item>
+        <item name="menuAddBtnStyle">@style/menuAddBtnThemeOO</item>
+        <item name="menuFavBtnStyle">@style/menuFavBtnThemeOO</item>
+        <item name="categorySjukdommarBtnStyle">@style/categorySjukdommarBtnThemeOO</item>
+        <item name="categoryOverfallBtnStyle">@style/categoryOverfallBtnThemeOO</item>
+        <item name="categoryDummaBtnStyle">@style/categoryDummaBtnThemeOO</item>
+        <item name="categoryElakaBtnStyle">@style/categoryElakaBtnThemeOO</item>
+        <item name="categoryIlandsBtnStyle">@style/categoryIlandsBtnThemeOO</item>
+        <item name="categoryManniskorBtnStyle">@style/categoryManniskorBtnThemeOO</item>
+        <item name="categoryDjurBtnStyle">@style/categoryDjurBtnThemeOO</item>
+        <item name="categoryKlassikerBtnStyle">@style/categoryKlassikerBtnThemeOO</item>
+        <item name="nextBtnStyle">@style/nextBtnThemeOO</item>
+        <item name="prevBtnStyle">@style/prevBtnThemeOO</item>
+        <item name="chooseRating0BtnStyle">@style/chooseRating0BtnThemeOO</item>
+        <item name="chooseRating1BtnStyle">@style/chooseRating1BtnThemeOO</item>
+        <item name="chooseRating2BtnStyle">@style/chooseRating2BtnThemeOO</item>
+        <item name="chooseRating3BtnStyle">@style/chooseRating3BtnThemeOO</item>
+        <item name="chooseRating4BtnStyle">@style/chooseRating4BtnThemeOO</item>
+        <item name="chooseRating5BtnStyle">@style/chooseRating5BtnThemeOO</item>
+        <item name="smallTextSettingsBtnStyle">@style/smallTextSettingsBtnThemeOO</item>
+        <item name="bigTextSettingsBtnStyle">@style/bigTextSettingsBtnThemeOO</item>
+        <item name="themeOOSettingsBtnStyle">@style/themeOOSettingsBtnThemeOO</item>
+        <item name="themeBBSettingsBtnStyle">@style/themeBBSettingsBtnThemeOO</item>
+        <item name="themePPSettingsBtnStyle">@style/themePPSettingsBtnThemeOO</item>
     </style>
 
     <style name="BabyBlue">
+        <item name="topPanelStyle">@style/topPanelThemeBB</item>
+        <item name="randomizeBtnStyle">@style/randomizeBtnThemeBB</item>
+        <item name="menuLibraryBtnStyle">@style/menuLibraryBtnThemeBB</item>
+        <item name="menuSettingsBtnStyle">@style/menuSettingsBtnThemeBB</item>
+        <item name="menuAboutBtnStyle">@style/menuAboutBtnThemeBB</item>
+        <item name="menuAddBtnStyle">@style/menuAddBtnThemeBB</item>
+        <item name="menuFavBtnStyle">@style/menuFavBtnThemeBB</item>
+        <item name="categorySjukdommarBtnStyle">@style/categorySjukdommarBtnThemeBB</item>
+        <item name="categoryOverfallBtnStyle">@style/categoryOverfallBtnThemeBB</item>
+        <item name="categoryDummaBtnStyle">@style/categoryDummaBtnThemeBB</item>
+        <item name="categoryElakaBtnStyle">@style/categoryElakaBtnThemeBB</item>
+        <item name="categoryIlandsBtnStyle">@style/categoryIlandsBtnThemeBB</item>
+        <item name="categoryManniskorBtnStyle">@style/categoryManniskorBtnThemeBB</item>
+        <item name="categoryDjurBtnStyle">@style/categoryDjurBtnThemeBB</item>
+        <item name="categoryKlassikerBtnStyle">@style/categoryKlassikerBtnThemeBB</item>
+        <item name="nextBtnStyle">@style/nextBtnThemeBB</item>
+        <item name="prevBtnStyle">@style/prevBtnThemeBB</item>
+        <item name="chooseRating0BtnStyle">@style/chooseRating0BtnThemeBB</item>
+        <item name="chooseRating1BtnStyle">@style/chooseRating1BtnThemeBB</item>
+        <item name="chooseRating2BtnStyle">@style/chooseRating2BtnThemeBB</item>
+        <item name="chooseRating3BtnStyle">@style/chooseRating3BtnThemeBB</item>
+        <item name="chooseRating4BtnStyle">@style/chooseRating4BtnThemeBB</item>
+        <item name="chooseRating5BtnStyle">@style/chooseRating5BtnThemeBB</item>
+        <item name="smallTextSettingsBtnStyle">@style/smallTextSettingsBtnThemeBB</item>
+        <item name="bigTextSettingsBtnStyle">@style/bigTextSettingsBtnThemeBB</item>
+        <item name="themeOOSettingsBtnStyle">@style/themeOOSettingsBtnThemeBB</item>
+        <item name="themeBBSettingsBtnStyle">@style/themeBBSettingsBtnThemeBB</item>
+        <item name="themePPSettingsBtnStyle">@style/themePPSettingsBtnThemeBB</item>
+    </style>
 
+    <style name="PornoPurple">
+        <item name="topPanelStyle">@style/topPanelThemePP</item>
+        <item name="randomizeBtnStyle">@style/randomizeBtnThemePP</item>
+        <item name="menuLibraryBtnStyle">@style/menuLibraryBtnThemePP</item>
+        <item name="menuSettingsBtnStyle">@style/menuSettingsBtnThemePP</item>
+        <item name="menuAboutBtnStyle">@style/menuAboutBtnThemePP</item>
+        <item name="menuAddBtnStyle">@style/menuAddBtnThemePP</item>
+        <item name="menuFavBtnStyle">@style/menuFavBtnThemePP</item>
+        <item name="categorySjukdommarBtnStyle">@style/categorySjukdommarBtnThemePP</item>
+        <item name="categoryOverfallBtnStyle">@style/categoryOverfallBtnThemePP</item>
+        <item name="categoryDummaBtnStyle">@style/categoryDummaBtnThemePP</item>
+        <item name="categoryElakaBtnStyle">@style/categoryElakaBtnThemePP</item>
+        <item name="categoryIlandsBtnStyle">@style/categoryIlandsBtnThemePP</item>
+        <item name="categoryManniskorBtnStyle">@style/categoryManniskorBtnThemePP</item>
+        <item name="categoryDjurBtnStyle">@style/categoryDjurBtnThemePP</item>
+        <item name="categoryKlassikerBtnStyle">@style/categoryKlassikerBtnThemePP</item>
+        <item name="nextBtnStyle">@style/nextBtnThemePP</item>
+        <item name="prevBtnStyle">@style/prevBtnThemePP</item>
+        <item name="chooseRating0BtnStyle">@style/chooseRating0BtnThemePP</item>
+        <item name="chooseRating1BtnStyle">@style/chooseRating1BtnThemePP</item>
+        <item name="chooseRating2BtnStyle">@style/chooseRating2BtnThemePP</item>
+        <item name="chooseRating3BtnStyle">@style/chooseRating3BtnThemePP</item>
+        <item name="chooseRating4BtnStyle">@style/chooseRating4BtnThemePP</item>
+        <item name="chooseRating5BtnStyle">@style/chooseRating5BtnThemePP</item>
+        <item name="smallTextSettingsBtnStyle">@style/smallTextSettingsBtnThemePP</item>
+        <item name="bigTextSettingsBtnStyle">@style/bigTextSettingsBtnThemePP</item>
+        <item name="themeOOSettingsBtnStyle">@style/themeOOSettingsBtnThemePP</item>
+        <item name="themeBBSettingsBtnStyle">@style/themeBBSettingsBtnThemePP</item>
+        <item name="themePPSettingsBtnStyle">@style/themePPSettingsBtnThemePP</item>
     </style>
 
     <!-- Non-themed styles -->
-    <style name="MenuButtonsTop">
+    <style name="MenuButtonsTop" parent="AppTheme">
         <item name="android:layout_height">90dp</item>
         <item name="android:layout_width">90dp</item>
         <item name="android:layout_marginLeft">10dp</item>
@@ -52,7 +543,7 @@
         <item name="android:layout_marginTop">10dp</item>
     </style>
 
-    <style name="MenuButtonsBottom" >
+    <style name="MenuButtonsBottom" parent="AppTheme">
         <item name="android:layout_height">90dp</item>
         <item name="android:layout_width">145dp</item>
         <item name="android:layout_marginLeft">10dp</item>

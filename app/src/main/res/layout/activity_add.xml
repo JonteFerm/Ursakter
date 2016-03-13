@@ -6,11 +6,11 @@
     >
 
     <LinearLayout
+        style="?attr/topPanelStyle"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:orientation="horizontal"
         android:id="@+id/top_panel"
-        android:background="@drawable/bar_top_bg"
         android:gravity="center"
         android:layout_alignParentTop="true"
         >

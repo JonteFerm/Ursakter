@@ -208,11 +208,71 @@ containing a value of this type.
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
+        public static final int bigTextSettingsBtnStyle=0x7f0100b2;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
         public static final int buttonBarButtonStyle=0x7f010074;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int buttonBarStyle=0x7f010073;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int categoryDjurBtnStyle=0x7f0100a7;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int categoryDummaBtnStyle=0x7f0100a3;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int categoryElakaBtnStyle=0x7f0100a4;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int categoryIlandsBtnStyle=0x7f0100a5;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int categoryKlassikerBtnStyle=0x7f0100a8;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int categoryManniskorBtnStyle=0x7f0100a6;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int categoryOverfallBtnStyle=0x7f0100a2;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int categorySjukdommarBtnStyle=0x7f0100a1;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int chooseRating0BtnStyle=0x7f0100ab;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int chooseRating1BtnStyle=0x7f0100ac;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int chooseRating2BtnStyle=0x7f0100ad;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int chooseRating3BtnStyle=0x7f0100ae;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int chooseRating4BtnStyle=0x7f0100af;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int chooseRating5BtnStyle=0x7f0100b0;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
@@ -228,11 +288,11 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int collapseContentDescription=0x7f0100a5;
+        public static final int collapseContentDescription=0x7f0100c0;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int collapseIcon=0x7f0100a4;
+        public static final int collapseIcon=0x7f0100bf;
         /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
 <p>This may also be a reference to a resource (in the form
@@ -617,7 +677,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int maxButtonHeight=0x7f0100a2;
+        public static final int maxButtonHeight=0x7f0100bd;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -626,6 +686,26 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int measureWithLargestChild=0x7f010028;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int menuAboutBtnStyle=0x7f01009e;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int menuAddBtnStyle=0x7f01009f;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int menuFavBtnStyle=0x7f0100a0;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int menuLibraryBtnStyle=0x7f01009c;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int menuSettingsBtnStyle=0x7f01009d;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -643,11 +723,11 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int navigationContentDescription=0x7f0100a7;
+        public static final int navigationContentDescription=0x7f0100c2;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int navigationIcon=0x7f0100a6;
+        public static final int navigationIcon=0x7f0100c1;
         /** <p>Must be one of the following constant values.</p>
 <table>
 <colgroup align="left" />
@@ -660,6 +740,10 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 </table>
          */
         public static final int navigationMode=0x7f010004;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int nextBtnStyle=0x7f0100a9;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -677,7 +761,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int paddingEnd=0x7f0100a9;
+        public static final int paddingEnd=0x7f0100c4;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -687,7 +771,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int paddingStart=0x7f0100a8;
+        public static final int paddingStart=0x7f0100c3;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
@@ -730,6 +814,10 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int preserveIconSpacing=0x7f01002f;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int prevBtnStyle=0x7f0100aa;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -763,7 +851,7 @@ containing a value of this type.
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int randomizeBtnStyle=0x7f01009a;
+        public static final int randomizeBtnStyle=0x7f01009b;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
@@ -815,6 +903,10 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int showText=0x7f010047;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int smallTextSettingsBtnStyle=0x7f0100b1;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -873,7 +965,7 @@ containing a value of this type.
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int subtitleTextAppearance=0x7f01009c;
+        public static final int subtitleTextAppearance=0x7f0100b7;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
@@ -948,7 +1040,19 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int theme=0x7f0100a3;
+        public static final int theme=0x7f0100be;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int themeBBSettingsBtnStyle=0x7f0100b4;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int themeOOSettingsBtnStyle=0x7f0100b3;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int themePPSettingsBtnStyle=0x7f0100b5;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -986,7 +1090,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int titleMarginBottom=0x7f0100a1;
+        public static final int titleMarginBottom=0x7f0100bc;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -996,7 +1100,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int titleMarginEnd=0x7f01009f;
+        public static final int titleMarginEnd=0x7f0100ba;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -1006,7 +1110,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int titleMarginStart=0x7f01009e;
+        public static final int titleMarginStart=0x7f0100b9;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -1016,7 +1120,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int titleMarginTop=0x7f0100a0;
+        public static final int titleMarginTop=0x7f0100bb;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -1026,11 +1130,11 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int titleMargins=0x7f01009d;
+        public static final int titleMargins=0x7f0100b8;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int titleTextAppearance=0x7f01009b;
+        public static final int titleTextAppearance=0x7f0100b6;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
@@ -1053,6 +1157,10 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int topBottomBarArrowSize=0x7f010024;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int topPanelStyle=0x7f01009a;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
@@ -1870,8 +1978,90 @@ containing a value of this type.
         public static final int Widget_AppCompat_TextView_SpinnerItem=0x7f060100;
         public static final int Widget_AppCompat_Toolbar=0x7f060101;
         public static final int Widget_AppCompat_Toolbar_Button_Navigation=0x7f060102;
-        public static final int randomizeBtnThemeOO=0x7f060103;
-        public static final int randomizeBtnThemePP=0x7f060104;
+        public static final int bigTextSettingsBtnThemeBB=0x7f060103;
+        public static final int bigTextSettingsBtnThemeOO=0x7f060104;
+        public static final int bigTextSettingsBtnThemePP=0x7f060105;
+        public static final int categoryDjurBtnThemeBB=0x7f060106;
+        public static final int categoryDjurBtnThemeOO=0x7f060107;
+        public static final int categoryDjurBtnThemePP=0x7f060108;
+        public static final int categoryDummaBtnThemeBB=0x7f060109;
+        public static final int categoryDummaBtnThemeOO=0x7f06010a;
+        public static final int categoryDummaBtnThemePP=0x7f06010b;
+        public static final int categoryElakaBtnThemeBB=0x7f06010c;
+        public static final int categoryElakaBtnThemeOO=0x7f06010d;
+        public static final int categoryElakaBtnThemePP=0x7f06010e;
+        public static final int categoryIlandsBtnThemeBB=0x7f06010f;
+        public static final int categoryIlandsBtnThemeOO=0x7f060110;
+        public static final int categoryIlandsBtnThemePP=0x7f060111;
+        public static final int categoryKlassikerBtnThemeBB=0x7f060112;
+        public static final int categoryKlassikerBtnThemeOO=0x7f060113;
+        public static final int categoryKlassikerBtnThemePP=0x7f060114;
+        public static final int categoryManniskorBtnThemeBB=0x7f060115;
+        public static final int categoryManniskorBtnThemeOO=0x7f060116;
+        public static final int categoryManniskorBtnThemePP=0x7f060117;
+        public static final int categoryOverfallBtnThemeBB=0x7f060118;
+        public static final int categoryOverfallBtnThemeOO=0x7f060119;
+        public static final int categoryOverfallBtnThemePP=0x7f06011a;
+        public static final int categorySjukdommarBtnThemeBB=0x7f06011b;
+        public static final int categorySjukdommarBtnThemeOO=0x7f06011c;
+        public static final int categorySjukdommarBtnThemePP=0x7f06011d;
+        public static final int chooseRating0BtnThemeBB=0x7f06011e;
+        public static final int chooseRating0BtnThemeOO=0x7f06011f;
+        public static final int chooseRating0BtnThemePP=0x7f060120;
+        public static final int chooseRating1BtnThemeBB=0x7f060121;
+        public static final int chooseRating1BtnThemeOO=0x7f060122;
+        public static final int chooseRating1BtnThemePP=0x7f060123;
+        public static final int chooseRating2BtnThemeBB=0x7f060124;
+        public static final int chooseRating2BtnThemeOO=0x7f060125;
+        public static final int chooseRating2BtnThemePP=0x7f060126;
+        public static final int chooseRating3BtnThemeBB=0x7f060127;
+        public static final int chooseRating3BtnThemeOO=0x7f060128;
+        public static final int chooseRating3BtnThemePP=0x7f060129;
+        public static final int chooseRating4BtnThemeBB=0x7f06012a;
+        public static final int chooseRating4BtnThemeOO=0x7f06012b;
+        public static final int chooseRating4BtnThemePP=0x7f06012c;
+        public static final int chooseRating5BtnThemeBB=0x7f06012d;
+        public static final int chooseRating5BtnThemeOO=0x7f06012e;
+        public static final int chooseRating5BtnThemePP=0x7f06012f;
+        public static final int menuAboutBtnThemeBB=0x7f060130;
+        public static final int menuAboutBtnThemeOO=0x7f060131;
+        public static final int menuAboutBtnThemePP=0x7f060132;
+        public static final int menuAddBtnThemeBB=0x7f060133;
+        public static final int menuAddBtnThemeOO=0x7f060134;
+        public static final int menuAddBtnThemePP=0x7f060135;
+        public static final int menuFavBtnThemeBB=0x7f060136;
+        public static final int menuFavBtnThemeOO=0x7f060137;
+        public static final int menuFavBtnThemePP=0x7f060138;
+        public static final int menuLibraryBtnThemeBB=0x7f060139;
+        public static final int menuLibraryBtnThemeOO=0x7f06013a;
+        public static final int menuLibraryBtnThemePP=0x7f06013b;
+        public static final int menuSettingsBtnThemeBB=0x7f06013c;
+        public static final int menuSettingsBtnThemeOO=0x7f06013d;
+        public static final int menuSettingsBtnThemePP=0x7f06013e;
+        public static final int nextBtnThemeBB=0x7f06013f;
+        public static final int nextBtnThemeOO=0x7f060140;
+        public static final int nextBtnThemePP=0x7f060141;
+        public static final int prevBtnThemeBB=0x7f060142;
+        public static final int prevBtnThemeOO=0x7f060143;
+        public static final int prevBtnThemePP=0x7f060144;
+        public static final int randomizeBtnThemeBB=0x7f060145;
+        public static final int randomizeBtnThemeOO=0x7f060146;
+        public static final int randomizeBtnThemePP=0x7f060147;
+        public static final int smallTextSettingsBtnThemeBB=0x7f060148;
+        public static final int smallTextSettingsBtnThemeOO=0x7f060149;
+        public static final int smallTextSettingsBtnThemePP=0x7f06014a;
+        public static final int themeBBSettingsBtnThemeBB=0x7f06014b;
+        public static final int themeBBSettingsBtnThemeOO=0x7f06014c;
+        public static final int themeBBSettingsBtnThemePP=0x7f06014d;
+        public static final int themeOOSettingsBtnThemeBB=0x7f06014e;
+        public static final int themeOOSettingsBtnThemeOO=0x7f06014f;
+        public static final int themeOOSettingsBtnThemePP=0x7f060150;
+        public static final int themePPSettingsBtnThemeBB=0x7f060151;
+        public static final int themePPSettingsBtnThemeOO=0x7f060152;
+        public static final int themePPSettingsBtnThemePP=0x7f060153;
+        public static final int topPanelThemeBB=0x7f060154;
+        public static final int topPanelThemeOO=0x7f060155;
+        public static final int topPanelThemePP=0x7f060156;
     }
     public static final class styleable {
         /** Attributes that can be used with a ActionBar.
@@ -4919,13 +5109,293 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #ThemeViews_bigTextSettingsBtnStyle com.example.ursakter:bigTextSettingsBtnStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ThemeViews_categoryDjurBtnStyle com.example.ursakter:categoryDjurBtnStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ThemeViews_categoryDummaBtnStyle com.example.ursakter:categoryDummaBtnStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ThemeViews_categoryElakaBtnStyle com.example.ursakter:categoryElakaBtnStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ThemeViews_categoryIlandsBtnStyle com.example.ursakter:categoryIlandsBtnStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ThemeViews_categoryKlassikerBtnStyle com.example.ursakter:categoryKlassikerBtnStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ThemeViews_categoryManniskorBtnStyle com.example.ursakter:categoryManniskorBtnStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ThemeViews_categoryOverfallBtnStyle com.example.ursakter:categoryOverfallBtnStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ThemeViews_categorySjukdommarBtnStyle com.example.ursakter:categorySjukdommarBtnStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ThemeViews_chooseRating0BtnStyle com.example.ursakter:chooseRating0BtnStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ThemeViews_chooseRating1BtnStyle com.example.ursakter:chooseRating1BtnStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ThemeViews_chooseRating2BtnStyle com.example.ursakter:chooseRating2BtnStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ThemeViews_chooseRating3BtnStyle com.example.ursakter:chooseRating3BtnStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ThemeViews_chooseRating4BtnStyle com.example.ursakter:chooseRating4BtnStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ThemeViews_chooseRating5BtnStyle com.example.ursakter:chooseRating5BtnStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ThemeViews_menuAboutBtnStyle com.example.ursakter:menuAboutBtnStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ThemeViews_menuAddBtnStyle com.example.ursakter:menuAddBtnStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ThemeViews_menuFavBtnStyle com.example.ursakter:menuFavBtnStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ThemeViews_menuLibraryBtnStyle com.example.ursakter:menuLibraryBtnStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ThemeViews_menuSettingsBtnStyle com.example.ursakter:menuSettingsBtnStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ThemeViews_nextBtnStyle com.example.ursakter:nextBtnStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ThemeViews_prevBtnStyle com.example.ursakter:prevBtnStyle}</code></td><td></td></tr>
            <tr><td><code>{@link #ThemeViews_randomizeBtnStyle com.example.ursakter:randomizeBtnStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ThemeViews_smallTextSettingsBtnStyle com.example.ursakter:smallTextSettingsBtnStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ThemeViews_themeBBSettingsBtnStyle com.example.ursakter:themeBBSettingsBtnStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ThemeViews_themeOOSettingsBtnStyle com.example.ursakter:themeOOSettingsBtnStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ThemeViews_themePPSettingsBtnStyle com.example.ursakter:themePPSettingsBtnStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ThemeViews_topPanelStyle com.example.ursakter:topPanelStyle}</code></td><td></td></tr>
            </table>
+           @see #ThemeViews_bigTextSettingsBtnStyle
+           @see #ThemeViews_categoryDjurBtnStyle
+           @see #ThemeViews_categoryDummaBtnStyle
+           @see #ThemeViews_categoryElakaBtnStyle
+           @see #ThemeViews_categoryIlandsBtnStyle
+           @see #ThemeViews_categoryKlassikerBtnStyle
+           @see #ThemeViews_categoryManniskorBtnStyle
+           @see #ThemeViews_categoryOverfallBtnStyle
+           @see #ThemeViews_categorySjukdommarBtnStyle
+           @see #ThemeViews_chooseRating0BtnStyle
+           @see #ThemeViews_chooseRating1BtnStyle
+           @see #ThemeViews_chooseRating2BtnStyle
+           @see #ThemeViews_chooseRating3BtnStyle
+           @see #ThemeViews_chooseRating4BtnStyle
+           @see #ThemeViews_chooseRating5BtnStyle
+           @see #ThemeViews_menuAboutBtnStyle
+           @see #ThemeViews_menuAddBtnStyle
+           @see #ThemeViews_menuFavBtnStyle
+           @see #ThemeViews_menuLibraryBtnStyle
+           @see #ThemeViews_menuSettingsBtnStyle
+           @see #ThemeViews_nextBtnStyle
+           @see #ThemeViews_prevBtnStyle
            @see #ThemeViews_randomizeBtnStyle
+           @see #ThemeViews_smallTextSettingsBtnStyle
+           @see #ThemeViews_themeBBSettingsBtnStyle
+           @see #ThemeViews_themeOOSettingsBtnStyle
+           @see #ThemeViews_themePPSettingsBtnStyle
+           @see #ThemeViews_topPanelStyle
          */
         public static final int[] ThemeViews = {
-            0x7f01009a
+            0x7f01009a, 0x7f01009b, 0x7f01009c, 0x7f01009d,
+            0x7f01009e, 0x7f01009f, 0x7f0100a0, 0x7f0100a1,
+            0x7f0100a2, 0x7f0100a3, 0x7f0100a4, 0x7f0100a5,
+            0x7f0100a6, 0x7f0100a7, 0x7f0100a8, 0x7f0100a9,
+            0x7f0100aa, 0x7f0100ab, 0x7f0100ac, 0x7f0100ad,
+            0x7f0100ae, 0x7f0100af, 0x7f0100b0, 0x7f0100b1,
+            0x7f0100b2, 0x7f0100b3, 0x7f0100b4, 0x7f0100b5
         };
+        /**
+          <p>This symbol is the offset where the {@link com.example.ursakter.R.attr#bigTextSettingsBtnStyle}
+          attribute's value can be found in the {@link #ThemeViews} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.example.ursakter:bigTextSettingsBtnStyle
+        */
+        public static final int ThemeViews_bigTextSettingsBtnStyle = 24;
+        /**
+          <p>This symbol is the offset where the {@link com.example.ursakter.R.attr#categoryDjurBtnStyle}
+          attribute's value can be found in the {@link #ThemeViews} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.example.ursakter:categoryDjurBtnStyle
+        */
+        public static final int ThemeViews_categoryDjurBtnStyle = 13;
+        /**
+          <p>This symbol is the offset where the {@link com.example.ursakter.R.attr#categoryDummaBtnStyle}
+          attribute's value can be found in the {@link #ThemeViews} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.example.ursakter:categoryDummaBtnStyle
+        */
+        public static final int ThemeViews_categoryDummaBtnStyle = 9;
+        /**
+          <p>This symbol is the offset where the {@link com.example.ursakter.R.attr#categoryElakaBtnStyle}
+          attribute's value can be found in the {@link #ThemeViews} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.example.ursakter:categoryElakaBtnStyle
+        */
+        public static final int ThemeViews_categoryElakaBtnStyle = 10;
+        /**
+          <p>This symbol is the offset where the {@link com.example.ursakter.R.attr#categoryIlandsBtnStyle}
+          attribute's value can be found in the {@link #ThemeViews} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.example.ursakter:categoryIlandsBtnStyle
+        */
+        public static final int ThemeViews_categoryIlandsBtnStyle = 11;
+        /**
+          <p>This symbol is the offset where the {@link com.example.ursakter.R.attr#categoryKlassikerBtnStyle}
+          attribute's value can be found in the {@link #ThemeViews} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.example.ursakter:categoryKlassikerBtnStyle
+        */
+        public static final int ThemeViews_categoryKlassikerBtnStyle = 14;
+        /**
+          <p>This symbol is the offset where the {@link com.example.ursakter.R.attr#categoryManniskorBtnStyle}
+          attribute's value can be found in the {@link #ThemeViews} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.example.ursakter:categoryManniskorBtnStyle
+        */
+        public static final int ThemeViews_categoryManniskorBtnStyle = 12;
+        /**
+          <p>This symbol is the offset where the {@link com.example.ursakter.R.attr#categoryOverfallBtnStyle}
+          attribute's value can be found in the {@link #ThemeViews} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.example.ursakter:categoryOverfallBtnStyle
+        */
+        public static final int ThemeViews_categoryOverfallBtnStyle = 8;
+        /**
+          <p>This symbol is the offset where the {@link com.example.ursakter.R.attr#categorySjukdommarBtnStyle}
+          attribute's value can be found in the {@link #ThemeViews} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.example.ursakter:categorySjukdommarBtnStyle
+        */
+        public static final int ThemeViews_categorySjukdommarBtnStyle = 7;
+        /**
+          <p>This symbol is the offset where the {@link com.example.ursakter.R.attr#chooseRating0BtnStyle}
+          attribute's value can be found in the {@link #ThemeViews} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.example.ursakter:chooseRating0BtnStyle
+        */
+        public static final int ThemeViews_chooseRating0BtnStyle = 17;
+        /**
+          <p>This symbol is the offset where the {@link com.example.ursakter.R.attr#chooseRating1BtnStyle}
+          attribute's value can be found in the {@link #ThemeViews} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.example.ursakter:chooseRating1BtnStyle
+        */
+        public static final int ThemeViews_chooseRating1BtnStyle = 18;
+        /**
+          <p>This symbol is the offset where the {@link com.example.ursakter.R.attr#chooseRating2BtnStyle}
+          attribute's value can be found in the {@link #ThemeViews} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.example.ursakter:chooseRating2BtnStyle
+        */
+        public static final int ThemeViews_chooseRating2BtnStyle = 19;
+        /**
+          <p>This symbol is the offset where the {@link com.example.ursakter.R.attr#chooseRating3BtnStyle}
+          attribute's value can be found in the {@link #ThemeViews} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.example.ursakter:chooseRating3BtnStyle
+        */
+        public static final int ThemeViews_chooseRating3BtnStyle = 20;
+        /**
+          <p>This symbol is the offset where the {@link com.example.ursakter.R.attr#chooseRating4BtnStyle}
+          attribute's value can be found in the {@link #ThemeViews} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.example.ursakter:chooseRating4BtnStyle
+        */
+        public static final int ThemeViews_chooseRating4BtnStyle = 21;
+        /**
+          <p>This symbol is the offset where the {@link com.example.ursakter.R.attr#chooseRating5BtnStyle}
+          attribute's value can be found in the {@link #ThemeViews} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.example.ursakter:chooseRating5BtnStyle
+        */
+        public static final int ThemeViews_chooseRating5BtnStyle = 22;
+        /**
+          <p>This symbol is the offset where the {@link com.example.ursakter.R.attr#menuAboutBtnStyle}
+          attribute's value can be found in the {@link #ThemeViews} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.example.ursakter:menuAboutBtnStyle
+        */
+        public static final int ThemeViews_menuAboutBtnStyle = 4;
+        /**
+          <p>This symbol is the offset where the {@link com.example.ursakter.R.attr#menuAddBtnStyle}
+          attribute's value can be found in the {@link #ThemeViews} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.example.ursakter:menuAddBtnStyle
+        */
+        public static final int ThemeViews_menuAddBtnStyle = 5;
+        /**
+          <p>This symbol is the offset where the {@link com.example.ursakter.R.attr#menuFavBtnStyle}
+          attribute's value can be found in the {@link #ThemeViews} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.example.ursakter:menuFavBtnStyle
+        */
+        public static final int ThemeViews_menuFavBtnStyle = 6;
+        /**
+          <p>This symbol is the offset where the {@link com.example.ursakter.R.attr#menuLibraryBtnStyle}
+          attribute's value can be found in the {@link #ThemeViews} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.example.ursakter:menuLibraryBtnStyle
+        */
+        public static final int ThemeViews_menuLibraryBtnStyle = 2;
+        /**
+          <p>This symbol is the offset where the {@link com.example.ursakter.R.attr#menuSettingsBtnStyle}
+          attribute's value can be found in the {@link #ThemeViews} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.example.ursakter:menuSettingsBtnStyle
+        */
+        public static final int ThemeViews_menuSettingsBtnStyle = 3;
+        /**
+          <p>This symbol is the offset where the {@link com.example.ursakter.R.attr#nextBtnStyle}
+          attribute's value can be found in the {@link #ThemeViews} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.example.ursakter:nextBtnStyle
+        */
+        public static final int ThemeViews_nextBtnStyle = 15;
+        /**
+          <p>This symbol is the offset where the {@link com.example.ursakter.R.attr#prevBtnStyle}
+          attribute's value can be found in the {@link #ThemeViews} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.example.ursakter:prevBtnStyle
+        */
+        public static final int ThemeViews_prevBtnStyle = 16;
         /**
           <p>This symbol is the offset where the {@link com.example.ursakter.R.attr#randomizeBtnStyle}
           attribute's value can be found in the {@link #ThemeViews} array.
@@ -4935,7 +5405,57 @@ containing a value of this type.
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name com.example.ursakter:randomizeBtnStyle
         */
-        public static final int ThemeViews_randomizeBtnStyle = 0;
+        public static final int ThemeViews_randomizeBtnStyle = 1;
+        /**
+          <p>This symbol is the offset where the {@link com.example.ursakter.R.attr#smallTextSettingsBtnStyle}
+          attribute's value can be found in the {@link #ThemeViews} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.example.ursakter:smallTextSettingsBtnStyle
+        */
+        public static final int ThemeViews_smallTextSettingsBtnStyle = 23;
+        /**
+          <p>This symbol is the offset where the {@link com.example.ursakter.R.attr#themeBBSettingsBtnStyle}
+          attribute's value can be found in the {@link #ThemeViews} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.example.ursakter:themeBBSettingsBtnStyle
+        */
+        public static final int ThemeViews_themeBBSettingsBtnStyle = 26;
+        /**
+          <p>This symbol is the offset where the {@link com.example.ursakter.R.attr#themeOOSettingsBtnStyle}
+          attribute's value can be found in the {@link #ThemeViews} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.example.ursakter:themeOOSettingsBtnStyle
+        */
+        public static final int ThemeViews_themeOOSettingsBtnStyle = 25;
+        /**
+          <p>This symbol is the offset where the {@link com.example.ursakter.R.attr#themePPSettingsBtnStyle}
+          attribute's value can be found in the {@link #ThemeViews} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.example.ursakter:themePPSettingsBtnStyle
+        */
+        public static final int ThemeViews_themePPSettingsBtnStyle = 27;
+        /**
+          <p>This symbol is the offset where the {@link com.example.ursakter.R.attr#topPanelStyle}
+          attribute's value can be found in the {@link #ThemeViews} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.example.ursakter:topPanelStyle
+        */
+        public static final int ThemeViews_topPanelStyle = 0;
         /** Attributes that can be used with a Toolbar.
            <p>Includes the following attributes:</p>
            <table>
@@ -4991,10 +5511,10 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int[] Toolbar = {
             0x010100af, 0x01010140, 0x7f010003, 0x7f010006,
             0x7f010016, 0x7f010017, 0x7f010018, 0x7f010019,
-            0x7f01001b, 0x7f01009b, 0x7f01009c, 0x7f01009d,
-            0x7f01009e, 0x7f01009f, 0x7f0100a0, 0x7f0100a1,
-            0x7f0100a2, 0x7f0100a3, 0x7f0100a4, 0x7f0100a5,
-            0x7f0100a6, 0x7f0100a7
+            0x7f01001b, 0x7f0100b6, 0x7f0100b7, 0x7f0100b8,
+            0x7f0100b9, 0x7f0100ba, 0x7f0100bb, 0x7f0100bc,
+            0x7f0100bd, 0x7f0100be, 0x7f0100bf, 0x7f0100c0,
+            0x7f0100c1, 0x7f0100c2
         };
         /**
           <p>This symbol is the offset where the {@link android.R.attr#gravity}
@@ -5299,7 +5819,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            @see #View_paddingStart
          */
         public static final int[] View = {
-            0x010100da, 0x7f0100a8, 0x7f0100a9
+            0x010100da, 0x7f0100c3, 0x7f0100c4
         };
         /**
           <p>This symbol is the offset where the {@link android.R.attr#focusable}

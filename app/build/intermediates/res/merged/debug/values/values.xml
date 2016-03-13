@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/C:/Users/Ferm/Dropbox/150Ursakter/150Ursakter2/ursakter/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
+    <!-- From: file:/C:/Users/Jonathan/Dropbox/150Ursakter/150Ursakter2/ursakter/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
     <eat-comment/>
     <attr format="reference" name="drawerArrowStyle"/>
     <attr format="dimension" name="height"/>
@@ -82,7 +82,7 @@
     <declare-styleable name="SwitchCompat"><attr name="android:thumb"/><attr format="reference" name="track"/><attr name="android:textOn"/><attr name="android:textOff"/><attr format="dimension" name="thumbTextPadding"/><attr format="reference" name="switchTextAppearance"/><attr format="dimension" name="switchMinWidth"/><attr format="dimension" name="switchPadding"/><attr format="boolean" name="splitTrack"/><attr format="boolean" name="showText"/></declare-styleable>
     <declare-styleable name="SwitchCompatTextAppearance"><attr name="android:textSize"/><attr name="android:textColor"/><attr name="textAllCaps"/></declare-styleable>
     <declare-styleable name="Theme"><attr format="boolean" name="windowActionBar"/><attr format="boolean" name="windowActionBarOverlay"/><attr format="boolean" name="windowActionModeOverlay"/><attr format="dimension|fraction" name="windowFixedWidthMajor"/><attr format="dimension|fraction" name="windowFixedHeightMinor"/><attr format="dimension|fraction" name="windowFixedWidthMinor"/><attr format="dimension|fraction" name="windowFixedHeightMajor"/><attr name="android:windowIsFloating"/><attr name="android:windowAnimationStyle"/><attr format="reference" name="actionBarTabStyle"/><attr format="reference" name="actionBarTabBarStyle"/><attr format="reference" name="actionBarTabTextStyle"/><attr format="reference" name="actionOverflowButtonStyle"/><attr format="reference" name="actionOverflowMenuStyle"/><attr format="reference" name="actionBarPopupTheme"/><attr format="reference" name="actionBarStyle"/><attr format="reference" name="actionBarSplitStyle"/><attr format="reference" name="actionBarTheme"/><attr format="reference" name="actionBarWidgetTheme"/><attr format="dimension" name="actionBarSize"><enum name="wrap_content" value="0"/></attr><attr format="reference" name="actionBarDivider"/><attr format="reference" name="actionBarItemBackground"/><attr format="reference" name="actionMenuTextAppearance"/><attr format="color|reference" name="actionMenuTextColor"/><attr format="reference" name="actionModeStyle"/><attr format="reference" name="actionModeCloseButtonStyle"/><attr format="reference" name="actionModeBackground"/><attr format="reference" name="actionModeSplitBackground"/><attr format="reference" name="actionModeCloseDrawable"/><attr format="reference" name="actionModeCutDrawable"/><attr format="reference" name="actionModeCopyDrawable"/><attr format="reference" name="actionModePasteDrawable"/><attr format="reference" name="actionModeSelectAllDrawable"/><attr format="reference" name="actionModeShareDrawable"/><attr format="reference" name="actionModeFindDrawable"/><attr format="reference" name="actionModeWebSearchDrawable"/><attr format="reference" name="actionModePopupWindowStyle"/><attr format="reference" name="textAppearanceLargePopupMenu"/><attr format="reference" name="textAppearanceSmallPopupMenu"/><attr format="reference" name="actionDropDownStyle"/><attr format="dimension" name="dropdownListPreferredItemHeight"/><attr format="reference" name="spinnerStyle"/><attr format="reference" name="spinnerDropDownItemStyle"/><attr format="reference" name="homeAsUpIndicator"/><attr format="reference" name="actionButtonStyle"/><attr format="reference" name="buttonBarStyle"/><attr format="reference" name="buttonBarButtonStyle"/><attr format="reference" name="selectableItemBackground"/><attr format="reference" name="selectableItemBackgroundBorderless"/><attr format="reference" name="dividerVertical"/><attr format="reference" name="dividerHorizontal"/><attr format="reference" name="activityChooserViewStyle"/><attr format="reference" name="toolbarStyle"/><attr format="reference" name="toolbarNavigationButtonStyle"/><attr format="reference" name="popupMenuStyle"/><attr format="reference" name="popupWindowStyle"/><attr format="reference|color" name="editTextColor"/><attr format="reference" name="editTextBackground"/><attr format="reference" name="switchStyle"/><attr format="reference" name="textAppearanceSearchResultTitle"/><attr format="reference" name="textAppearanceSearchResultSubtitle"/><attr format="reference|color" name="textColorSearchUrl"/><attr format="reference" name="searchViewStyle"/><attr format="dimension" name="listPreferredItemHeight"/><attr format="dimension" name="listPreferredItemHeightSmall"/><attr format="dimension" name="listPreferredItemHeightLarge"/><attr format="dimension" name="listPreferredItemPaddingLeft"/><attr format="dimension" name="listPreferredItemPaddingRight"/><attr format="reference" name="dropDownListViewStyle"/><attr format="reference" name="listPopupWindowStyle"/><attr format="reference" name="textAppearanceListItem"/><attr format="reference" name="textAppearanceListItemSmall"/><attr format="reference" name="panelBackground"/><attr format="dimension" name="panelMenuListWidth"/><attr format="reference" name="panelMenuListTheme"/><attr format="reference" name="listChoiceBackgroundIndicator"/><attr format="color" name="colorPrimary"/><attr format="color" name="colorPrimaryDark"/><attr format="color" name="colorAccent"/><attr format="color" name="colorControlNormal"/><attr format="color" name="colorControlActivated"/><attr format="color" name="colorControlHighlight"/><attr format="color" name="colorButtonNormal"/><attr format="color" name="colorSwitchThumbNormal"/></declare-styleable>
-    <declare-styleable name="ThemeViews"><attr format="reference" name="randomizeBtnStyle"/></declare-styleable>
+    <declare-styleable name="ThemeViews"><attr format="reference" name="topPanelStyle"/><attr format="reference" name="randomizeBtnStyle"/><attr format="reference" name="menuLibraryBtnStyle"/><attr format="reference" name="menuSettingsBtnStyle"/><attr format="reference" name="menuAboutBtnStyle"/><attr format="reference" name="menuAddBtnStyle"/><attr format="reference" name="menuFavBtnStyle"/><attr format="reference" name="categorySjukdommarBtnStyle"/><attr format="reference" name="categoryOverfallBtnStyle"/><attr format="reference" name="categoryDummaBtnStyle"/><attr format="reference" name="categoryElakaBtnStyle"/><attr format="reference" name="categoryIlandsBtnStyle"/><attr format="reference" name="categoryManniskorBtnStyle"/><attr format="reference" name="categoryDjurBtnStyle"/><attr format="reference" name="categoryKlassikerBtnStyle"/><attr format="reference" name="nextBtnStyle"/><attr format="reference" name="prevBtnStyle"/><attr format="reference" name="chooseRating0BtnStyle"/><attr format="reference" name="chooseRating1BtnStyle"/><attr format="reference" name="chooseRating2BtnStyle"/><attr format="reference" name="chooseRating3BtnStyle"/><attr format="reference" name="chooseRating4BtnStyle"/><attr format="reference" name="chooseRating5BtnStyle"/><attr format="reference" name="smallTextSettingsBtnStyle"/><attr format="reference" name="bigTextSettingsBtnStyle"/><attr format="reference" name="themeOOSettingsBtnStyle"/><attr format="reference" name="themeBBSettingsBtnStyle"/><attr format="reference" name="themePPSettingsBtnStyle"/></declare-styleable>
     <declare-styleable name="Toolbar"><attr format="reference" name="titleTextAppearance"/><attr format="reference" name="subtitleTextAppearance"/><attr name="title"/><attr name="subtitle"/><attr name="android:gravity"/><attr format="dimension" name="titleMargins"/><attr format="dimension" name="titleMarginStart"/><attr format="dimension" name="titleMarginEnd"/><attr format="dimension" name="titleMarginTop"/><attr format="dimension" name="titleMarginBottom"/><attr name="contentInsetStart"/><attr name="contentInsetEnd"/><attr name="contentInsetLeft"/><attr name="contentInsetRight"/><attr format="dimension" name="maxButtonHeight"/><attr format="reference" name="theme"/><attr format="reference" name="collapseIcon"/><attr format="string" name="collapseContentDescription"/><attr name="popupTheme"/><attr format="reference" name="navigationIcon"/><attr format="string" name="navigationContentDescription"/><attr name="android:minHeight"/></declare-styleable>
     <declare-styleable name="View"><attr format="dimension" name="paddingStart"/><attr format="dimension" name="paddingEnd"/><attr name="android:focusable"/></declare-styleable>
     <declare-styleable name="ViewStubCompat"><attr name="android:layout"/><attr name="android:inflatedId"/><attr name="android:id"/></declare-styleable>
@@ -128,11 +128,11 @@
     <dimen name="abc_text_size_subtitle_material_toolbar">16dp</dimen>
     <dimen name="abc_text_size_title_material">20sp</dimen>
     <dimen name="abc_text_size_title_material_toolbar">20dp</dimen>
-    <!-- From: file:/C:/Users/Ferm/Dropbox/150Ursakter/150Ursakter2/ursakter/app/src/main/res/values/dimens.xml -->
+    <!-- From: file:/C:/Users/Jonathan/Dropbox/150Ursakter/150Ursakter2/ursakter/app/src/main/res/values/dimens.xml -->
     <eat-comment/>
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
-    <!-- From: file:/C:/Users/Ferm/Dropbox/150Ursakter/150Ursakter2/ursakter/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
+    <!-- From: file:/C:/Users/Jonathan/Dropbox/150Ursakter/150Ursakter2/ursakter/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
     <eat-comment/>
     <item name="dialog_fixed_height_major" type="dimen">80%</item>
     <item name="dialog_fixed_height_minor" type="dimen">100%</item>
@@ -168,7 +168,7 @@
     <string name="abc_shareactionprovider_share_with">Share with</string>
     <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
     <string name="abc_toolbar_collapse_description">Collapse</string>
-    <!-- From: file:/C:/Users/Ferm/Dropbox/150Ursakter/150Ursakter2/ursakter/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/C:/Users/Jonathan/Dropbox/150Ursakter/150Ursakter2/ursakter/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="aboutBtn_text">Om...</string>
     <string name="action_settings">Settings</string>
@@ -195,10 +195,10 @@
     <string name="title_activity_random_excuses">RandomExcusesActivity</string>
     <string name="title_activity_randomization">Randomization</string>
     <string name="title_activity_settings">SettingsActivity</string>
-    <!-- From: file:/C:/Users/Ferm/Dropbox/150Ursakter/150Ursakter2/ursakter/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
+    <!-- From: file:/C:/Users/Jonathan/Dropbox/150Ursakter/150Ursakter2/ursakter/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
     <eat-comment/>
     <style name="Animation.AppCompat.DropDownUp" parent="Base.Animation.AppCompat.DropDownUp"/>
-    <!-- From: file:/C:/Users/Ferm/Dropbox/150Ursakter/150Ursakter2/ursakter/app/src/main/res/values/styles.xml -->
+    <!-- From: file:/C:/Users/Jonathan/Dropbox/150Ursakter/150Ursakter2/ursakter/app/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="AppBaseTheme" parent="Theme.AppCompat.Light">
         <!--
@@ -211,9 +211,36 @@
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
     <style name="BabyBlue">
-
+        <item name="topPanelStyle">@style/topPanelThemeBB</item>
+        <item name="randomizeBtnStyle">@style/randomizeBtnThemeBB</item>
+        <item name="menuLibraryBtnStyle">@style/menuLibraryBtnThemeBB</item>
+        <item name="menuSettingsBtnStyle">@style/menuSettingsBtnThemeBB</item>
+        <item name="menuAboutBtnStyle">@style/menuAboutBtnThemeBB</item>
+        <item name="menuAddBtnStyle">@style/menuAddBtnThemeBB</item>
+        <item name="menuFavBtnStyle">@style/menuFavBtnThemeBB</item>
+        <item name="categorySjukdommarBtnStyle">@style/categorySjukdommarBtnThemeBB</item>
+        <item name="categoryOverfallBtnStyle">@style/categoryOverfallBtnThemeBB</item>
+        <item name="categoryDummaBtnStyle">@style/categoryDummaBtnThemeBB</item>
+        <item name="categoryElakaBtnStyle">@style/categoryElakaBtnThemeBB</item>
+        <item name="categoryIlandsBtnStyle">@style/categoryIlandsBtnThemeBB</item>
+        <item name="categoryManniskorBtnStyle">@style/categoryManniskorBtnThemeBB</item>
+        <item name="categoryDjurBtnStyle">@style/categoryDjurBtnThemeBB</item>
+        <item name="categoryKlassikerBtnStyle">@style/categoryKlassikerBtnThemeBB</item>
+        <item name="nextBtnStyle">@style/nextBtnThemeBB</item>
+        <item name="prevBtnStyle">@style/prevBtnThemeBB</item>
+        <item name="chooseRating0BtnStyle">@style/chooseRating0BtnThemeBB</item>
+        <item name="chooseRating1BtnStyle">@style/chooseRating1BtnThemeBB</item>
+        <item name="chooseRating2BtnStyle">@style/chooseRating2BtnThemeBB</item>
+        <item name="chooseRating3BtnStyle">@style/chooseRating3BtnThemeBB</item>
+        <item name="chooseRating4BtnStyle">@style/chooseRating4BtnThemeBB</item>
+        <item name="chooseRating5BtnStyle">@style/chooseRating5BtnThemeBB</item>
+        <item name="smallTextSettingsBtnStyle">@style/smallTextSettingsBtnThemeBB</item>
+        <item name="bigTextSettingsBtnStyle">@style/bigTextSettingsBtnThemeBB</item>
+        <item name="themeOOSettingsBtnStyle">@style/themeOOSettingsBtnThemeBB</item>
+        <item name="themeBBSettingsBtnStyle">@style/themeBBSettingsBtnThemeBB</item>
+        <item name="themePPSettingsBtnStyle">@style/themePPSettingsBtnThemeBB</item>
     </style>
-    <!-- From: file:/C:/Users/Ferm/Dropbox/150Ursakter/150Ursakter2/ursakter/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
+    <!-- From: file:/C:/Users/Jonathan/Dropbox/150Ursakter/150Ursakter2/ursakter/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
     <eat-comment/>
     <style name="Base.Animation.AppCompat.DropDownUp" parent="android:Animation">
         <item name="android:windowEnterAnimation">@anim/abc_grow_fade_in_from_bottom</item>
@@ -1068,19 +1095,19 @@
         <item name="android:scaleType">center</item>
         <item name="android:background">?attr/selectableItemBackground</item>
     </style>
-    <!-- From: file:/C:/Users/Ferm/Dropbox/150Ursakter/150Ursakter2/ursakter/app/src/main/res/values/styles.xml -->
+    <!-- From: file:/C:/Users/Jonathan/Dropbox/150Ursakter/150Ursakter2/ursakter/app/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="BrowsingPanel">
 
     </style>
-    <style name="MenuButtonsBottom">
+    <style name="MenuButtonsBottom" parent="AppTheme">
         <item name="android:layout_height">90dp</item>
         <item name="android:layout_width">145dp</item>
         <item name="android:layout_marginLeft">10dp</item>
         <item name="android:layout_marginRight">10dp</item>
         <item name="android:layout_marginTop">10dp</item>
     </style>
-    <style name="MenuButtonsTop">
+    <style name="MenuButtonsTop" parent="AppTheme">
         <item name="android:layout_height">90dp</item>
         <item name="android:layout_width">90dp</item>
         <item name="android:layout_marginLeft">10dp</item>
@@ -1088,9 +1115,36 @@
         <item name="android:layout_marginTop">10dp</item>
     </style>
     <style name="OriginalOrange">
+        <item name="topPanelStyle">@style/topPanelThemeOO</item>
         <item name="randomizeBtnStyle">@style/randomizeBtnThemeOO</item>
+        <item name="menuLibraryBtnStyle">@style/menuLibraryBtnThemeOO</item>
+        <item name="menuSettingsBtnStyle">@style/menuSettingsBtnThemeOO</item>
+        <item name="menuAboutBtnStyle">@style/menuAboutBtnThemeOO</item>
+        <item name="menuAddBtnStyle">@style/menuAddBtnThemeOO</item>
+        <item name="menuFavBtnStyle">@style/menuFavBtnThemeOO</item>
+        <item name="categorySjukdommarBtnStyle">@style/categorySjukdommarBtnThemeOO</item>
+        <item name="categoryOverfallBtnStyle">@style/categoryOverfallBtnThemeOO</item>
+        <item name="categoryDummaBtnStyle">@style/categoryDummaBtnThemeOO</item>
+        <item name="categoryElakaBtnStyle">@style/categoryElakaBtnThemeOO</item>
+        <item name="categoryIlandsBtnStyle">@style/categoryIlandsBtnThemeOO</item>
+        <item name="categoryManniskorBtnStyle">@style/categoryManniskorBtnThemeOO</item>
+        <item name="categoryDjurBtnStyle">@style/categoryDjurBtnThemeOO</item>
+        <item name="categoryKlassikerBtnStyle">@style/categoryKlassikerBtnThemeOO</item>
+        <item name="nextBtnStyle">@style/nextBtnThemeOO</item>
+        <item name="prevBtnStyle">@style/prevBtnThemeOO</item>
+        <item name="chooseRating0BtnStyle">@style/chooseRating0BtnThemeOO</item>
+        <item name="chooseRating1BtnStyle">@style/chooseRating1BtnThemeOO</item>
+        <item name="chooseRating2BtnStyle">@style/chooseRating2BtnThemeOO</item>
+        <item name="chooseRating3BtnStyle">@style/chooseRating3BtnThemeOO</item>
+        <item name="chooseRating4BtnStyle">@style/chooseRating4BtnThemeOO</item>
+        <item name="chooseRating5BtnStyle">@style/chooseRating5BtnThemeOO</item>
+        <item name="smallTextSettingsBtnStyle">@style/smallTextSettingsBtnThemeOO</item>
+        <item name="bigTextSettingsBtnStyle">@style/bigTextSettingsBtnThemeOO</item>
+        <item name="themeOOSettingsBtnStyle">@style/themeOOSettingsBtnThemeOO</item>
+        <item name="themeBBSettingsBtnStyle">@style/themeBBSettingsBtnThemeOO</item>
+        <item name="themePPSettingsBtnStyle">@style/themePPSettingsBtnThemeOO</item>
     </style>
-    <!-- From: file:/C:/Users/Ferm/Dropbox/150Ursakter/150Ursakter2/ursakter/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
+    <!-- From: file:/C:/Users/Jonathan/Dropbox/150Ursakter/150Ursakter2/ursakter/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
     <eat-comment/>
     <style name="Platform.AppCompat" parent="android:Theme">
         <item name="android:windowNoTitle">true</item>
@@ -1229,12 +1283,39 @@
         <item name="android:listChoiceIndicatorMultiple">@drawable/abc_btn_check_material</item>
     </style>
     <style name="Platform.AppCompat.Light.Dialog" parent="Platform.AppCompat.Dialog"/>
-    <!-- From: file:/C:/Users/Ferm/Dropbox/150Ursakter/150Ursakter2/ursakter/app/src/main/res/values/styles.xml -->
+    <!-- From: file:/C:/Users/Jonathan/Dropbox/150Ursakter/150Ursakter2/ursakter/app/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="PornoPurple">
+        <item name="topPanelStyle">@style/topPanelThemePP</item>
         <item name="randomizeBtnStyle">@style/randomizeBtnThemePP</item>
+        <item name="menuLibraryBtnStyle">@style/menuLibraryBtnThemePP</item>
+        <item name="menuSettingsBtnStyle">@style/menuSettingsBtnThemePP</item>
+        <item name="menuAboutBtnStyle">@style/menuAboutBtnThemePP</item>
+        <item name="menuAddBtnStyle">@style/menuAddBtnThemePP</item>
+        <item name="menuFavBtnStyle">@style/menuFavBtnThemePP</item>
+        <item name="categorySjukdommarBtnStyle">@style/categorySjukdommarBtnThemePP</item>
+        <item name="categoryOverfallBtnStyle">@style/categoryOverfallBtnThemePP</item>
+        <item name="categoryDummaBtnStyle">@style/categoryDummaBtnThemePP</item>
+        <item name="categoryElakaBtnStyle">@style/categoryElakaBtnThemePP</item>
+        <item name="categoryIlandsBtnStyle">@style/categoryIlandsBtnThemePP</item>
+        <item name="categoryManniskorBtnStyle">@style/categoryManniskorBtnThemePP</item>
+        <item name="categoryDjurBtnStyle">@style/categoryDjurBtnThemePP</item>
+        <item name="categoryKlassikerBtnStyle">@style/categoryKlassikerBtnThemePP</item>
+        <item name="nextBtnStyle">@style/nextBtnThemePP</item>
+        <item name="prevBtnStyle">@style/prevBtnThemePP</item>
+        <item name="chooseRating0BtnStyle">@style/chooseRating0BtnThemePP</item>
+        <item name="chooseRating1BtnStyle">@style/chooseRating1BtnThemePP</item>
+        <item name="chooseRating2BtnStyle">@style/chooseRating2BtnThemePP</item>
+        <item name="chooseRating3BtnStyle">@style/chooseRating3BtnThemePP</item>
+        <item name="chooseRating4BtnStyle">@style/chooseRating4BtnThemePP</item>
+        <item name="chooseRating5BtnStyle">@style/chooseRating5BtnThemePP</item>
+        <item name="smallTextSettingsBtnStyle">@style/smallTextSettingsBtnThemePP</item>
+        <item name="bigTextSettingsBtnStyle">@style/bigTextSettingsBtnThemePP</item>
+        <item name="themeOOSettingsBtnStyle">@style/themeOOSettingsBtnThemePP</item>
+        <item name="themeBBSettingsBtnStyle">@style/themeBBSettingsBtnThemePP</item>
+        <item name="themePPSettingsBtnStyle">@style/themePPSettingsBtnThemePP</item>
     </style>
-    <!-- From: file:/C:/Users/Ferm/Dropbox/150Ursakter/150Ursakter2/ursakter/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
+    <!-- From: file:/C:/Users/Jonathan/Dropbox/150Ursakter/150Ursakter2/ursakter/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
     <eat-comment/>
     <style name="RtlOverlay.Widget.AppCompat.ActionBar.TitleItem" parent="android:Widget">
         <item name="android:layout_gravity">center_vertical|left</item>
@@ -1362,7 +1443,7 @@
     <style name="ThemeOverlay.AppCompat.Dark" parent="Base.ThemeOverlay.AppCompat.Dark"/>
     <style name="ThemeOverlay.AppCompat.Dark.ActionBar" parent="Base.ThemeOverlay.AppCompat.Dark.ActionBar"/>
     <style name="ThemeOverlay.AppCompat.Light" parent="Base.ThemeOverlay.AppCompat.Light"/>
-    <!-- From: file:/C:/Users/Ferm/Dropbox/150Ursakter/150Ursakter2/ursakter/app/src/main/res/values/styles.xml -->
+    <!-- From: file:/C:/Users/Jonathan/Dropbox/150Ursakter/150Ursakter2/ursakter/app/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="TopPanelButtons">
         <item name="android:layout_height">40dp</item>
@@ -1374,7 +1455,7 @@
     <style name="TopPanelRightButtons" parent="TopPanelButtons">
         <item name="android:layout_marginLeft">30dp</item>
     </style>
-    <!-- From: file:/C:/Users/Ferm/Dropbox/150Ursakter/150Ursakter2/ursakter/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
+    <!-- From: file:/C:/Users/Jonathan/Dropbox/150Ursakter/150Ursakter2/ursakter/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
     <eat-comment/>
     <style name="Widget.AppCompat.ActionBar" parent="Base.Widget.AppCompat.ActionBar">
     </style>
@@ -1459,12 +1540,258 @@
     <style name="Widget.AppCompat.TextView.SpinnerItem" parent="Base.Widget.AppCompat.TextView.SpinnerItem"/>
     <style name="Widget.AppCompat.Toolbar" parent="Base.Widget.AppCompat.Toolbar"/>
     <style name="Widget.AppCompat.Toolbar.Button.Navigation" parent="Base.Widget.AppCompat.Toolbar.Button.Navigation"/>
-    <!-- From: file:/C:/Users/Ferm/Dropbox/150Ursakter/150Ursakter2/ursakter/app/src/main/res/values/styles.xml -->
+    <!-- From: file:/C:/Users/Jonathan/Dropbox/150Ursakter/150Ursakter2/ursakter/app/src/main/res/values/styles.xml -->
     <eat-comment/>
+    <style name="bigTextSettingsBtnThemeBB" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_blue_settings_btn_txt_oka</item>
+    </style>
+    <style name="bigTextSettingsBtnThemeOO" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_settings_btn_txt_oka</item>
+    </style>
+    <style name="bigTextSettingsBtnThemePP" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_purple_settings_btn_txt_oka</item>
+    </style>
+    <style name="categoryDjurBtnThemeBB" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_blue_kat_btn_djur</item>
+    </style>
+    <style name="categoryDjurBtnThemeOO" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_kat_btn_djur</item>
+    </style>
+    <style name="categoryDjurBtnThemePP" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_purple_kat_btn_djur</item>
+    </style>
+    <style name="categoryDummaBtnThemeBB" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_blue_kat_btn_dumma_aktiviteter</item>
+    </style>
+    <style name="categoryDummaBtnThemeOO" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_kat_btn_dumma_aktiviteter</item>
+    </style>
+    <style name="categoryDummaBtnThemePP" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_purple_kat_btn_dumma_aktiviteter</item>
+    </style>
+    <style name="categoryElakaBtnThemeBB" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_blue_kat_btn_elaka_fracka</item>
+    </style>
+    <style name="categoryElakaBtnThemeOO" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_kat_btn_elaka_fracka</item>
+    </style>
+    <style name="categoryElakaBtnThemePP" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_purple_kat_btn_elaka_fracka</item>
+    </style>
+    <style name="categoryIlandsBtnThemeBB" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_blue_kat_btn_ilandsproblem</item>
+    </style>
+    <style name="categoryIlandsBtnThemeOO" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_kat_btn_ilandsproblem</item>
+    </style>
+    <style name="categoryIlandsBtnThemePP" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_purple_kat_btn_ilandsproblem</item>
+    </style>
+    <style name="categoryKlassikerBtnThemeBB" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_blue_kat_btn_klassiker</item>
+    </style>
+    <style name="categoryKlassikerBtnThemeOO" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_kat_btn_klassiker</item>
+    </style>
+    <style name="categoryKlassikerBtnThemePP" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_purple_kat_btn_klassiker</item>
+    </style>
+    <style name="categoryManniskorBtnThemeBB" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_blue_kat_btn_manniskor</item>
+    </style>
+    <style name="categoryManniskorBtnThemeOO" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_kat_btn_manniskor</item>
+    </style>
+    <style name="categoryManniskorBtnThemePP" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_purple_kat_btn_manniskor</item>
+    </style>
+    <style name="categoryOverfallBtnThemeBB" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_blue_kat_btn_overfall_attacker</item>
+    </style>
+    <style name="categoryOverfallBtnThemeOO" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_kat_btn_overfall_attacker</item>
+    </style>
+    <style name="categoryOverfallBtnThemePP" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_purple_kat_btn_overfall_attacker</item>
+    </style>
+    <style name="categorySjukdommarBtnThemeBB" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_blue_kat_btn_sjukdommar_inbillskhet</item>
+    </style>
+    <style name="categorySjukdommarBtnThemeOO" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_kat_btn_sjukdommar_inbillskhet</item>
+    </style>
+    <style name="categorySjukdommarBtnThemePP" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_purple_kat_btn_sjukdommar_inbillskhet</item>
+    </style>
+    <style name="chooseRating0BtnThemeBB" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_blue_btn_rate_0</item>
+    </style>
+    <style name="chooseRating0BtnThemeOO" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_btn_rate_0</item>
+    </style>
+    <style name="chooseRating0BtnThemePP" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_purple_btn_rate_0</item>
+    </style>
+    <style name="chooseRating1BtnThemeBB" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_blue_btn_rate_1</item>
+    </style>
+    <style name="chooseRating1BtnThemeOO" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_btn_rate_1</item>
+    </style>
+    <style name="chooseRating1BtnThemePP" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_purple_btn_rate_1</item>
+    </style>
+    <style name="chooseRating2BtnThemeBB" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_blue_btn_rate_2</item>
+    </style>
+    <style name="chooseRating2BtnThemeOO" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_btn_rate_2</item>
+    </style>
+    <style name="chooseRating2BtnThemePP" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_purple_btn_rate_2</item>
+    </style>
+    <style name="chooseRating3BtnThemeBB" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_blue_btn_rate_3</item>
+    </style>
+    <style name="chooseRating3BtnThemeOO" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_btn_rate_3</item>
+    </style>
+    <style name="chooseRating3BtnThemePP" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_purple_btn_rate_3</item>
+    </style>
+    <style name="chooseRating4BtnThemeBB" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_blue_btn_rate_4</item>
+    </style>
+    <style name="chooseRating4BtnThemeOO" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_btn_rate_4</item>
+    </style>
+    <style name="chooseRating4BtnThemePP" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_purple_btn_rate_4</item>
+    </style>
+    <style name="chooseRating5BtnThemeBB" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_blue_btn_rate_5</item>
+    </style>
+    <style name="chooseRating5BtnThemeOO" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_btn_rate_5</item>
+    </style>
+    <style name="chooseRating5BtnThemePP" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_purple_btn_rate_5</item>
+    </style>
+    <style name="menuAboutBtnThemeBB" parent="MenuButtonsTop">
+        <item name="android:background">@drawable/ui_app_blue_btn_about</item>
+    </style>
+    <style name="menuAboutBtnThemeOO" parent="MenuButtonsTop">
+        <item name="android:background">@drawable/ui_app_btn_about</item>
+    </style>
+    <style name="menuAboutBtnThemePP" parent="MenuButtonsTop">
+        <item name="android:background">@drawable/ui_app_purple_btn_about</item>
+    </style>
+    <style name="menuAddBtnThemeBB" parent="MenuButtonsBottom">
+        <item name="android:background">@drawable/ui_app_blue_btn_add_10</item>
+    </style>
+    <style name="menuAddBtnThemeOO" parent="MenuButtonsBottom">
+        <item name="android:background">@drawable/ui_app_btn_add_10</item>
+    </style>
+    <style name="menuAddBtnThemePP" parent="MenuButtonsBottom">
+        <item name="android:background">@drawable/ui_app_purple_btn_add_10</item>
+    </style>
+    <style name="menuFavBtnThemeBB" parent="MenuButtonsBottom">
+        <item name="android:background">@drawable/ui_app_blue_btn_fav</item>
+    </style>
+    <style name="menuFavBtnThemeOO" parent="MenuButtonsBottom">
+        <item name="android:background">@drawable/ui_app_btn_fav</item>
+    </style>
+    <style name="menuFavBtnThemePP" parent="MenuButtonsBottom">
+        <item name="android:background">@drawable/ui_app_purple_btn_fav</item>
+    </style>
+    <style name="menuLibraryBtnThemeBB" parent="MenuButtonsTop">
+        <item name="android:background">@drawable/ui_app_blue_btn_libary</item>
+    </style>
+    <style name="menuLibraryBtnThemeOO" parent="MenuButtonsTop">
+        <item name="android:background">@drawable/ui_app_btn_libary</item>
+    </style>
+    <style name="menuLibraryBtnThemePP" parent="MenuButtonsTop">
+        <item name="android:background">@drawable/ui_app_purple_btn_libary</item>
+    </style>
+    <style name="menuSettingsBtnThemeBB" parent="MenuButtonsTop">
+        <item name="android:background">@drawable/ui_app_blue_btn_settings</item>
+    </style>
+    <style name="menuSettingsBtnThemeOO" parent="MenuButtonsTop">
+        <item name="android:background">@drawable/ui_app_btn_settings</item>
+    </style>
+    <style name="menuSettingsBtnThemePP" parent="MenuButtonsTop">
+        <item name="android:background">@drawable/ui_app_purple_btn_settings</item>
+    </style>
+    <style name="nextBtnThemeBB" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_blue_btn_next</item>
+    </style>
+    <style name="nextBtnThemeOO" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_btn_next</item>
+    </style>
+    <style name="nextBtnThemePP" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_purple_btn_next</item>
+    </style>
+    <style name="prevBtnThemeBB" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_blue_btn_back</item>
+    </style>
+    <style name="prevBtnThemeOO" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_btn_back</item>
+    </style>
+    <style name="prevBtnThemePP" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_purple_btn_back</item>
+    </style>
+    <style name="randomizeBtnThemeBB" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_blue_btn_random</item>
+    </style>
     <style name="randomizeBtnThemeOO" parent="AppTheme">
         <item name="android:background">@drawable/ui_app_btn_random</item>
     </style>
     <style name="randomizeBtnThemePP" parent="AppTheme">
         <item name="android:background">@drawable/ui_app_purple_btn_random</item>
+    </style>
+    <style name="smallTextSettingsBtnThemeBB" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_blue_settings_btn_txt_minska</item>
+    </style>
+    <style name="smallTextSettingsBtnThemeOO" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_settings_btn_txt_minska</item>
+    </style>
+    <style name="smallTextSettingsBtnThemePP" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_purple_settings_btn_txt_minska</item>
+    </style>
+    <style name="themeBBSettingsBtnThemeBB" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_blue_settings_btn_col_turqouse</item>
+    </style>
+    <style name="themeBBSettingsBtnThemeOO" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_settings_btn_col_turqouse</item>
+    </style>
+    <style name="themeBBSettingsBtnThemePP" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_purple_settings_btn_col_turqouse</item>
+    </style>
+    <style name="themeOOSettingsBtnThemeBB" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_blue_settings_btn_col_orange</item>
+    </style>
+    <style name="themeOOSettingsBtnThemeOO" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_settings_btn_col_orange</item>
+    </style>
+    <style name="themeOOSettingsBtnThemePP" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_purple_settings_btn_col_orange</item>
+    </style>
+    <style name="themePPSettingsBtnThemeBB" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_blue_settings_btn_col_orange_purple</item>
+    </style>
+    <style name="themePPSettingsBtnThemeOO" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_settings_btn_col_orange_purple</item>
+    </style>
+    <style name="themePPSettingsBtnThemePP" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_purple_settings_btn_col_orange_purple</item>
+    </style>
+    <style name="topPanelThemeBB">
+        <item name="android:background">@drawable/ui_app_blue_bg_top</item>
+    </style>
+    <style name="topPanelThemeOO">
+        <item name="android:background">@drawable/bar_top_bg</item>
+    </style>
+    <style name="topPanelThemePP">
+        <item name="android:background">@drawable/ui_app_purple_bg_top</item>
     </style>
 </resources>
