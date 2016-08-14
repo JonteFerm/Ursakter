@@ -63,7 +63,8 @@
                 android:id="@+id/textView2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="25sp"
+                android:textSize="28sp"
+                android:textStyle="bold"
                 android:text="@string/start_text"
                 android:layout_centerInParent="true"
                 android:layout_alignParentTop="true"
@@ -132,4 +133,4 @@
 
     </FrameLayout>
 
-</RelativeLayout><!-- From: file:/C:/Users/Jonathan/Dropbox/150Ursakter/150Ursakter2/ursakter/app/src/main/res/layout/activity_library.xml -->
+</RelativeLayout><!-- From: file:/C:/Users/Ferm/Dropbox/150Ursakter/150Ursakter2/ursakter/app/src/main/res/layout/activity_library.xml -->

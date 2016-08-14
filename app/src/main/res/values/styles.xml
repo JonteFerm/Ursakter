@@ -46,6 +46,8 @@
         <attr name="themeOOSettingsBtnStyle" format="reference"></attr>
         <attr name="themeBBSettingsBtnStyle" format="reference"></attr>
         <attr name="themePPSettingsBtnStyle" format="reference"></attr>
+        <attr name="newBtnOkStyle" format="reference"></attr>
+        <attr name="newBtnAbortStyle" format="reference"></attr>
     </declare-styleable>
 
     <!-- Top panel theme styles -->
@@ -440,6 +442,34 @@
         <item name="android:background">@drawable/ui_app_purple_settings_btn_col_orange_purple</item>
     </style>
 
+    <!-- New ok button theme styles -->
+    <style name="newBtnOkThemeOO" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_new_btn_ok</item>
+    </style>
+
+    <style name="newBtnOkThemeBB" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_blue_new_btn_ok</item>
+    </style>
+
+    <style name="newBtnOkThemePP" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_purple_new_btn_ok</item>
+    </style>
+    <!-- ______________________________________________________________________ -->
+
+    <!-- New abort btn theme styles -->
+    <style name="newBtnAbortThemeOO" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_new_btn_abort</item>
+    </style>
+
+    <style name="newBtnAbortThemeBB" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_blue_new_btn_abort</item>
+    </style>
+
+    <style name="newBtnAbortThemePP" parent="AppTheme">
+        <item name="android:background">@drawable/ui_app_purple_new_btn_abort</item>
+    </style>
+    <!-- ______________________________________________________________________ -->
+
     <!-- Themes -->
     <style name="OriginalOrange">
         <item name="topPanelStyle">@style/topPanelThemeOO</item>
@@ -470,6 +500,8 @@
         <item name="themeOOSettingsBtnStyle">@style/themeOOSettingsBtnThemeOO</item>
         <item name="themeBBSettingsBtnStyle">@style/themeBBSettingsBtnThemeOO</item>
         <item name="themePPSettingsBtnStyle">@style/themePPSettingsBtnThemeOO</item>
+        <item name="newBtnOkStyle">@style/newBtnOkThemeOO</item>
+        <item name="newBtnAbortStyle">@style/newBtnAbortThemeOO</item>
     </style>
 
     <style name="BabyBlue">
@@ -501,6 +533,8 @@
         <item name="themeOOSettingsBtnStyle">@style/themeOOSettingsBtnThemeBB</item>
         <item name="themeBBSettingsBtnStyle">@style/themeBBSettingsBtnThemeBB</item>
         <item name="themePPSettingsBtnStyle">@style/themePPSettingsBtnThemeBB</item>
+        <item name="newBtnOkStyle">@style/newBtnOkThemeBB</item>
+        <item name="newBtnAbortStyle">@style/newBtnAbortThemeBB</item>
     </style>
 
     <style name="PornoPurple">
@@ -532,6 +566,8 @@
         <item name="themeOOSettingsBtnStyle">@style/themeOOSettingsBtnThemePP</item>
         <item name="themeBBSettingsBtnStyle">@style/themeBBSettingsBtnThemePP</item>
         <item name="themePPSettingsBtnStyle">@style/themePPSettingsBtnThemePP</item>
+        <item name="newBtnOkStyle">@style/newBtnOkThemePP</item>
+        <item name="newBtnAbortStyle">@style/newBtnAbortThemePP</item>
     </style>
 
     <!-- Non-themed styles -->

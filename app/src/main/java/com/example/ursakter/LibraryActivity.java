@@ -34,12 +34,12 @@ public class LibraryActivity extends FragmentActivity implements ExcuseFragment.
     private TextView categoryNameView;
     private int categoryId;
     private PageListener pageListener;
-
+    private String currentTheme;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         appSettings = getSharedPreferences("AppSettings", 0);
-        String currentTheme = appSettings.getString("AppTheme", "OO");
+        currentTheme = appSettings.getString("AppTheme", "OO");
 
         switch (currentTheme){
             case "OO":
@@ -153,7 +153,14 @@ public class LibraryActivity extends FragmentActivity implements ExcuseFragment.
                 previousButton.setBackgroundResource(R.drawable.ui_app_btn_back_neg);
                 previousButton.invalidate();
             }else{
-                previousButton.setBackgroundResource(R.drawable.ui_app_btn_back);
+                if(currentTheme == "OO"){
+                    previousButton.setBackgroundResource(R.drawable.ui_app_btn_back);
+                }else if(currentTheme == "BB"){
+                    previousButton.setBackgroundResource(R.drawable.ui_app_blue_btn_back);
+                }else if(currentTheme == "PP"){
+                    previousButton.setBackgroundResource(R.drawable.ui_app_purple_btn_back);
+                }
+
                 previousButton.invalidate();
             }
             current = excuses.get(position);

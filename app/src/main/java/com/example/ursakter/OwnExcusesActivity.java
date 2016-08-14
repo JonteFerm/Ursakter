@@ -34,14 +34,14 @@ public class OwnExcusesActivity extends FragmentActivity implements ExcuseFragme
     private ExcusePagerAdapter excusePagerAdapter;
     private TextView categoryNameView;
     private PageListener pageListener;
-
+    String currentTheme;
     private int currentPosition = 0;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         appSettings = getSharedPreferences("AppSettings", 0);
-        String currentTheme = appSettings.getString("AppTheme", "OO");
+        currentTheme = appSettings.getString("AppTheme", "OO");
 
         switch (currentTheme){
             case "OO":
@@ -191,7 +191,14 @@ public class OwnExcusesActivity extends FragmentActivity implements ExcuseFragme
                 previousButton.setBackgroundResource(R.drawable.ui_app_btn_back_neg);
                 previousButton.invalidate();
             }else{
-                previousButton.setBackgroundResource(R.drawable.ui_app_btn_back);
+                if(currentTheme == "OO"){
+                    previousButton.setBackgroundResource(R.drawable.ui_app_btn_back);
+                }else if(currentTheme == "BB"){
+                    previousButton.setBackgroundResource(R.drawable.ui_app_blue_btn_back);
+                }else if(currentTheme == "PP"){
+                    previousButton.setBackgroundResource(R.drawable.ui_app_purple_btn_back);
+                }
+
                 previousButton.invalidate();
             }
             current = excuses.get(position);

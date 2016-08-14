@@ -20,7 +20,7 @@
             android:id="@+id/home_btn"
             android:onClick="mainMenu"
             android:background="@drawable/ui_app_btn_home"
-            />
+        />
 
     </LinearLayout>
 

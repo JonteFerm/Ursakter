@@ -30,6 +30,7 @@ public class RandomExcusesActivity extends Activity{
     protected void onCreate(Bundle savedInstanceState) {
         appSettings = getSharedPreferences("AppSettings", 0);
         String currentTheme = appSettings.getString("AppTheme", "OO");
+        int currentTextSize = appSettings.getInt("TextSize", 14);
 
         switch (currentTheme){
             case "OO":
@@ -52,6 +53,9 @@ public class RandomExcusesActivity extends Activity{
         excuses = dbHandler.getAllExcuses();
         usedExcuses = new HashSet();
         random = new Random();
+
+        excuseTextView.setTextSize(currentTextSize);
+
 
         loadNewExcuse();
     }

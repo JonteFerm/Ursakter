@@ -51,7 +51,8 @@
                 android:id="@+id/intro_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="25sp"
+                android:textSize="28sp"
+                android:textStyle="bold"
                 android:text="@string/start_text"
                 android:layout_centerInParent="true"
                 android:layout_alignParentTop="true"
@@ -84,22 +85,21 @@
         android:layout_alignParentBottom="true"
     >
         <Button
+            style="?attr/newBtnAbortStyle"
             android:id="@+id/abort_btn"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginRight="20dp"
             android:onClick="abort"
-            android:background="@drawable/ui_app_new_btn_abort"
-
         />
 
         <Button
+            style="?attr/newBtnOkStyle"
             android:id="@+id/ok_btn"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginLeft="20dp"
             android:onClick="saveExcuse"
-            android:background="@drawable/ui_app_new_btn_ok"
         />
 
     </LinearLayout>

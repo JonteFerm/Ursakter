@@ -1,6 +1,7 @@
 package com.example.ursakter;
 
 import android.app.Activity;
+import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -26,7 +27,8 @@ public class ExcuseFragment extends Fragment {
     private String text;
 
     private OnFragmentInteractionListener mListener;
-
+    private SharedPreferences appSettings;
+    int currentTextSize;
 
     public static ExcuseFragment newInstance(Excuse excuse) {
         ExcuseFragment fragment = new ExcuseFragment();
@@ -46,8 +48,8 @@ public class ExcuseFragment extends Fragment {
         if (getArguments() != null) {
             text = getArguments().getString(ARG_TEXT);
         }
-
-
+        appSettings = this.getActivity().getSharedPreferences("AppSettings", 0);
+        currentTextSize = appSettings.getInt("TextSize", 14);
     }
 
     @Override
@@ -57,6 +59,11 @@ public class ExcuseFragment extends Fragment {
         View fragmentView = inflater.inflate(R.layout.fragment_excuse, container, false);
         TextView textView = (TextView) fragmentView.findViewById(R.id.fragmentTextView);
         textView.setText(text);
+
+
+
+        textView.setTextSize(currentTextSize);
+
         return fragmentView;
     }
 
