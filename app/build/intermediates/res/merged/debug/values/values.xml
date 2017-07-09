@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/C:/Users/Ferm/Dropbox/150Ursakter/150Ursakter2/ursakter/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
+    <!-- From: file:/C:/Users/Ferm/Desktop/Ursakter/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
     <eat-comment/>
     <attr format="reference" name="drawerArrowStyle"/>
     <attr format="dimension" name="height"/>
@@ -128,11 +128,11 @@
     <dimen name="abc_text_size_subtitle_material_toolbar">16dp</dimen>
     <dimen name="abc_text_size_title_material">20sp</dimen>
     <dimen name="abc_text_size_title_material_toolbar">20dp</dimen>
-    <!-- From: file:/C:/Users/Ferm/Dropbox/150Ursakter/150Ursakter2/ursakter/app/src/main/res/values/dimens.xml -->
+    <!-- From: file:/C:/Users/Ferm/Desktop/Ursakter/app/src/main/res/values/dimens.xml -->
     <eat-comment/>
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
-    <!-- From: file:/C:/Users/Ferm/Dropbox/150Ursakter/150Ursakter2/ursakter/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
+    <!-- From: file:/C:/Users/Ferm/Desktop/Ursakter/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
     <eat-comment/>
     <item name="dialog_fixed_height_major" type="dimen">80%</item>
     <item name="dialog_fixed_height_minor" type="dimen">100%</item>
@@ -168,7 +168,7 @@
     <string name="abc_shareactionprovider_share_with">Share with</string>
     <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
     <string name="abc_toolbar_collapse_description">Collapse</string>
-    <!-- From: file:/C:/Users/Ferm/Dropbox/150Ursakter/150Ursakter2/ursakter/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/C:/Users/Ferm/Desktop/Ursakter/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="aboutBtn_text">Om...</string>
     <string name="action_settings">Settings</string>
@@ -195,10 +195,10 @@
     <string name="title_activity_random_excuses">RandomExcusesActivity</string>
     <string name="title_activity_randomization">Randomization</string>
     <string name="title_activity_settings">SettingsActivity</string>
-    <!-- From: file:/C:/Users/Ferm/Dropbox/150Ursakter/150Ursakter2/ursakter/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
+    <!-- From: file:/C:/Users/Ferm/Desktop/Ursakter/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
     <eat-comment/>
     <style name="Animation.AppCompat.DropDownUp" parent="Base.Animation.AppCompat.DropDownUp"/>
-    <!-- From: file:/C:/Users/Ferm/Dropbox/150Ursakter/150Ursakter2/ursakter/app/src/main/res/values/styles.xml -->
+    <!-- From: file:/C:/Users/Ferm/Desktop/Ursakter/app/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="AppBaseTheme" parent="Theme.AppCompat.Light">
         <!--
@@ -242,7 +242,7 @@
         <item name="newBtnOkStyle">@style/newBtnOkThemeBB</item>
         <item name="newBtnAbortStyle">@style/newBtnAbortThemeBB</item>
     </style>
-    <!-- From: file:/C:/Users/Ferm/Dropbox/150Ursakter/150Ursakter2/ursakter/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
+    <!-- From: file:/C:/Users/Ferm/Desktop/Ursakter/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
     <eat-comment/>
     <style name="Base.Animation.AppCompat.DropDownUp" parent="android:Animation">
         <item name="android:windowEnterAnimation">@anim/abc_grow_fade_in_from_bottom</item>
@@ -1097,7 +1097,7 @@
         <item name="android:scaleType">center</item>
         <item name="android:background">?attr/selectableItemBackground</item>
     </style>
-    <!-- From: file:/C:/Users/Ferm/Dropbox/150Ursakter/150Ursakter2/ursakter/app/src/main/res/values/styles.xml -->
+    <!-- From: file:/C:/Users/Ferm/Desktop/Ursakter/app/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="BrowsingPanel">
 
@@ -1148,7 +1148,7 @@
         <item name="newBtnOkStyle">@style/newBtnOkThemeOO</item>
         <item name="newBtnAbortStyle">@style/newBtnAbortThemeOO</item>
     </style>
-    <!-- From: file:/C:/Users/Ferm/Dropbox/150Ursakter/150Ursakter2/ursakter/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
+    <!-- From: file:/C:/Users/Ferm/Desktop/Ursakter/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
     <eat-comment/>
     <style name="Platform.AppCompat" parent="android:Theme">
         <item name="android:windowNoTitle">true</item>
@@ -1287,7 +1287,7 @@
         <item name="android:listChoiceIndicatorMultiple">@drawable/abc_btn_check_material</item>
     </style>
     <style name="Platform.AppCompat.Light.Dialog" parent="Platform.AppCompat.Dialog"/>
-    <!-- From: file:/C:/Users/Ferm/Dropbox/150Ursakter/150Ursakter2/ursakter/app/src/main/res/values/styles.xml -->
+    <!-- From: file:/C:/Users/Ferm/Desktop/Ursakter/app/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="PornoPurple">
         <item name="topPanelStyle">@style/topPanelThemePP</item>
@@ -1321,7 +1321,7 @@
         <item name="newBtnOkStyle">@style/newBtnOkThemePP</item>
         <item name="newBtnAbortStyle">@style/newBtnAbortThemePP</item>
     </style>
-    <!-- From: file:/C:/Users/Ferm/Dropbox/150Ursakter/150Ursakter2/ursakter/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
+    <!-- From: file:/C:/Users/Ferm/Desktop/Ursakter/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
     <eat-comment/>
     <style name="RtlOverlay.Widget.AppCompat.ActionBar.TitleItem" parent="android:Widget">
         <item name="android:layout_gravity">center_vertical|left</item>
@@ -1449,7 +1449,7 @@
     <style name="ThemeOverlay.AppCompat.Dark" parent="Base.ThemeOverlay.AppCompat.Dark"/>
     <style name="ThemeOverlay.AppCompat.Dark.ActionBar" parent="Base.ThemeOverlay.AppCompat.Dark.ActionBar"/>
     <style name="ThemeOverlay.AppCompat.Light" parent="Base.ThemeOverlay.AppCompat.Light"/>
-    <!-- From: file:/C:/Users/Ferm/Dropbox/150Ursakter/150Ursakter2/ursakter/app/src/main/res/values/styles.xml -->
+    <!-- From: file:/C:/Users/Ferm/Desktop/Ursakter/app/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="TopPanelButtons">
         <item name="android:layout_height">40dp</item>
@@ -1461,7 +1461,7 @@
     <style name="TopPanelRightButtons" parent="TopPanelButtons">
         <item name="android:layout_marginLeft">30dp</item>
     </style>
-    <!-- From: file:/C:/Users/Ferm/Dropbox/150Ursakter/150Ursakter2/ursakter/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
+    <!-- From: file:/C:/Users/Ferm/Desktop/Ursakter/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
     <eat-comment/>
     <style name="Widget.AppCompat.ActionBar" parent="Base.Widget.AppCompat.ActionBar">
     </style>
@@ -1546,7 +1546,7 @@
     <style name="Widget.AppCompat.TextView.SpinnerItem" parent="Base.Widget.AppCompat.TextView.SpinnerItem"/>
     <style name="Widget.AppCompat.Toolbar" parent="Base.Widget.AppCompat.Toolbar"/>
     <style name="Widget.AppCompat.Toolbar.Button.Navigation" parent="Base.Widget.AppCompat.Toolbar.Button.Navigation"/>
-    <!-- From: file:/C:/Users/Ferm/Dropbox/150Ursakter/150Ursakter2/ursakter/app/src/main/res/values/styles.xml -->
+    <!-- From: file:/C:/Users/Ferm/Desktop/Ursakter/app/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="bigTextSettingsBtnThemeBB" parent="AppTheme">
         <item name="android:background">@drawable/ui_app_blue_settings_btn_txt_oka</item>

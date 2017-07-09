@@ -42,55 +42,58 @@
         android:orientation="vertical"
         android:layout_below="@id/top_panel"
         android:id="@+id/linearLayout">
-
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-
-            <TextView
-                android:id="@+id/textView1"
+        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+        >
+            <RelativeLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:layout_alignParentTop="true"
-                android:gravity="center"
-                android:textSize="16sp"
-                android:layout_marginTop="10dp"
-            />
+                android:layout_height="wrap_content">
 
-            <TextView
-                android:layout_below="@+id/textView1"
-                android:id="@+id/textView2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textSize="28sp"
-                android:textStyle="bold"
-                android:text="@string/start_text"
-                android:layout_centerInParent="true"
-                android:layout_alignParentTop="true"
-                android:layout_marginTop="30dp"
-                android:gravity="center"
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentTop="true"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:layout_marginTop="10dp"
                 />
 
-            <android.support.v4.view.ViewPager
-                android:layout_below="@id/textView2"
-                android:id="@+id/pager"
-                android:layout_width="wrap_content"
-                android:layout_height="250dp"
-            >
+                <TextView
+                    android:layout_below="@+id/textView1"
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:text="@string/start_text"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center"
+                    />
+                <android.support.v4.view.ViewPager
+                    android:layout_below="@id/textView2"
+                    android:id="@+id/pager"
+                    android:layout_width="wrap_content"
+                    android:layout_height="250dp"
+                    >
 
-            </android.support.v4.view.ViewPager>
+                </android.support.v4.view.ViewPager>
 
-            <TextView
-                android:layout_below="@+id/pager"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/textView3"
-                android:gravity="center"
-                android:layout_centerInParent="true"
-            />
+                <TextView
+                    android:layout_below="@+id/pager"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView3"
+                    android:gravity="center"
+                    android:layout_centerInParent="true"
+                />
 
-        </RelativeLayout>
+            </RelativeLayout>
+        </ScrollView>
     </LinearLayout>
 
     <FrameLayout

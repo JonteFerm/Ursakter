@@ -2,16 +2,20 @@
 xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
 android:layout_height="match_parent" tools:context="com.example.ursakter.ExcuseFragment">
 
+
     <TextView
         android:id="@+id/fragmentTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="14sp"
         android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal"
         android:layout_marginTop="20dp"
         android:paddingRight="20dp"
         android:paddingLeft="20dp"
-    />
+        android:gravity="center_horizontal"
+
+        />
 
 </FrameLayout>
-<!-- From: file:/C:/Users/Ferm/Dropbox/150Ursakter/150Ursakter2/ursakter/app/src/main/res/layout/fragment_excuse.xml -->
+<!-- From: file:/C:/Users/Ferm/Desktop/Ursakter/app/src/main/res/layout/fragment_excuse.xml -->

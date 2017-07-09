@@ -4,7 +4,6 @@
     android:layout_height="wrap_content"
     tools:context="com.example.ursakter.CategoryActivity"
     >
-
     <LinearLayout
         style="?attr/topPanelStyle"
         android:layout_width="match_parent"
@@ -13,127 +12,141 @@
         android:id="@+id/top_panel"
         android:gravity="center"
         android:layout_alignParentTop="true"
-    >
+        >
 
         <Button
             style="@style/TopPanelButtons"
             android:id="@+id/home_btn"
             android:onClick="mainMenu"
             android:background="@drawable/ui_app_btn_home"
-        />
+            />
 
 
     </LinearLayout>
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
         android:layout_below="@id/top_panel"
     >
-
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center_horizontal"
-        >
-            <Button
-                style="?attr/categorySjukdommarBtnStyle"
-                android:layout_width="340dp"
-                android:layout_height="80dp"
-                android:layout_margin="5dp"
-                android:tag="1"
-                android:onClick="showCategory"
-            />
-        </LinearLayout>
+            android:layout_height="match_parent">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center_horizontal"
-            >
-            <Button
-                style="?attr/categoryOverfallBtnStyle"
-                android:layout_width="165dp"
-                android:layout_height="90dp"
-                android:tag="1"
-                android:layout_margin="5dp"
-                android:onClick="showCategory"
-            />
-            <Button
-                style="?attr/categoryDummaBtnStyle"
-                android:layout_width="165dp"
-                android:layout_height="90dp"
-                android:tag="1"
-                android:layout_margin="5dp"
-                android:onClick="showCategory"
-            />
-        </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center_horizontal"
-            >
-            <Button
-                style="?attr/categoryElakaBtnStyle"
-                android:layout_width="165dp"
-                android:layout_height="90dp"
-                android:tag="1"
-                android:layout_margin="5dp"
-                android:onClick="showCategory"
-            />
-            <Button
-                style="?attr/categoryIlandsBtnStyle"
-                android:layout_width="165dp"
-                android:layout_height="90dp"
-                android:tag="1"
-                android:layout_margin="5dp"
-                android:onClick="showCategory"
-            />
-        </LinearLayout>
+                >
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center_horizontal"
-            >
-            <Button
-                style="?attr/categoryManniskorBtnStyle"
-                android:layout_width="165dp"
-                android:layout_height="90dp"
-                android:tag="1"
-                android:layout_margin="5dp"
-                android:onClick="showCategory"
-            />
-            <Button
-                style="?attr/categoryDjurBtnStyle"
-                android:layout_width="165dp"
-                android:layout_height="90dp"
-                android:tag="1"
-                android:layout_margin="5dp"
-                android:onClick="showCategory"
-            />
-        </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    >
+                    <Button
+                        style="?attr/categorySjukdommarBtnStyle"
+                        android:layout_width="340dp"
+                        android:layout_height="80dp"
+                        android:layout_margin="5dp"
+                        android:tag="4"
+                        android:onClick="showCategory"
+                        />
+                </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center_horizontal"
-        >
-            <Button
-                style="?attr/categoryKlassikerBtnStyle"
-                android:layout_width="340dp"
-                android:layout_height="90dp"
-                android:layout_margin="5dp"
-                android:tag="1"
-                android:onClick="showCategory"
-            />
-        </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    >
+                    <Button
+                        style="?attr/categoryOverfallBtnStyle"
+                        android:layout_width="165dp"
+                        android:layout_height="90dp"
+                        android:tag="8"
+                        android:layout_margin="5dp"
+                        android:onClick="showCategory"
+                        />
+                    <Button
+                        style="?attr/categoryDummaBtnStyle"
+                        android:layout_width="165dp"
+                        android:layout_height="90dp"
+                        android:tag="7"
+                        android:layout_margin="5dp"
+                        android:onClick="showCategory"
+                        />
+                </LinearLayout>
 
-    </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    >
+                    <Button
+                        style="?attr/categoryElakaBtnStyle"
+                        android:layout_width="165dp"
+                        android:layout_height="90dp"
+                        android:tag="1"
+                        android:layout_margin="5dp"
+                        android:onClick="showCategory"
+                        />
+                    <Button
+                        style="?attr/categoryIlandsBtnStyle"
+                        android:layout_width="165dp"
+                        android:layout_height="90dp"
+                        android:tag="6"
+                        android:layout_margin="5dp"
+                        android:onClick="showCategory"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    >
+                    <Button
+                        style="?attr/categoryManniskorBtnStyle"
+                        android:layout_width="165dp"
+                        android:layout_height="90dp"
+                        android:tag="5"
+                        android:layout_margin="5dp"
+                        android:onClick="showCategory"
+                        />
+                    <Button
+                        style="?attr/categoryDjurBtnStyle"
+                        android:layout_width="165dp"
+                        android:layout_height="90dp"
+                        android:tag="2"
+                        android:layout_margin="5dp"
+                        android:onClick="showCategory"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    >
+                    <Button
+                        style="?attr/categoryKlassikerBtnStyle"
+                        android:layout_width="340dp"
+                        android:layout_height="90dp"
+                        android:layout_margin="5dp"
+                        android:tag="3"
+                        android:onClick="showCategory"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+
+
 </RelativeLayout>

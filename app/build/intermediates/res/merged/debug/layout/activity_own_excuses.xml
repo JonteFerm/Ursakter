@@ -51,55 +51,59 @@
         android:layout_below="@id/top_panel"
 
         >
-
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-
-            <TextView
-                android:id="@+id/textView1"
+        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <RelativeLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:layout_alignParentTop="true"
-                android:gravity="center"
-                android:textSize="16sp"
-                android:layout_marginTop="10dp"
-            />
+                android:layout_height="wrap_content">
 
-            <TextView
-                android:layout_below="@+id/textView1"
-                android:id="@+id/textView2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textSize="28sp"
-                android:textStyle="bold"
-                android:text="@string/start_text"
-                android:layout_centerInParent="true"
-                android:layout_alignParentTop="true"
-                android:layout_marginTop="30dp"
-                android:gravity="center"
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentTop="true"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:layout_marginTop="10dp"
                 />
 
-            <android.support.v4.view.ViewPager
-                android:layout_below="@id/textView2"
-                android:id="@+id/pager"
-                android:layout_width="wrap_content"
-                android:layout_height="250dp"
-                >
+                <TextView
+                    android:layout_below="@+id/textView1"
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:text="@string/start_text"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center"
+                    />
 
-            </android.support.v4.view.ViewPager>
 
-            <TextView
-                android:layout_below="@+id/pager"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/textView3"
-                android:gravity="center"
-                android:layout_centerInParent="true"
-                />
+                <android.support.v4.view.ViewPager
+                    android:layout_below="@id/textView2"
+                    android:id="@+id/pager"
+                    android:layout_width="wrap_content"
+                    android:layout_height="250dp"
+                    >
 
-        </RelativeLayout>
+                </android.support.v4.view.ViewPager>
+
+                <TextView
+                    android:layout_below="@+id/pager"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView3"
+                    android:gravity="center"
+                    android:layout_centerInParent="true"
+                    />
+            </RelativeLayout>
+        </ScrollView>
     </LinearLayout>
 
 
@@ -144,4 +148,4 @@
 
 
 </RelativeLayout>
-<!-- From: file:/C:/Users/Ferm/Dropbox/150Ursakter/150Ursakter2/ursakter/app/src/main/res/layout/activity_own_excuses.xml -->
+<!-- From: file:/C:/Users/Ferm/Desktop/Ursakter/app/src/main/res/layout/activity_own_excuses.xml -->
